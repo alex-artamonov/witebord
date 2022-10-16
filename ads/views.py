@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse, get_object_or_404
-from django.views.generic import DetailView
+from django.views.generic import DetailView, ListView
 import ads.models as ads
 
 
@@ -23,7 +23,14 @@ def ad_detail(request, ad_id):
     ad = get_object_or_404(ads.Ad, pk=ad_id)
     return render(request, 'ads/ad_detail.html', context)
 
+
+class GuildsListView(ListView):
+    model = ads.Guild
+    template_name = 'ads/guilds_list.html'
+    context_object_name = 'guilds_list'
+
+
 class GuildDetailView(DetailView):
     model = ads.Guild
-    template_name = 'ads/ad_detail.html'
+    template_name = 'ads/guild.html'
     context_object_name = 'guild'

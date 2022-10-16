@@ -25,6 +25,9 @@ class Guild(m.Model):
     def __str__(self):
         return self.name
 
+    def get_absolute_url(self):
+        return reverse_lazy('guild_detail', kwargs={'pk': self.pk})
+
     class Meta:
         ordering = ['-name']
         verbose_name = "Гильдия"
