@@ -17,6 +17,10 @@ class Guild(m.Model):
                        null=False,
                        verbose_name="Наименование")
     description = m.TextField(verbose_name="Описание")
+    image = m.ImageField(
+        upload_to='pics/guilds',
+        null=True,
+        blank=True)
 
     def __str__(self):
         return self.name
@@ -56,7 +60,7 @@ class Ad(m.Model):
         return self.content[:124] + '...'
 
     def get_absolute_url(self):
-        return reverse_lazy('ad_detail', kwargs={'pk': self.id})
+        return reverse_lazy('ad_detail', kwargs={'ad_id': self.id})
 
     class Meta:
         ordering = ['-created_at']

@@ -10,7 +10,9 @@ def index(request):
     output = '<br><hr>'.join([f'<h3>{ad.title}:</h3><p>{ad.content}</p>' for ad in ads_list])
     # return HttpResponse(output)
     context = {'ads_list': ads_list}
-    return render(request, 'ads/ads.html', context)
+    s = render(request, 'ads/ads.html', context)
+    print(s)
+    return s
 
 
 def ad_detail(request, ad_id):
