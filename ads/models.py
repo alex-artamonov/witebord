@@ -1,10 +1,14 @@
 from django.db import models as m
 from django.urls import reverse_lazy
+# from django.contrib.auth import get_user_model
+from django.conf import settings
 
-import users.models as um
+# import users.models as um
 
 
 # Create your models here.
+
+# User = get_user_model()
 
 class Guild(m.Model):
     name = m.CharField(max_length=25,
@@ -25,7 +29,7 @@ class Guild(m.Model):
 
 class Ad(m.Model):
     author = m.ForeignKey(
-        to=um.User,
+        to=settings.AUTH_USER_MODEL,
         on_delete=m.CASCADE,
         verbose_name="Автор",
         null=False,
@@ -58,3 +62,40 @@ class Ad(m.Model):
         ordering = ['-created_at']
         verbose_name = "Объявление"
         verbose_name_plural = 'Объявления'
+
+
+# class Reply(m.Model):
+#     pass
+
+
+class Tag(m.Model):
+    name = m.CharField(
+        max_length=30,
+        null=True,
+        blank=True,
+        verbose_name="Метка",
+        unique=True,
+    )
+    ads = m.ManyToManyField(
+        to=Ad,
+        db_constraint=True,
+        db_table='ads_tags',
+)
+
+    def __str__(self) -> str:
+        return self.name
+
+    class Meta:
+        ordering = ['name']
+        verbose_name = "Метка"
+        verbose_name_plural = 'Метки'
+
+
+# class AdsTags(m.Model):
+#     ad = m.ForeignKey(Ad, on_delete=m.CASCADE)
+#     tag = m.ForeignKey(Tag, on_delete=m.CASCADE)
+#
+#     class Meta:
+#         constraints = [
+#             m.UniqueConstraint('ad_id', 'tag_id', name='unique_ad_tag')
+#         ]
