@@ -24,6 +24,12 @@ class Guild(m.Model):
 
 
 class Ad(m.Model):
+    author = m.ForeignKey(
+        to=um.User,
+        on_delete=m.CASCADE,
+        verbose_name="Автор",
+        null=False,
+        blank=False)
     title = m.CharField(
         verbose_name='Заголовок',
         max_length=100,

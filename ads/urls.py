@@ -4,5 +4,5 @@ import ads.views as av
 
 urlpatterns = [
     path('ads', av.index, name='ads'),
-    path('ads/<int:pk>', av.index, name='ads_detail'),
+    path('ads/<int:ad_id>', av.ad_detail, name='ad_detail'),
 ]

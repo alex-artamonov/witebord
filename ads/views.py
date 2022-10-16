@@ -1,5 +1,6 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, get_object_or_404
 import ads.models as ads
+
 
 # Create your views here.
 
@@ -10,3 +11,9 @@ def index(request):
     # return HttpResponse(output)
     context = {'ads_list': ads_list}
     return render(request, 'ads/ads.html', context)
+
+
+def ad_detail(request, ad_id):
+    # ad = ads.Ad.objects.get(pk=pk)
+    ad = get_object_or_404(ads.Ad, pk=ad_id)
+    return HttpResponse(ad)
