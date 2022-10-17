@@ -11,6 +11,10 @@ from django.conf import settings
 # User = get_user_model()
 
 class Guild(m.Model):
+    """пользователь обязательно должен определить объявление в одну из следующих 
+    - категорий: 
+    -- Танки, Хилы, ДД, Торговцы, Гилдмастеры, Квестгиверы, Кузнецы, Кожевники, Зельевары, Мастера заклинаний."""
+
     name = m.CharField(max_length=25,
                        unique=True,
                        blank=False,
@@ -35,6 +39,10 @@ class Guild(m.Model):
 
 
 class Ad(m.Model):
+    """Объявления состоят из 
+    -- заголовка и 
+    -- текста, внутри которого могут быть 
+    -- картинки, встроенные видео и другой контент. """
     author = m.ForeignKey(
         to=settings.AUTH_USER_MODEL,
         on_delete=m.CASCADE,
@@ -76,6 +84,7 @@ class Ad(m.Model):
 
 
 class Tag(m.Model):
+    """Метки для поиска. В ТЗ не было"""
     name = m.CharField(
         max_length=30,
         null=True,
@@ -106,3 +115,34 @@ class Tag(m.Model):
 #         constraints = [
 #             m.UniqueConstraint('ad_id', 'tag_id', name='unique_ad_tag')
 #         ]
+
+
+
+class Reply(m.Model):
+    """Пользователи могут отправлять  - отклики на объявления других пользователей, 
+    состоящие из простого текста. """
+    author = m.ForeignKey(
+        to=settings.AUTH_USER_MODEL,
+        on_delete=m.CASCADE,
+        verbose_name="Автор",
+        null=False,
+        blank=False)
+    content = m.TextField(null=False,
+                          blank=False,
+                          verbose_name="Текст")
+    parent_ad = m.ForeignKey(
+        to=Ad,
+        null=False,
+        blank=False,
+        on_delete=m.CASCADE)  
+    created_at = m.DateTimeField(
+        auto_now_add=True,
+        verbose_name="Дата создания")
+    updated_at = m.DateTimeField(
+        auto_now=True,
+        verbose_name="Дата редактирования")
+
+    class Meta:
+        ordering = ['-created_at']
+        verbose_name = "Отклик"
+        verbose_name_plural = 'Отклики'                  
