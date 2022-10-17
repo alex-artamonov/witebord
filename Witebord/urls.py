@@ -22,6 +22,6 @@ from django.conf.urls.static import static
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('__debug__/', include('debug_toolbar.urls')),
-    path('', include('ads.urls'), name='ads'),
+    path('', include('ads.urls'), name='home'),
     path("", RedirectView.as_view(pattern_name='ads')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) #why is it not working without this line???
