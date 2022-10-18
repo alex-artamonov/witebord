@@ -1,0 +1,35 @@
+<div class="list-group">
+    <h5>Гильдии:</h5>         
+    <div class="col-lt-1">
+        {% for guild in guilds %} 
+        <a href="{{ guild.get_absolute_url }}" class="list-group-item list-group-item-action" aria-current="true">
+        {{ guild.name }} <span class="badge bg-info text-dark">{{ guild.cnt }}</span>
+        </a>
+        {% endfor %}
+        <hr>
+        <a href="{% url 'guilds_list' %}" class="list-group-item list-group-item-action" aria-current="true">
+            <Все гильдии> <span class="badge bg-info text-dark"> {{ guilds.count }}</span>
+        </a>
+    </div>                         
+    <!-- <a href="#" class="btn btn-secondary">Подписаться</a> -->
+    
+</div> 
+<hr>
+<h5>Юзеры:</h5>
+<!-- <div class="row">                            -->
+<div class="list-group">
+        
+    <div class="col-lt-1">
+        {% for usr in users %} 
+        <a href="{{ auth.get_absolute_url }}" class="list-group-item list-group-item-action" aria-current="true">
+        {{ usr|default:'anonymous' }} <span class="'badge rounded-pill text-bg-primary"> {{ usr.cnt }}</span>
+        </a>
+        {% endfor %}
+        <hr>
+        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+            <Все юзеры> <span class="'badge rounded-pill text-bg-primary"> {{ users.count }}</span>
+        </a>
+    </div>                         
+    <!-- <a href="#" class="btn btn-secondary">Подписаться</a> -->
+    
+</div> 

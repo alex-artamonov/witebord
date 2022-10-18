@@ -10,10 +10,20 @@
     <title>Доска оъявлений Witebord</title>
 </head>
 <body>
+    
     {% include 'inc/_navbar.html' %}
     {% block body %}
-    {% block content %}
-    {% endblock content %}
-    {% endblock body %}
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col-lg-3">
+                {% include 'inc/_sidebar.html' %}
+            </div>
+            <div class="col-lg-9 text-start">
+                {% block content %}
+                {% endblock content %}
+            </div>   
+            {% endblock body %}
+        </div>
+    </div>
 </body>
 </html>
