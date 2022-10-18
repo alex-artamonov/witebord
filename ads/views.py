@@ -34,3 +34,7 @@ class GuildDetailView(DetailView):
     model = ads.Guild
     template_name = 'ads/guild.html'
     context_object_name = 'guild'
+
+
+def rules(request):
+    return render(request,'ads/rules.html')
