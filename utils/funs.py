@@ -32,7 +32,7 @@ def create_random_users(number=1):
     for i in range(number):
         first_name = random.choice(names)
         last_name = random.choice(names)
-        username = first_name[0]+last_name
+        username = first_name[0].lower()+last_name.lower()
         email = get_email(first_name, last_name)  
         print(first_name, last_name)
         usr = User.objects.create(

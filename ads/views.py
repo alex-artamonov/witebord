@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponse, get_object_or_404
 from django.views.generic import DetailView, ListView
 import ads.models as ads
+import users.models as um
 
 
 # Create your views here.
@@ -34,6 +35,11 @@ class GuildDetailView(DetailView):
     model = ads.Guild
     template_name = 'ads/guild.html'
     context_object_name = 'guild'
+
+class UserProfileView(DetailView):
+    model = um.User
+    template_name = 'ads/profile.html'
+    context_object_name = 'user'
 
 
 def rules(request):

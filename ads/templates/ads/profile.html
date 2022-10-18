@@ -1,0 +1,23 @@
+{% extends 'Witebord/base.html' %}
+{% block content %}
+<div class="container mt-10">
+        <div class="card mb-3 mt-10" style="width: 80rem;">
+                <div class="card header mt-2" style="background-color: #a6cde9;">
+                    <h3>Данные пользователя:</h3>
+                </div>
+                <div class="card-body">
+                        <img height="400" width="auto" src="https://tse2.explicit.bing.net/th?id=OIP.DnpAkfD0yJS8GlI8FRL6jgAAAA&pid=Api&P=0">
+                        <h5 class="card-title float-right">Юзернейм: {{ user.username }}</h5>
+                        <p class="card-text">Имя: {{ user.first_name }}</p>
+                        <p class="card-text">Фамилия: {{ user.last_name }}</p>
+                        <p class="card-text">Гильдия: {{ user.guild|default_if_none:"еще не определился" }}</p>
+                        <p class="card-text">Вступил в ряды: {{ user.date_joined|date:'d.m.Y' }}</p>
+                        <p class="card-text">Коротко о себе: {% lorem 4 b random %}</p> 
+                </div>
+                <div class="card-footer text-muted">
+                    Здесь будет какая-то дополнительная инфо
+                </div>
+        </div>
+</div>
+
+{% endblock content %}
