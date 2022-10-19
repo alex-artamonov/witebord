@@ -96,6 +96,7 @@ class Tag(m.Model):
         to=Ad,
         db_constraint=True,
         db_table='ads_tags',
+        blank=True,
 )
 
     def __str__(self) -> str:

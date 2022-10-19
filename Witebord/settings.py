@@ -35,15 +35,39 @@ INSTALLED_APPS = [
     "django.contrib.admin",
     "users.apps.UsersConfig",
     "django.contrib.auth",
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    'django.contrib.sites',
     "django.contrib.staticfiles",
     "debug_toolbar",
     "ads.apps.AdsConfig",
 ]
 
 AUTH_USER_MODEL = 'users.User'
+SITE_ID = 1
+# ACCOUNT_AUTHENTICATION_METHOD = 'email'
+# DEFAULT_FROM_EMAIL = 'sat.arepo@yandex.ru'
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
+# LOGIN_REDIRECT_URL = '/accounts/profile/'
+
+
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_UNIQUE_EMAIL = True
+
+EMAIL_HOST = 'smtp.yandex.ru' 
+EMAIL_PORT = 465 # порт smtp сервера тоже одинаковый
+EMAIL_HOST_USER = 'sat.arepo' 
+EMAIL_HOST_PASSWORD = 'bywtxyagkfghspfh' # пароль от почты
+EMAIL_USE_SSL = True # Яндекс использует ssl, подробнее о том, 
+#что это, почитайте на Википедии, но включать его здесь обязательно
+# 
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER + '@yandex.ru'
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -74,10 +98,20 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                'django.template.context_processors.request',
             ],
         },
     },
 ]
+
+AUTHENTICATION_BACKENDS = [
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
 
 WSGI_APPLICATION = "Witebord.wsgi.application"
 

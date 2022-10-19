@@ -24,4 +24,5 @@ urlpatterns = [
     path('__debug__/', include('debug_toolbar.urls')),
     path('', include('ads.urls'), name='home'),
     path("", RedirectView.as_view(pattern_name='ads')),
+    path('accounts/', include('allauth.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) #why is it not working without this line???
