@@ -21,7 +21,7 @@
         
     <div class="col-lt-1">
         {% for usr in users %} 
-        <a href="{{ auth.get_absolute_url }}" class="list-group-item list-group-item-action" aria-current="true">
+        <a href="{{ usr.get_absolute_url }}" class="list-group-item list-group-item-action" aria-current="true">
         {{ usr|default:'anonymous' }} <span class="'badge rounded-pill text-bg-primary"> {{ usr.cnt }}</span>
         </a>
         {% endfor %}
