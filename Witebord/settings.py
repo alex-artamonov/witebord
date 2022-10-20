@@ -52,8 +52,9 @@ SITE_ID = 1
 # ACCOUNT_AUTHENTICATION_METHOD = 'email'
 # DEFAULT_FROM_EMAIL = 'sat.arepo@yandex.ru'
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/'
-# LOGIN_REDIRECT_URL = '/accounts/profile/'
+LOGIN_REDIRECT_URL = 'home'
+# LOGOUT_REDIRECT_URL = 'home'
+# LOGIN_REDIRECT_URL = '/accounts/profile'
 
 
 ACCOUNT_EMAIL_REQUIRED = True

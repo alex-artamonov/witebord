@@ -9,7 +9,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'ads' %}">Главная</a>
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Главная</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="{% url 'guilds_list' %}">Гильдии</a>
@@ -39,9 +39,9 @@
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
-        <a class="nav-link active" href="accounts/login">Вход</a>
-        <a class="nav-link active" href="accounts/logout">Выход</a>
-        <a class="nav-link active" href="accounts/signup/">Регистрация</a>
+        <a class="nav-link active" href="{% url 'account_login' %}">Вход</a>
+        <a class="nav-link active" href="{% url 'account_logout' %}">Выход</a>
+        <a class="nav-link active" href="{% url 'account_signup' %}">Регистрация</a>
       </div>
     </div>
   </nav>

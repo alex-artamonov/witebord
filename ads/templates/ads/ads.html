@@ -1,4 +1,8 @@
 {% extends 'Witebord/base.html' %}
+{% comment %}
+    {% load thumbnail %}
+{% endcomment %}
+
 {% block content %}
 <div class="container mt-10">
     <div class="row mt-4">
@@ -10,9 +14,11 @@
                 <div class="card-body">                    
 <!--                    <div class="media">-->
                         {% if ad.media_content %}
-                            <img class="img-thumbnail" src="{{ ad.media_content.url }}" alt="Какая-то картинка" class="float-left">
+                            <img height='100 width='auto' 
+                            src="{{ ad.media_content.url }}" alt="Какая-то картинка" class="float-left">
                         {% else %}
-                            <img class="img-thumbnail" src="https://randompicturegenerator.com/img/national-park-generator/g51b6ed108bf0bcfbce1555d91a34261220668f81518f4d2aad7e4626ac37926cf0462b3528692ef5e1b04243b6e7b5fe_640.jpg" alt="Какая-то картинка">
+                            <img height='100 width='auto' 
+                            src="https://randompicturegenerator.com/img/national-park-generator/g51b6ed108bf0bcfbce1555d91a34261220668f81518f4d2aad7e4626ac37926cf0462b3528692ef5e1b04243b6e7b5fe_640.jpg" alt="Какая-то картинка">
                         {% endif %}
 <!--                        <div class="media-body">-->
                             {{ ad.content }}</p>

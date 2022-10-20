@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse, get_object_or_404
-from django.views.generic import DetailView, ListView
+from django.views.generic import DetailView, ListView, TemplateView
+from django.views.generic.base import ContextMixin
 from django.db.models import Count
 
 import ads.models as ads
@@ -8,7 +9,7 @@ import users.models as um
 
 # Create your views here.
 
-class CustomContextMixin():
+class CustomContextMixin(ContextMixin):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['guilds'] = ads.Guild.objects.annotate(cnt=Count('user'))
@@ -21,9 +22,7 @@ def index(request):
     output = '<br><hr>'.join([f'<h3>{ad.title}:</h3><p>{ad.content}</p>' for ad in ads_list])
     # return HttpResponse(output)
     context = {'ads_list': ads_list}
-    s = render(request, 'ads/ads.html', context)
-    print(s)
-    return s
+    return render(request, 'ads/ads.html', context)
 
 
 def ad_detail(request, ad_id):
@@ -65,7 +64,13 @@ class UserProfileView(CustomContextMixin, DetailView):
 def rules(request):
     return render(request,'ads/rules.html')
 
-class RulesView(CustomContextMixin, ListView):
-    model = um.User
+class RulesView(CustomContextMixin, TemplateView):
     template_name = 'ads/rules.html'
     # context_object_name = 'user'
+
+
+def profile(request):
+    if request.method == 'POST':
+        print(request)
+    # return HttpResponse("hi from profile view")
+    return render(request, 'ads/rules.html')

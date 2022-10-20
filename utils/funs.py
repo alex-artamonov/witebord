@@ -1,6 +1,7 @@
 import random
 
 from users.models import User
+from ads.models import Ad
 
 MY_FILE = './utils/slovo'
 NAMES_FILE = './utils/male_names'
@@ -12,6 +13,18 @@ def get_random_paragraph():
     clean_result = [item for item in slovo if item] #getting rid of empty strings
     
     return random.sample(clean_result, k=1)[0]
+
+
+def create_random_ad():
+    content = get_random_paragraph()
+    title = ' '.join(random.sample(content.split(' '), k=random.choice(range(2,5)))).capitalize()    
+    author = random.choice(User.objects.all())
+    return Ad.objects.create(
+        author=author,
+        content=content,
+        title=title)
+
+
 
 
 def get_email(first_name, last_name):
