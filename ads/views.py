@@ -1,10 +1,11 @@
-from django.shortcuts import render, HttpResponse, get_object_or_404
+from django.shortcuts import redirect, render, HttpResponse, get_object_or_404
 from django.views.generic import DetailView, ListView, TemplateView
 from django.views.generic.base import ContextMixin
 from django.db.models import Count
 
 import ads.models as ads
 import users.models as um
+from ads.forms import ReplyForm
 
 
 # Create your views here.
@@ -28,9 +29,34 @@ def index(request):
 def ad_detail(request, ad_id):
     # ad = ads.Ad.objects.get(pk=pk)
     ad = ads.Ad.objects.get(pk=ad_id)
-    context = {'ad': ad}
+    replies = ads.Reply.objects.filter(parent_ad_id=ad.pk)
+    # context = {'ad': ad, 'replies': replies}
     ad = get_object_or_404(ads.Ad, pk=ad_id)
-    return render(request, 'ads/ad_detail.html', context)
+    # return render(request, 'ads/ad_detail.html', context)
+    user = request.user
+    new_reply = None
+
+    if request.method == 'POST':
+        # A comment was posted
+        reply_form = ReplyForm(data=request.POST)
+        if reply_form.is_valid():            
+            # Create Comment object but don't save to database yet          
+            new_reply = reply_form.save(commit=False)
+            new_reply.author = user
+            # Assign the current post to the comment
+            new_reply.parent_ad = ad
+            # Save the comment to the database
+            new_reply.save()
+            # return redirect('/post_reply')
+    else:
+        reply_form = ReplyForm()                   
+    return render(request,
+                  'ads/ad_detail.html',
+                  {'ad': ad,
+                  'user': user,
+                  'replies': replies,
+                  'new_reply': new_reply,
+                  'reply_form': reply_form})
 
 
 class AdsListView(CustomContextMixin, ListView):

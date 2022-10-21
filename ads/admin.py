@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Guild, Ad, Tag
+from .models import Guild, Ad, Reply, Tag
 
 
 # Register your models here.
@@ -16,3 +16,5 @@ admin.site.register(Guild)
 admin.site.register(Ad, AdsAdmin)
 
 admin.site.register(Tag)
+
+admin.site.register(Reply)

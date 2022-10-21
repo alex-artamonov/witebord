@@ -20,6 +20,30 @@
                 <div class="card-footer">
                     {{ ad.created_at|date:'d.m.Y' }}: С момента опубликования прошло {{ ad.created_at|timesince }}
                 </div>
+                <!-- <a href="#" class="btn btn-primary col-lg-1">Ответить</a> -->
+                Отклики:
+                <ul class="list-group list-group-flush">
+                    {% for reply in replies %}
+                        <li class="list-group-item comment">{{ reply.content }} <p><em>Откликнулся:
+                            <a href="{{ reply.author.get_absolute_url }}">{{ reply.author }}</a> 
+                            {{ reply.created_at|timesince }} назад</em> </p>
+                        </li>
+                    {% empty %}
+                        <p class="info">Окликов нет</p>
+                    {% endfor %}
+                </ul>
+                <h1>{{ user }}</h1>
+                {% if new_reply %}
+                
+                <h2>Your comment has been added.</h2>
+                {% else %}
+                <h2>Add a new comment</h2>
+                <form action="{{ ad_detail }}" method="post">
+                    {{ reply_form.as_p }}
+                    {% csrf_token %}
+                    <p><input type="submit" value="Add comment" class="btn btn-primary col-lg-1"></p>
+                </form>
+                {% endif %}
         </div>
 </div>
 
