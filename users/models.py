@@ -17,4 +17,4 @@ class User(AbstractUser):
         return self.username
 
     def get_absolute_url(self):
-        return reverse_lazy('user_profile', kwargs={'pk': self.pk})
+        return reverse_lazy('ads:user_profile', kwargs={'pk': self.pk})

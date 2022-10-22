@@ -11,14 +11,17 @@
 </head>
 <body>
     
+    
     {% include 'inc/_navbar.html' %}
     {% block body %}
+    <h1>test</h1>
     <div class="container">
         <div class="row mt-2">
             <div class="col-lg-3">
                 {% include 'inc/_sidebar.html' %}
             </div>
             <div class="col-lg-9 text-start">
+                <h1>test</h1>
                 {% block content %}
                 {% endblock content %}
                 {% include 'inc/_paginator.html' %}

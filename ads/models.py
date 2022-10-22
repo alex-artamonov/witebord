@@ -30,7 +30,7 @@ class Guild(m.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse_lazy('guild_detail', kwargs={'pk': self.pk})
+        return reverse_lazy('ads:guild_detail', kwargs={'pk': self.pk})
 
     class Meta:
         ordering = ['-name']
@@ -71,7 +71,7 @@ class Ad(m.Model):
         return self.content[:124] + '...'
 
     def get_absolute_url(self):
-        return reverse_lazy('ad_detail', kwargs={'ad_id': self.id})
+        return reverse_lazy('ads:ad_detail', kwargs={'pk': self.id})
 
     class Meta:
         ordering = ['-created_at']
