@@ -1,6 +1,11 @@
+
+{% load ads_tags %}
+
 <div class="list-group">
     <h5>Гильдии:</h5>         
     <div class="col-lt-1">
+        {% get_guilds_list as guilds %}
+        {% get_users_list as users %}
         {% for guild in guilds %} 
         <a href="{{ guild.get_absolute_url }}" class="list-group-item list-group-item-action" aria-current="true">
         {{ guild.name }} <span class="badge bg-info text-dark">{{ guild.cnt }}</span>

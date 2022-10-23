@@ -17,5 +17,7 @@ urlpatterns = [
     path('rules', av.RulesView.as_view(), name='rules' ),
     path('accounts/profile/<int:pk>', av.UserProfileView.as_view()),
     path('ads/<int:ad_id>/new_reply', av.ad_detail, name='post_reply'),
+    path('ads/create', av.AdCreateView.as_view(), name='create_ad'),
+    path('ads/<int:pk>/update', av.AdUpdateView.as_view(), name='update_ad'),
     #  path('rules', av.rules, name='rules' ),
 ]

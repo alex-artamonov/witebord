@@ -59,6 +59,10 @@ LOGIN_REDIRECT_URL = 'ads:home'
 
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_SIGNUP_REDIRECT_URL = 'ads:rules' # не работает: Note that users are only redirected to this URL 
+    #if the signup went through uninterruptedly, for example, without any side steps due to email verification. 
+ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
 
 EMAIL_HOST = 'smtp.yandex.ru' 
 EMAIL_PORT = 465 # порт smtp сервера тоже одинаковый

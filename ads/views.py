@@ -1,24 +1,44 @@
 from django.conf import settings
 from django.shortcuts import redirect, render, HttpResponse, get_object_or_404
-from django.views.generic import DetailView, ListView, TemplateView
+from django.views.generic import DetailView, ListView, TemplateView, CreateView, UpdateView
 from django.views.generic.base import ContextMixin
 from django.db.models import Count
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from requests import session
 
 import ads.models as ads
 import users.models as um
 from ads.forms import ReplyForm
+import ads.forms as af
 
 
 # Create your views here.
 
-class CustomContextMixin(ContextMixin):
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['guilds'] = ads.Guild.objects.annotate(cnt=Count('user'))
-        context['users'] = um.User.objects.all()
-        return context
+# class CustomContextMixin(ContextMixin):
+#     def get_context_data(self, **kwargs):
+#         context = super().get_context_data(**kwargs)
+#         # context['guilds'] = ads.Guild.objects.annotate(cnt=Count('user'))
+#         # context['users'] = um.User.objects.all()
+#         return context
+
+
+class AdCreateView(LoginRequiredMixin, CreateView):
+    # model = ads.Ad
+    form_class = af.AdForm
+    template_name = 'ads/ad_form.html'
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+class AdUpdateView(LoginRequiredMixin, UpdateView):
+    form_class = af.AdForm
+    template_name = 'ads/ad_form.html'
+
+    def get_object(self, **kwargs):
+        pk = self.kwargs.get('pk')
+        return ads.Ad.objects.get(pk=pk)
 
 
 
@@ -30,9 +50,8 @@ def index(request):
     return render(request, 'ads/ads.html', context)
 
 
-class AdDetailView(CustomContextMixin, DetailView):
+class AdDetailView(DetailView):
     model = ads.Ad
-    template_name = 'ads/ad_detail.html'
     context_object_name = 'ad'
 
     # def __init__(request, *args, **kwargs) -> None:
@@ -107,27 +126,23 @@ def ad_detail(request, pk):
                   'reply_form': reply_form})
 
 
-class AdsListView(CustomContextMixin, ListView):
+class AdsListView(ListView):
     model = ads.Ad
-    template_name = 'ads/ads.html'
     context_object_name = 'ads_list'
     paginate_by = 6
 
 
-class GuildsListView(CustomContextMixin, ListView):
+class GuildsListView(ListView):
     model = ads.Guild
-    template_name = 'ads/guilds_list.html'
     context_object_name = 'guilds_list'
 
 
-class GuildDetailView(CustomContextMixin, DetailView):
+class GuildDetailView(DetailView):
     model = ads.Guild
-    template_name = 'ads/guild.html'
     context_object_name = 'guild'
 
-class UserProfileView(CustomContextMixin, DetailView):
+class UserProfileView(DetailView):
     model = um.User
-    template_name = 'ads/profile.html'
     context_object_name = 'user'
 
     # def get_context_data(self, **kwargs):
@@ -139,7 +154,7 @@ class UserProfileView(CustomContextMixin, DetailView):
 def rules(request):
     return render(request,'ads/rules.html')
 
-class RulesView(CustomContextMixin, TemplateView):
+class RulesView(TemplateView):
     template_name = 'ads/rules.html'
     # context_object_name = 'user'
 

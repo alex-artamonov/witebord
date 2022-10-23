@@ -54,9 +54,15 @@ class Ad(m.Model):
         max_length=100,
         null=False,
         blank=False)
-    content = m.TextField(null=False,
-                          blank=False)
-    media_content = m.ImageField(upload_to="pics/%Y/%m/%d/", null=True, blank=True)
+    content = m.TextField(
+        verbose_name='Содержание',
+        null=False,
+        blank=False)
+    media_content = m.ImageField(
+        verbose_name='Изображение/Видео',
+        upload_to="pics/%Y/%m/%d/", 
+        null=True, 
+        blank=True)
     created_at = m.DateTimeField(
         auto_now_add=True,
         verbose_name="Дата создания")
@@ -64,6 +70,7 @@ class Ad(m.Model):
         auto_now=True,
         verbose_name="Дата редактирования")
     guild = m.ForeignKey(
+        verbose_name='Гильдия',
         to=Guild,
         on_delete=m.CASCADE,
         null=False,
