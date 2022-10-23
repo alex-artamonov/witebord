@@ -63,6 +63,11 @@ class Ad(m.Model):
     updated_at = m.DateTimeField(
         auto_now=True,
         verbose_name="Дата редактирования")
+    guild = m.ForeignKey(
+        to=Guild,
+        on_delete=m.CASCADE,
+        null=False,
+        blank=False,)
 
     def __str__(self) -> str:
         return f"{self.title=}"
