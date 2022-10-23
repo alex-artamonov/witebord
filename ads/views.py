@@ -1,10 +1,12 @@
 from django.conf import settings
 from django.shortcuts import redirect, render, HttpResponse, get_object_or_404
-from django.views.generic import DetailView, ListView, TemplateView, CreateView, UpdateView
+from django.views.generic import DetailView, ListView, TemplateView, CreateView, UpdateView, DeleteView
 from django.views.generic.base import ContextMixin
 from django.db.models import Count
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.exceptions import PermissionDenied
+from django.urls import reverse_lazy
 from requests import session
 
 import ads.models as ads
@@ -38,8 +40,20 @@ class AdUpdateView(LoginRequiredMixin, UpdateView):
 
     def get_object(self, **kwargs):
         pk = self.kwargs.get('pk')
-        return ads.Ad.objects.get(pk=pk)
+        obj = ads.Ad.objects.get(pk=pk)
+        if obj.author  != self.request.user and not self.request.user.is_superuser:
+            raise PermissionDenied 
+        return obj
 
+class AdDeleteView(LoginRequiredMixin, DeleteView):
+    success_url = reverse_lazy('ads:home')
+
+    def get_object(self, **kwargs):
+        pk = self.kwargs.get('pk')
+        obj = ads.Ad.objects.get(pk=pk)
+        if obj.author  != self.request.user and not self.request.user.is_superuser:
+            raise PermissionDenied 
+        return obj
 
 
 def index(request):
