@@ -3,8 +3,8 @@ from django.shortcuts import redirect, render, HttpResponse, get_object_or_404
 from django.views.generic import DetailView, ListView, TemplateView, CreateView, UpdateView, DeleteView
 from django.views.generic.base import ContextMixin
 from django.db.models import Count
-from django.contrib.auth.decorators import login_required
-from django.contrib.auth.mixins import LoginRequiredMixin
+# from django.contrib.auth.decorators import login_required
+# from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import PermissionDenied
 from django.urls import reverse_lazy
 from requests import session
@@ -25,7 +25,7 @@ import ads.forms as af
 #         return context
 
 
-class AdCreateView(LoginRequiredMixin, CreateView):
+class AdCreateView(CreateView):
     # model = ads.Ad
     form_class = af.AdForm
     template_name = 'ads/ad_form.html'
@@ -34,7 +34,7 @@ class AdCreateView(LoginRequiredMixin, CreateView):
         form.instance.author = self.request.user
         return super().form_valid(form)
 
-class AdUpdateView(LoginRequiredMixin, UpdateView):
+class AdUpdateView(UpdateView):
     form_class = af.AdForm
     template_name = 'ads/ad_form.html'
 
@@ -45,7 +45,7 @@ class AdUpdateView(LoginRequiredMixin, UpdateView):
             raise PermissionDenied 
         return obj
 
-class AdDeleteView(LoginRequiredMixin, DeleteView):
+class AdDeleteView(DeleteView):
     success_url = reverse_lazy('ads:home')
 
     def get_object(self, **kwargs):
@@ -107,7 +107,7 @@ class AdDetailView(DetailView):
                   'guilds': ads.Guild.objects.annotate(cnt=Count('user')),
                  'users': um.User.objects.all()})
 
-@login_required(login_url=settings.LOGIN_URL)
+# @login_required(login_url=settings.LOGIN_URL)
 def ad_detail(request, pk):
     ad = ads.Ad.objects.get(pk=pk)
     # ad = get_object_or_404(ads.Ad, pk=pk)

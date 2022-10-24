@@ -35,10 +35,10 @@ INSTALLED_APPS = [
     "django.contrib.admin",
     "users.apps.UsersConfig",
     "django.contrib.auth",
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.google',
+    # 'allauth',
+    # 'allauth.account',
+    # 'allauth.socialaccount',
+    # 'allauth.socialaccount.providers.google',
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
@@ -52,18 +52,18 @@ AUTH_USER_MODEL = 'users.User'
 SITE_ID = 1
 # ACCOUNT_AUTHENTICATION_METHOD = 'email'
 # DEFAULT_FROM_EMAIL = 'sat.arepo@yandex.ru'
-LOGIN_URL = '/accounts/login/'
+LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = 'ads:home'
 # LOGOUT_REDIRECT_URL = 'ads:home'
 # LOGIN_REDIRECT_URL = '/accounts/profile'
 
 
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_UNIQUE_EMAIL = True
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-ACCOUNT_SIGNUP_REDIRECT_URL = 'ads:rules' # не работает: Note that users are only redirected to this URL 
-    #if the signup went through uninterruptedly, for example, without any side steps due to email verification. 
-ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
+# ACCOUNT_EMAIL_REQUIRED = True
+# ACCOUNT_UNIQUE_EMAIL = True
+# ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+# ACCOUNT_SIGNUP_REDIRECT_URL = 'ads:rules' # не работает: Note that users are only redirected to this URL 
+#     #if the signup went through uninterruptedly, for example, without any side steps due to email verification. 
+# ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
 
 EMAIL_HOST = 'smtp.yandex.ru' 
 EMAIL_PORT = 465 # порт smtp сервера тоже одинаковый

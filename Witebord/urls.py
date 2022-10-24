@@ -18,11 +18,14 @@ from django.urls import path, include
 from django.views.generic import RedirectView
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.auth.views import LoginView, LogoutView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path('login/', LoginView.as_view(template_name='account/login.html'), name='login'),
+    path('logout/', LogoutView.as_view(template_name='account/logout.html'), name='logout'),
     path('__debug__/', include('debug_toolbar.urls')),
     path('', include('ads.urls',namespace='ads')), #, name='home'
     path('', RedirectView.as_view(pattern_name='ads:home')),
-    path('accounts/', include('allauth.urls')),
+    # path('accounts/', include('allauth.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) #why is it not working without this line???
