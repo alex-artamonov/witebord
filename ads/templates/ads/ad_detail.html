@@ -40,7 +40,7 @@
                 <h1>{{ user }}</h1>
 
                 {% if not user.is_authenticated %}
-                    <mark><a href="{% url 'account_login' %}">Войдите,</a>  чтобы оставить отклик.</mark>
+                    <mark><a href="{% url 'login' %}">Войдите,</a>  чтобы оставить отклик.</mark>
                 {% else %}
                     {% if new_reply %}                    
                     <h2>Отклик был добавлен.</h2>
