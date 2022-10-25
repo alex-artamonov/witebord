@@ -7,11 +7,11 @@ from django.db.models import Count
 # from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import PermissionDenied
 from django.urls import reverse_lazy
-from requests import session
+# from requests import session
 
 import ads.models as ads
 import users.models as um
-from ads.forms import ReplyForm
+# from .forms import ReplyForm
 import ads.forms as af
 
 
@@ -87,7 +87,7 @@ class AdDetailView(DetailView):
         user = self.request.user
         replies = ads.Reply.objects.filter(parent_ad_id=self.get_object()).select_related('author')
         new_reply = None
-        reply_form = ReplyForm(data=request.POST)
+        reply_form = ads.ReplyForm(data=request.POST)
         if reply_form.is_valid():            
             # Create Comment object but don't save to database yet          
             new_reply = reply_form.save(commit=False)
