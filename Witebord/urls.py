@@ -20,10 +20,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth.views import LoginView, LogoutView
 
-from users.views import BaseRegisterView
+from users.views import BaseRegisterView, login
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    # path('login/', login, name='login'),
     path('login/', LoginView.as_view(template_name='account/login.html'), name='login'),
     path('logout/', LogoutView.as_view(template_name='account/logout.html'), name='logout'),
     path('signup/', BaseRegisterView.as_view(template_name='account/signup.html'), name='signup'),

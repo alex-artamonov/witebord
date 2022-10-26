@@ -16,9 +16,10 @@ class User(AbstractUser):
         to=Guild, 
         null=True, 
         blank=True,
-        on_delete=models.PROTECT)
+        on_delete=models.PROTECT,
+        verbose_name="Гильдия")
 
-    def __str__(self):
+    def __str__(self): 
         return self.username
 
     def get_absolute_url(self):

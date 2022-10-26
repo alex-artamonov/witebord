@@ -11,7 +11,7 @@ from django.urls import reverse_lazy
 
 import ads.models as ads
 import users.models as um
-# from .forms import ReplyForm
+from .forms import ReplyForm
 import ads.forms as af
 
 
@@ -67,6 +67,8 @@ def index(request):
 class AdDetailView(DetailView):
     model = ads.Ad
     context_object_name = 'ad'
+
+    # def dispatch(self, request, *args, **kwargs):
 
     # def __init__(request, *args, **kwargs) -> None:
     #     super().__init__()
