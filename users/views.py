@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.contrib.auth import get_user_model, authenticate, login
 from django.views.generic import CreateView
 
-# from Witebord.settings import AUTHENTICATION_BACKENDS
 from django.core.mail import send_mail
 from django.contrib import messages
 from django.shortcuts import redirect
