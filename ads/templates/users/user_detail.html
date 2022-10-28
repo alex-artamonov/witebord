@@ -6,7 +6,11 @@
                     <h3>Данные пользователя:</h3>
                 </div>
                 <div class="card-body">
-                        <img height="400" width="auto" src="https://tse2.explicit.bing.net/th?id=OIP.DnpAkfD0yJS8GlI8FRL6jgAAAA&pid=Api&P=0">
+                        {% if user.avatar %}
+                                <img height="400" width="auto" src="{{ user.avatar.url }}" alt="Аватар пользователя">
+                        {% else %}
+                                <img height="400" width="auto" src="https://tse2.explicit.bing.net/th?id=OIP.DnpAkfD0yJS8GlI8FRL6jgAAAA&pid=Api&P=0">
+                        {% endif %}
                         <h5 class="card-title float-right">Юзернейм: {{ user.username }}</h5>
                         <p class="card-text">Имя: {{ user.first_name }}</p>
                         <p class="card-text">Фамилия: {{ user.last_name }}</p>
