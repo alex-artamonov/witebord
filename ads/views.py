@@ -7,13 +7,14 @@ from django.db.models import Count
 # from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import PermissionDenied
 from django.urls import reverse_lazy
+from django.core.mail import send_mail
+import random
 # from requests import session
 
 import ads.models as ads
 import users.models as um
 from .forms import ReplyForm
 import ads.forms as af
-
 
 # Create your views here.
 
@@ -180,3 +181,4 @@ def profile(request):
         print(request)
     # return HttpResponse("hi from profile view")
     return render(request, 'ads/rules.html')
+

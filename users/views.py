@@ -5,6 +5,7 @@ from Witebord.settings import AUTHENTICATION_BACKENDS
 from django.core.mail import send_mail
 from django.contrib import messages
 from django.shortcuts import redirect
+from django.views.generic import DetailView
 
 from users.forms import BaseRegisterForm
 import random
@@ -17,92 +18,71 @@ class BaseRegisterView(CreateView):
     success_url = 'ads:home'
 
 
-def loginUser(request): 
-    if request.method == "POST":
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-        try:
-            # user = AUTHENTICATION_BACKENDS(username=username, password=password)
-            user = get_user_model().objects.get(username=username, password=password)
-            if user is not None:
-                user = get_user_model(username=username)
-                otp = random.randrange(100000,999999)
-                user.customer.otp_code = otp
-                user.customer.save()
-                request.session['username'] = username
-                body = f"Dear {username}, your OTP for login is {otp}. Use this OTP to validate your login."
-                send_mail('OTP request',body,'email@gmail.com',[username], fail_silently=False)
-                messages.success(request, "Your OTP has been send to your email.")
-                return redirect("/otp_verification")
-            else:
-                messages.error(request, "Wrong Credentials!!")
-                return render(request,'account/login.html')
-        except:
-            messages.error(request, "Please enter email and password for login!")
-            return render(request,'account/login.html')
-    context={}    
-    return render(request, 'account/login.html', context)
-
+def signup(request):
+    if request.method == 'POST':
+        form = BaseRegisterForm(request.POST)
+        if form.is_valid():
+            user = form.save(commit=False)
+            # user.is_active = False
+            user.save()
+            username = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password1')
+            code = random.randrange(100000,999999)
+            request.session['username1'] = username
+            request.session['raw_password'] = raw_password
+            request.session['otp1'] = code
+            # user = authenticate(username=username, password=raw_password)
+            
+            print(code)
+            # otp = OTP.objects.create(code=code, user=user)
+            # user.otp = otp
+            body = f"Dear {username}, your OTP for login is {otp.code}. Use this OTP to validate your login."
+            send_mail(
+                message=body,
+                subject='registration at examle.com: OTP request',
+                from_email='sat.arepo@yandex.ru',
+                recipient_list=[user.email]
+            )
+            # send_mail('OTP request',body,'email@gmail.com',[username], fail_silently=False)
+            messages.success(request, "Your OTP has been send to your email.")
+            # login(request, user)
+            return redirect('otp_verification')
+    else:
+        form = BaseRegisterForm()
+    return render(request, 'accounts/signup.html', {'form': form})
 
 
 def otp_verification(request):
-    username = request.session['username']
+    # for i in request.session:
+    #     print(i)
+    username = request.session['username1']
+    print('username:')
+    print(username)
     if request.method == "POST":
-        otp = request.POST.get('username')
-        user = get_user_model.objects.get(username = username)
-        if otp == user.customer.otp_code:
+        otp1 = request.session['otp1']
+        otp2 = request.POST.get('otp2')
+        print("request.session['otp1']:")
+        print(otp1 )
+        print(otp2)
+        # otp2 = request.POST.get('username')
+        # print('otp', otp)
+        # user = User.objects.filter(username = username).first()
+        user = get_user_model().objects.get(username = username)
+        if str(otp2) == str(otp1):
+            print('hi from if otp2==otp1')
             messages.success(request, "OTP Success. Please login with your credentials!")
+            # user.is_active = True
+            print('user.is_authenticated', user.is_authenticated)
+            print('user.is_active ', user.is_active)
             login(request, user)
+            # user.save()
+            print('user.is_authenticated', user.is_authenticated)
             messages.success(request, f' Wecome {username}')
             return redirect("/")
         else:
+            print('hi from else')
             messages.error(request, "Wrong OTP!!")
-    return render(request, "otpVerification.html")
+    return render(request, "accounts/otp.html")
 
 
-def signup_first(request):
-    username = request['username']
-    password = request['password']
 
-
-# def user_login(request):
-#     if request.method == 'POST':
-#         form = LoginForm(request.POST)
-#         if form.is_valid():
-#             cd = form.cleaned_data
-#             user = authenticate(request,
-#                                 username=cd['username'],
-#                                 password=cd['password'])
-#             if user is not None:
-#                 if user.is_active:
-#                     login(request, user)
-#                     return HttpResponse('Authenticated successfully')
-#                 else:
-#                     return HttpResponse('Disabled account')
-#             else:
-#                 return HttpResponse('Invalid login')
-#     else:
-#         form = LoginForm()
-#     return render(request, 'account/login.html', {'form': form})
-
-# def register(request):
-#     if request.method == 'POST':
-#         user_form = UserRegistrationForm(request.POST)
-#         if user_form.is_valid():
-#             # Create a new user object but avoid saving it yet
-#             new_user = user_form.save(commit=False)
-#             # Set the chosen password
-#             new_user.set_password(
-#                 user_form.cleaned_data['password'])
-#             # Save the User object
-#             new_user.save()
-#             # Create the user profile
-#             Profile.objects.create(user=new_user)
-#             return render(request,
-#                           'account/register_done.html',
-#                           {'new_user': new_user})
-#     else:
-#         user_form = UserRegistrationForm()
-#     return render(request,
-#                   'account/register.html',
-#                   {'user_form': user_form})
