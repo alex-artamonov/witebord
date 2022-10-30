@@ -116,6 +116,10 @@ class Reply(m.Model):
     parent_ad = m.ForeignKey(to=Ad, null=False, blank=False, on_delete=m.CASCADE)
     created_at = m.DateTimeField(auto_now_add=True, verbose_name="Дата создания")
     updated_at = m.DateTimeField(auto_now=True, verbose_name="Дата редактирования")
+    accepted = m.BooleanField(null=True, verbose_name="Принят")
+
+    def __str__(self) -> str:
+        return self.content
 
     class Meta:
         ordering = ["-created_at"]

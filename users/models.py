@@ -30,3 +30,6 @@ class User(AbstractUser):
 
     def get_absolute_url(self):
         return reverse_lazy("user_profile", kwargs={"pk": self.pk})
+
+    class Meta:
+        ordering = ["username"]

@@ -11,7 +11,7 @@ from django.views.generic import (
 from django.views.generic.base import ContextMixin
 from django.db.models import Count
 
-# from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required
 # from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import PermissionDenied
 from django.urls import reverse_lazy
@@ -200,3 +200,13 @@ def profile(request):
         print(request)
     # return HttpResponse("hi from profile view")
     return render(request, "ads/rules.html")
+
+
+@login_required
+def ads_replies_list_view(request):
+    user = request.user
+    ads_list = ads.Ad.objects.filter(author=user)
+
+
+    return render(request, "ads/my_ad_list.html", {'ads_list': ads_list})
+
