@@ -1,0 +1,23 @@
+{% extends 'Witebord/base.html' %}
+{% block content %}
+<div class="container mt-10">
+        <div class="card mb-3 mt-10" style="width: 80rem;">
+                <div class="card header mt-2" style="background-color: #a6cde9;">
+                    <h3>{{ guild }}:</h3>
+                </div>
+                <div class="card-body">
+                        {% if guild.image %}
+                            <img height="400" src="{{ guild.image.url }}" alt="Какая-то картинка" class="float-left mr-3" >
+                        {% else %}
+                            <img height="400" src="https://randompicturegenerator.com/img/national-park-generator/g51b6ed108bf0bcfbce1555d91a34261220668f81518f4d2aad7e4626ac37926cf0462b3528692ef5e1b04243b6e7b5fe_640.jpg" alt="Какая-то картинка">
+                        {% endif %}
+                        <h5 class="card-title float-right">Описание:</h5>
+                        <p class="card-text">{{ guild.description|linebreaks }}{% lorem 3 b random %}</p>
+                </div>
+                <div class="card-footer text-muted">
+                    Здесь будет какая-то дополнительная инфо, типа сколько в гильдии человек и т.п.
+                </div>
+        </div>
+</div>
+
+{% endblock content %}

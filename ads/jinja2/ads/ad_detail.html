@@ -1,0 +1,64 @@
+{% extends 'Witebord/base.html' %}
+{% block content %}
+<div class="container mt-10">
+        <div class="card mb-3 mt-10" style="width: 80rem;">
+                <div class="card header mt-2" style="background-color: #a6cde9;">
+                    <h3>{{ ad.title  }}:</h3>
+                </div>
+                <div class="card-body">                    
+<!--                    <div class="media">-->
+                        {% if ad.media_content %}
+                            <img src="{{ ad.media_content.url }}" alt="Какая-то картинка" class="float-left">
+                        {% else %}
+                            <img src="https://randompicturegenerator.com/img/national-park-generator/g51b6ed108bf0bcfbce1555d91a34261220668f81518f4d2aad7e4626ac37926cf0462b3528692ef5e1b04243b6e7b5fe_640.jpg" alt="Какая-то картинка">
+                        {% endif %}
+<!--                        <div class="media-body">-->
+                            {{ ad.content }}</p>
+<!--                        </div>                        -->
+<!--                    </div>-->
+                </div>
+                <div class="card-footer">
+                    Автор: {{ ad.author }}
+                    {{ ad.created_at|date:'d.m.Y' }}: С момента опубликования прошло {{ ad.created_at|timesince }}
+                    {% if user == ad.author %}
+                        <a href="{% url 'ads:update_ad' ad.pk %}" class="btn btn-warning col-lg-1">Изменить</a>
+                        <a href="{% url 'ads:delete_ad' ad.pk %}" class="btn btn-danger col-lg-1">Удалить</a>
+                    {% endif %}
+                </div>
+                <!-- <a href="#" class="btn btn-primary col-lg-1">Ответить</a> -->
+                Отклики:
+                <ul class="list-group list-group-flush">
+                    {% for reply in replies %}
+                        <li class="list-group-item comment">{{ reply.content }} <p><em>Откликнулся:
+                            <a href="{{ reply.author.get_absolute_url }}">{{ reply.author }}</a> 
+                            {{ reply.created_at|timesince }} назад</em> </p>
+                        </li>
+                    {% empty %}
+                        <p class="info">Откликов нет</p>
+                    {% endfor %}
+                </ul>
+                <h1>{{ user }}</h1>
+
+                {% if not user.is_authenticated %}
+                    <mark><a href="{% url 'login' %}">Войдите,</a>  чтобы оставить отклик.</mark>
+                {% else %}
+                    {% if new_reply %}                    
+                    <h2>Отклик был добавлен.</h2>
+                    {% else %}
+                    <h2>Добавить отклик</h2>
+                    <form action="{{ ad_detail }}" method="post">
+                        {{ reply_form.as_p }}
+                        {% csrf_token %}
+                        <p><input type="submit" value="Add comment" class="btn btn-primary col-lg-1"></p>
+                    </form>
+                    {% endif %}
+
+                {% endif %}
+
+
+                <h3>user authenticted: {{ user.is_authenticated }}</h3>
+                
+        </div>
+</div>
+
+{% endblock content %}

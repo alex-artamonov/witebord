@@ -1,0 +1,22 @@
+{% extends 'Witebord/base.html' %}
+{% block content %}
+<div class="container mt-10">
+        <div class="card mb-3 mt-10" style="width: 80rem;">
+            <div class="card header mt-2" style="background-color: #a6cde9;">
+                <h3>{{ ad.title  }}:</h3>
+            </div>
+            <div class="card-body">                    
+
+                <form method="post">{% csrf_token %}
+                    <p>Точно удалить объявление "{{ object }}"?</p>
+                    {{ form }}
+                    <input type="submit" value="Да, точно" class="btn btn-danger col-lg-1">
+                </form>
+            </div>
+            <div class="card-footer">
+                Пользователь: {{ user }}
+            </div>                
+        </div>
+</div>
+
+{% endblock content %}

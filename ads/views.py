@@ -205,6 +205,7 @@ def profile(request):
 @login_required
 def ads_replies_list_view(request):
     user = request.user
+    # replies = ads.Reply.objects.exclude(accepted=Falsedir
     ads_list = ads.Ad.objects.filter(author=user)
 
 
