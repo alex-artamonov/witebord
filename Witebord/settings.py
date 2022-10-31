@@ -90,7 +90,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = "Witebord.urls"
 INTERNAL_IPS = [
     "127.0.0.1",
-    "localhose",
+    "localhost",
 ]
 
 TEMPLATES = [
