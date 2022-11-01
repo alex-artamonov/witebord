@@ -30,12 +30,31 @@
                     Автор: {{ ad.author }}
                     {{ ad.created_at|date:'d.m.Y' }}: С момента опубликования прошло {{ ad.created_at|timesince }}
                     <a href="{{ ad.get_absolute_url }}" class="btn btn-primary">Подробности...</a>
-                    {% for reply in ad.reply_set.all %}
-                        <p>{{ reply.content }}</p>
-                        <p>{{ reply.accepted }} <a href="">Принять</a>  <a href="">Отклонить</a></p>
-                    {% empty %}
-                        <p>Нет откликов</p>
-                    {% endfor %}
+                    <br>
+                    <hr>
+                    <h4>Отклики:</h4>
+                    <hr>
+                    <div style="display: inline">
+                        {% for reply in ad.reply_set.all %}
+                            <form method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="reply_id" value="{{ reply.id }}">
+                                <hr>
+
+                                {% if reply.accepted %}
+                                    <p>Пользователь {{ reply.author }}: {{ reply.content }} # {{ reply.id }}</p>
+                                    <p>{{ reply.accepted }}</p>
+                                    <button type="submit" name="btnAction" value="0">Decline</button>
+                                {% elif reply.accepted == None %}
+                                    <p>Пользователь {{ reply.author }} {{ reply.content }} # {{ reply.id }}</p>
+                                    <button type="submit" name="btnAction" value="0">Decline</button>
+                                    <button type="submit" name="btnAction" value="1">Accept</button>
+                                {% endif %}
+
+                        </form>
+                        {% endfor %}
+                    </div>
+
                 </div>
             {% endfor %}           
         </div>

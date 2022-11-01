@@ -13,7 +13,7 @@
         {% endfor %}
         <hr>
         <a href="{% url 'ads:guilds_list' %}" class="list-group-item list-group-item-action" aria-current="true">
-            <Все гильдии> <span class="badge bg-info text-dark"> {{ guilds.count }}</span>
+            &lt;Все гильдии&gt; <span class="badge bg-info text-dark"> {{ guilds.count }}</span>
         </a>
     </div>                         
     <!-- <a href="#" class="btn btn-secondary">Подписаться</a> -->
@@ -27,12 +27,12 @@
     <div class="col-lt-1">
         {% for usr in users %} 
         <a href="{{ usr.get_absolute_url }}" class="list-group-item list-group-item-action" aria-current="true">
-        {{ usr|default:'anonymous' }} <span class="'badge rounded-pill text-bg-primary"> {{ usr.cnt }}</span>
+        {{ usr|default:'anonymous' }} <span class="badge bg-info text-dark"> {{ usr.cnt }}</span>
         </a>
         {% endfor %}
         <hr>
         <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-            <Все юзеры> <span class="'badge rounded-pill text-bg-primary"> {{ users.count }}</span>
+            &lt;Все юзеры&gt; <span class="badge bg-info text-dark"> {{ users.count }}</span>
         </a>
     </div>                         
     <!-- <a href="#" class="btn btn-secondary">Подписаться</a> -->

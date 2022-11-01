@@ -24,6 +24,7 @@ import users.models as um
 from .forms import ReplyForm
 import ads.forms as af
 
+
 # Create your views here.
 
 # class CustomContextMixin(ContextMixin):
@@ -205,9 +206,41 @@ def profile(request):
 @login_required
 def ads_replies_list_view(request):
     user = request.user
-    # replies = ads.Reply.objects.exclude(accepted=Falsedir
-    ads_list = ads.Ad.objects.filter(author=user)
+    sql = "SELECT ads_reply.content, ads_reply.accepted, ads_ad.id, ads_ad.author_id, ads_ad.title, ads_ad.content, " \
+          "ads_ad.media_content, ads_ad.created_at, ads_ad.updated_at,ads_ad.guild_id FROM ads_ad left join ads_reply " \
+          "on ads_ad.id = ads_reply.parent_ad_id WHERE ads_ad.author_id = %s and ads_reply.accepted != True " \
+          "or ads_reply.accepted is null;"
+    ads_list = ads.Ad.objects.filter(author=user) #.exclude(reply__accepted=False)
+    # ads_list = ads.Ad.objects.raw(sql, [user.id])
 
+    if request.method == "POST":
+        # d = {}
+        # d = {**request.POST}
+        # print(d)
+        reply = ads.Reply.objects.get(pk=int(request.POST['reply_id']))
+        # print(reply.content, reply.accepted)
+        reply.accepted = bool(int(request.POST['btnAction']))
+        print('reply:', reply.content, 'reply.id:', reply.id, 'reply.accepted', reply.accepted)
+        reply.save()
+        print('reply:', reply.content, 'reply.id:', reply.id, 'reply.accepted', reply.accepted)
+        messages.info(request, "Отклик был изменен")
+        # print(reply.content, reply.accepted)
 
     return render(request, "ads/my_ad_list.html", {'ads_list': ads_list})
 
+
+class AdsRepliesUpdateView(UpdateView):
+    queryset = ads.Ad.objects.exclude(reply__accepted=False)
+    template_name = "ads/my_ad_list.html"
+
+    def get_queryset(self):
+        return ads.Ad.objects.exclude(reply__accepted=False)
+
+    # def post(self, request):
+    #     button = self.get_success_url()
+    #     print(button)
+    #
+    # def get_success_url(self):
+    #     if 'no-selection' in self.request.POST:
+    #         return 'none selected'
+    #     return ''

@@ -127,26 +127,3 @@ class Reply(m.Model):
         verbose_name_plural = "Отклики"
 
 
-class ReplyAcceptedOrNull(m.Model):
-    author = m.ForeignKey(
-        to=settings.AUTH_USER_MODEL,
-        on_delete=m.CASCADE,
-        verbose_name="Автор",
-        null=False,
-        blank=False,
-    )
-    content = m.TextField(null=False, blank=False, verbose_name="Текст")
-    parent_ad = m.ForeignKey(to=Ad, null=False, blank=False, on_delete=m.CASCADE)
-    created_at = m.DateTimeField(auto_now_add=True, verbose_name="Дата создания")
-    updated_at = m.DateTimeField(auto_now=True, verbose_name="Дата редактирования")
-    accepted = m.BooleanField(null=True, verbose_name="Принят")
-
-    def save(self, *args, **kwargs):
-        raise NotSupportedError('This model is tied to a view, it cannot be saved.')
-
-    class Meta:
-        managed = False
-        db_table = 'vw_replies_accepted_or_null'
-        ordering = ["-created_at"]
-        verbose_name = "Отклик"
-        verbose_name_plural = "Отклики"
