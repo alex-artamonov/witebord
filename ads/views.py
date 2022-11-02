@@ -233,7 +233,6 @@ def ads_replies_list_view(request):
     ads_list = ads.Ad.objects.filter(author=user, reply__accepted=False)
     # ads_list = ads.Ad.objects.raw(sql, [user.id])
 
-    # replies_null_true = ads.Reply.objects.exclude(accepted=False)
 
     # ads_list = ads.Ad.objects.annotate(
     #     no_replies=~Exists(ads.Reply.objects.filter(author=OuterRef('pk')))
