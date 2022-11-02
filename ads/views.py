@@ -9,7 +9,7 @@ from django.views.generic import (
     DeleteView,
 )
 from django.views.generic.base import ContextMixin
-from django.db.models import Count
+from django.db.models import Count, Exists, OuterRef
 
 from django.contrib.auth.decorators import login_required
 # from django.contrib.auth.mixins import LoginRequiredMixin
@@ -206,13 +206,34 @@ def profile(request):
 @login_required
 def ads_replies_list_view(request):
     user = request.user
-    sql = "SELECT ads_reply.content, ads_reply.accepted, ads_ad.id, ads_ad.author_id, ads_ad.title, ads_ad.content, " \
-          "ads_ad.media_content, ads_ad.created_at, ads_ad.updated_at,ads_ad.guild_id FROM ads_ad left join ads_reply " \
-          "on ads_ad.id = ads_reply.parent_ad_id WHERE ads_ad.author_id = %s and ads_reply.accepted != True " \
+    print('user.id:', user.id)
+    sql = "SELECT ads_reply.content, ads_reply.accepted, ads_ad.id, ads_ad.author_id, " \
+          "ads_ad.title, ads_ad.content, " \
+          "ads_ad.media_content, ads_ad.created_at, ads_ad.updated_at,ads_ad.guild_id " \
+          "FROM ads_ad left join ads_reply " \
+          "on ads_ad.id = ads_reply.parent_ad_id " \
+          "WHERE ads_ad.author_id = %s and ads_reply.accepted = True " \
           "or ads_reply.accepted is null;"
-    ads_list = ads.Ad.objects.filter(author=user) #.exclude(reply__accepted=False)
+
+    # User.objects.annotate(
+    #     no_reports=~Exists(Reports.objects.filter(user__eq=OuterRef('pk')))
+    # ).filter(
+    #     email__startswith='a',
+    #     no_reports=True
+    # )
+
+    ads_list = ads.Ad.objects.filter(author=user).exclude(reply__accepted=False)
+    ads_list = ads.Ad.objects.filter(author=user, reply__accepted=False)
     # ads_list = ads.Ad.objects.raw(sql, [user.id])
 
+    # replies_null_true = ads.Reply.objects.exclude(accepted=False)
+
+    # ads_list = ads.Ad.objects.annotate(
+    #     no_replies=~Exists(ads.Reply.objects.filter(author=OuterRef('pk')))
+    #     ).filter(author=user, no_replies=True).exclude(reply__accepted=False)
+    to_reply = ads.Reply.objects.exclude(accepted=False).filter(parent_ad_id=OuterRef('pk'))
+    ads_list = ads.Ad.objects.filter(author=user).annotate(to_reply=Exists(to_reply))
+    print(ads_list.query)
     if request.method == "POST":
         # d = {}
         # d = {**request.POST}
@@ -220,9 +241,9 @@ def ads_replies_list_view(request):
         reply = ads.Reply.objects.get(pk=int(request.POST['reply_id']))
         # print(reply.content, reply.accepted)
         reply.accepted = bool(int(request.POST['btnAction']))
-        print('reply:', reply.content, 'reply.id:', reply.id, 'reply.accepted', reply.accepted)
+        # print('reply:', reply.content, 'reply.id:', reply.id, 'reply.accepted', reply.accepted)
         reply.save()
-        print('reply:', reply.content, 'reply.id:', reply.id, 'reply.accepted', reply.accepted)
+        # print('reply:', reply.content, 'reply.id:', reply.id, 'reply.accepted', reply.accepted)
         messages.info(request, "Отклик был изменен")
         # print(reply.content, reply.accepted)
 

@@ -11,8 +11,7 @@
                 <div class="card header mt-2" style="background-color: #a6cde9;">
                     <h3>{{ ad.title  }}:</h3>
                 </div>
-                <div class="card-body">                    
-<!--                    <div class="media">-->
+                <div class="card-body">
                         {% if ad.media_content %}
                             <img height='100 width='auto' 
                             src="{{ ad.media_content.url }}" alt="Какая-то картинка" class="float-left">
@@ -20,45 +19,48 @@
                             <img height='100 width='auto' 
                             src="https://randompicturegenerator.com/img/national-park-generator/g51b6ed108bf0bcfbce1555d91a34261220668f81518f4d2aad7e4626ac37926cf0462b3528692ef5e1b04243b6e7b5fe_640.jpg" alt="Какая-то картинка">
                         {% endif %}
-<!--                        <div class="media-body">-->
-                            {{ ad.content }}</p>
-<!--                        </div>                        -->
-<!--                    </div>-->
-                    
+                    {{ ad.content }}<
                 </div>
                 <div class="card-footer">
                     Автор: {{ ad.author }}
                     {{ ad.created_at|date:'d.m.Y' }}: С момента опубликования прошло {{ ad.created_at|timesince }}
                     <a href="{{ ad.get_absolute_url }}" class="btn btn-primary">Подробности...</a>
                     <br>
-                    <hr>
-                    <h4>Отклики:</h4>
+                    <h4>Откликов: {{ ad.reply_set.count }}</h4>
                     <hr>
                     <div style="display: inline">
+                        <ol>
                         {% for reply in ad.reply_set.all %}
-                            <form method="POST">
-                            {% csrf_token %}
-                            <input type="hidden" name="reply_id" value="{{ reply.id }}">
-                                <hr>
+                                <li>
+                                    <form method="POST">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="reply_id" value="{{ reply.id }}">
+                                        <hr>
+                                        {% if reply.accepted %}
+                                            <p>Пользователь {{ reply.author }}: {{ reply.content }} # {{ reply.id }}</p>
+                                            <p>{{ reply.accepted }}</p>
+                                            <button type="submit" name="btnAction" value="0">Decline</button>
+                                        {% elif reply.accepted is None %}
+                                            <p>Пользователь {{ reply.author }} {{ reply.content }} # {{ reply.id }}</p>
+                                            <p>{{ reply.accepted }}</p>
+                                            <button type="submit" name="btnAction" value="0">Decline</button>
+                                            <button type="submit" name="btnAction" value="1">Accept</button>
+                                        {% else %}
+<!--                                            <h4>declined</h4>-->
+<!--                                            <p>Пользовательccc {{ reply.author }} {{ reply.content }} # {{ reply.id }}</p>-->
+<!--                                            <p>{{ reply.accepted }}</p>-->
 
-                                {% if reply.accepted %}
-                                    <p>Пользователь {{ reply.author }}: {{ reply.content }} # {{ reply.id }}</p>
-                                    <p>{{ reply.accepted }}</p>
-                                    <button type="submit" name="btnAction" value="0">Decline</button>
-                                {% elif reply.accepted == None %}
-                                    <p>Пользователь {{ reply.author }} {{ reply.content }} # {{ reply.id }}</p>
-                                    <button type="submit" name="btnAction" value="0">Decline</button>
-                                    <button type="submit" name="btnAction" value="1">Accept</button>
-                                {% endif %}
+                                        {% endif %}
 
-                        </form>
+                                    </form>
+                                </li>
+
                         {% endfor %}
+                        </ol>
                     </div>
 
                 </div>
             {% endfor %}           
         </div>
     </div>
-<!-- </div> -->
-
 {% endblock content %}
