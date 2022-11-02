@@ -31,6 +31,7 @@
                     <div style="display: inline">
                         <ol>
                         {% for reply in ad.reply_set.all %}
+
                                 <li>
                                     <form method="POST">
                                     {% csrf_token %}
@@ -55,12 +56,15 @@
                                     </form>
                                 </li>
 
+
                         {% endfor %}
                         </ol>
                     </div>
 
                 </div>
-            {% endfor %}           
+            {% empty %}
+            <comment>Нет неотвеченных откликов.</comment>
+            {% endfor %}
         </div>
     </div>
 {% endblock content %}

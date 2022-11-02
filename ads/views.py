@@ -176,6 +176,13 @@ class AdsListView(ListView):
     context_object_name = "ads_list"
     paginate_by = 6
 
+class MyAdsListView(ListView):
+    context_object_name = "ads_list"
+    paginate_by = 6
+
+    def get_queryset(self):
+        return ads.Ad.objects.filter(author=self.request.user)
+
 
 class GuildsListView(ListView):
     model = ads.Guild
@@ -232,7 +239,8 @@ def ads_replies_list_view(request):
     #     no_replies=~Exists(ads.Reply.objects.filter(author=OuterRef('pk')))
     #     ).filter(author=user, no_replies=True).exclude(reply__accepted=False)
     to_reply = ads.Reply.objects.exclude(accepted=False).filter(parent_ad_id=OuterRef('pk'))
-    ads_list = ads.Ad.objects.filter(author=user).annotate(to_reply=Exists(to_reply))
+    # ads_list = ads.Ad.objects.filter(author=user).annotate(to_reply=Exists(to_reply))
+    ads_list = ads.Ad.objects.filter(Exists(to_reply), author=user, )
     print(ads_list.query)
     if request.method == "POST":
         # d = {}
