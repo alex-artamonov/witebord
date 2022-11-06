@@ -2,6 +2,7 @@
 {% comment %}
     {% load thumbnail %}
 {% endcomment %}
+{% load ads_tags %}
 
 {% block content %}
 <!-- <div class="container mt-10"> -->
@@ -26,12 +27,11 @@
                     {{ ad.created_at|date:'d.m.Y' }}: С момента опубликования прошло {{ ad.created_at|timesince }}
                     <a href="{{ ad.get_absolute_url }}" class="btn btn-primary">Подробности...</a>
                     <br>
-                    <h4>Откликов: {{ ad.reply_set.count }}</h4>
+                    <h4>Откликов: {{ ad.reply_set.exclude_declined.count }}</h4>
                     <hr>
                     <div style="display: inline">
                         <ol>
-                        {% for reply in ad.reply_set.all %}
-
+                        {% for reply in ad.reply_set.exclude_declined %}
                                 <li>
                                     <form method="POST">
                                     {% csrf_token %}

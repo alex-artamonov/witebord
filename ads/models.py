@@ -101,6 +101,17 @@ class Tag(m.Model):
         verbose_name_plural = "Метки"
 
 
+class RepliesManager(m.Manager):
+
+    use_for_related_fields = True
+
+    def exclude_declined(self):
+        qs = self.get_query_set()
+        qs = qs.exclude(accepted=False)
+        return qs
+
+
+
 class Reply(m.Model):
     """Пользователи могут отправлять отклики на объявления других пользователей,
     состоящие из простого текста."""
@@ -117,6 +128,8 @@ class Reply(m.Model):
     created_at = m.DateTimeField(auto_now_add=True, verbose_name="Дата создания")
     updated_at = m.DateTimeField(auto_now=True, verbose_name="Дата редактирования")
     accepted = m.BooleanField(null=True, verbose_name="Принят")
+
+    objects = RepliesManager()
 
     def __str__(self) -> str:
         return self.content

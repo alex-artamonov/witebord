@@ -2,7 +2,7 @@
 {% load ads_tags %}
 
 <div class="list-group">
-    <h5>Гильдии:</h5>         
+    <h5>Гильдии <small>(кол-во участников)</small>:</h5>
     <div class="col-lt-1">
         {% get_guilds_list as guilds %}
         {% get_users_list as users %}
@@ -20,7 +20,7 @@
     
 </div> 
 <hr>
-<h5>Юзеры:</h5>
+<h5>Юзеры <small>(кол-во объявлений)</small>:</h5>
 <!-- <div class="row">                            -->
 <div class="list-group">
         

@@ -4,9 +4,7 @@ from django.db.models import Count
 
 from ..models import Guild
 
-
 User = get_user_model()
-
 
 register = template.Library()
 
@@ -19,3 +17,8 @@ def get_guilds_list():
 @register.simple_tag
 def get_users_list():
     return User.objects.annotate(cnt=Count('ad'))
+
+
+@register.filter
+def exclude_declined_replies(reply_set):
+    return reply_set.exclude(accepted=False)
