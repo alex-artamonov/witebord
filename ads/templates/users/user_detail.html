@@ -19,7 +19,7 @@
                         <p class="card-text">Коротко о себе: {% lorem 4 b random %}</p> 
                 </div>
                 <div class="card-footer text-muted">
-                    Здесь будет какая-то дополнительная инфо
+                        <a href="{% url 'ads:home' %}?author_id={{ user.id }}">Объявления пользователя</a>
                 </div>
         </div>
 </div>

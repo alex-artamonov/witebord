@@ -52,7 +52,7 @@
           <a class="nav-link active" href="{% url 'login' %}">Вход</a>
           <a class="nav-link active" href="{% url 'signup' %}">Регистрация</a>
         {% else %}
-          Вы вошли на сайт как <a class="nav-link active" href="{{ user.get_absolute_url }}">{{ user }}</a>
+          Вы вошли на сайт как <a class="nav-link active" href="{{ reauest.user.get_absolute_url }}">{{ request.user }}</a>
           <a class="nav-link active" href="{% url 'logout' %}">Выход</a>
         {% endif %}
       </div>

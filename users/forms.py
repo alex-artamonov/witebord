@@ -8,6 +8,9 @@ class BaseRegisterForm(UserCreationForm):
     email = forms.EmailField(label="Email")
     first_name = forms.CharField(label="Имя")
     last_name = forms.CharField(label="Фамилия")
+    is_subscribed = forms.BooleanField(label="Подписаться на еженедельную рассылку")
+    is_subscribed.initial = 1
+
 
     class Meta:
         model = get_user_model()
@@ -19,6 +22,7 @@ class BaseRegisterForm(UserCreationForm):
             "email",
             "password1",
             "password2",
+            "is_subscribed",
         )
         widgets = {
             "username": forms.TextInput(

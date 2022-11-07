@@ -31,6 +31,8 @@
                     {{ ad.created_at|date:'d.m.Y' }}: С момента опубликования прошло {{ ad.created_at|timesince }}
                     <a href="{{ ad.get_absolute_url }}" class="btn btn-primary">Подробности...</a>
                 </div>
+            {% empty %}
+                <comment>У этого юзера нет объявлений.</comment>
             {% endfor %}           
         </div>
     </div>

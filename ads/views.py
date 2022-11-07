@@ -172,9 +172,16 @@ def ad_detail(request, pk):
 
 
 class AdsListView(ListView):
-    model = ads.Ad
     context_object_name = "ads_list"
     paginate_by = 6
+
+    def get_queryset(self):
+        author_id = self.request.GET.get("author_id", None)
+        if author_id:
+            return ads.Ad.objects.filter(author__id=author_id)
+        else:
+            return ads.Ad.objects.all()
+
 
 class MyAdsListView(ListView):
     context_object_name = "ads_list"

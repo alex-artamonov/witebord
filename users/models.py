@@ -24,6 +24,11 @@ class User(AbstractUser):
     avatar = models.ImageField(
         verbose_name="Аватар", upload_to="pics/%Y/%m/%d/", null=True, blank=True
     )
+    is_subscribed = models.BooleanField(
+        verbose_name="Подписан на рассылку",
+        null=False,
+        blank=False
+    )
 
     def __str__(self):
         return self.username
