@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "django.contrib.staticfiles",
     "debug_toolbar",
+    "django_apscheduler",
     "ads.apps.AdsConfig",
 ]
 
@@ -178,3 +179,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
 
 MESSAGE_TAGS = {message_constants.ERROR: "danger"}
+
+APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
+APSCHEDULER_RUN_NOW_TIMEOUT = 25  # Seconds
