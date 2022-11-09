@@ -12,7 +12,7 @@ from django.views.generic.base import ContextMixin
 from django.db.models import Count, Exists, OuterRef
 
 from django.contrib.auth.decorators import login_required
-# from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import PermissionDenied
 from django.urls import reverse_lazy
 from django.core.mail import send_mail
@@ -80,14 +80,6 @@ def index(request):
 class AdDetailView(DetailView):
     model = ads.Ad
     context_object_name = "ad"
-
-    # def dispatch(self, request, *args, **kwargs):
-
-    # def __init__(request, *args, **kwargs) -> None:
-    #     super().__init__()
-    #     ses = session()
-    #     print('hello', ses.get() )
-    #     # user = request.user
 
     def get_context_data(self, **kwargs):
         # xxx will be available in the template as the related objects
@@ -183,7 +175,7 @@ class AdsListView(ListView):
             return ads.Ad.objects.all()
 
 
-class MyAdsListView(ListView):
+class MyAdsListView(LoginRequiredMixin, ListView):
     context_object_name = "ads_list"
     paginate_by = 6
 
@@ -207,13 +199,11 @@ def rules(request):
 
 class RulesView(TemplateView):
     template_name = "ads/rules.html"
-    # context_object_name = 'user'
 
 
 def profile(request):
     if request.method == "POST":
         print(request)
-    # return HttpResponse("hi from profile view")
     return render(request, "ads/rules.html")
 
 
@@ -229,37 +219,19 @@ def ads_replies_list_view(request):
           "WHERE ads_ad.author_id = %s and ads_reply.accepted = True " \
           "or ads_reply.accepted is null;"
 
-    # User.objects.annotate(
-    #     no_reports=~Exists(Reports.objects.filter(user__eq=OuterRef('pk')))
-    # ).filter(
-    #     email__startswith='a',
-    #     no_reports=True
-    # )
 
     ads_list = ads.Ad.objects.filter(author=user).exclude(reply__accepted=False)
     ads_list = ads.Ad.objects.filter(author=user, reply__accepted=False)
-    # ads_list = ads.Ad.objects.raw(sql, [user.id])
 
-
-    # ads_list = ads.Ad.objects.annotate(
-    #     no_replies=~Exists(ads.Reply.objects.filter(author=OuterRef('pk')))
-    #     ).filter(author=user, no_replies=True).exclude(reply__accepted=False)
     to_reply = ads.Reply.objects.exclude(accepted=False).filter(parent_ad_id=OuterRef('pk'))
-    # ads_list = ads.Ad.objects.filter(author=user).annotate(to_reply=Exists(to_reply))
     ads_list = ads.Ad.objects.filter(Exists(to_reply), author=user, )
     print(ads_list.query)
     if request.method == "POST":
-        # d = {}
-        # d = {**request.POST}
-        # print(d)
+
         reply = ads.Reply.objects.get(pk=int(request.POST['reply_id']))
-        # print(reply.content, reply.accepted)
         reply.accepted = bool(int(request.POST['btnAction']))
-        # print('reply:', reply.content, 'reply.id:', reply.id, 'reply.accepted', reply.accepted)
         reply.save()
-        # print('reply:', reply.content, 'reply.id:', reply.id, 'reply.accepted', reply.accepted)
         messages.info(request, "Отклик был изменен")
-        # print(reply.content, reply.accepted)
 
     return render(request, "ads/my_ad_list.html", {'ads_list': ads_list})
 
@@ -271,11 +243,3 @@ class AdsRepliesUpdateView(UpdateView):
     def get_queryset(self):
         return ads.Ad.objects.exclude(reply__accepted=False)
 
-    # def post(self, request):
-    #     button = self.get_success_url()
-    #     print(button)
-    #
-    # def get_success_url(self):
-    #     if 'no-selection' in self.request.POST:
-    #         return 'none selected'
-    #     return ''

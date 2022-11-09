@@ -103,11 +103,12 @@ class Tag(m.Model):
 
 class RepliesManager(m.Manager):
 
-    use_for_related_fields = True
+    # use_for_related_fields = True
 
     def exclude_declined(self):
-        qs = self.get_query_set()
-        qs = qs.exclude(accepted=False)
+        # qs = self.get_query_set()
+        # qs = qs.exclude(accepted=False)
+        qs = self.exclude(accepted=False)
         return qs
 
 
