@@ -8,31 +8,20 @@ from django.views.generic import (
     UpdateView,
     DeleteView,
 )
-from django.views.generic.base import ContextMixin
+
 from django.db.models import Count, Exists, OuterRef
 
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import PermissionDenied
 from django.urls import reverse_lazy
-from django.core.mail import send_mail
-import random
+
 from django.contrib import messages
 
 import ads.models as ads
 import users.models as um
 from .forms import ReplyForm
 import ads.forms as af
-
-
-# Create your views here.
-
-# class CustomContextMixin(ContextMixin):
-#     def get_context_data(self, **kwargs):
-#         context = super().get_context_data(**kwargs)
-#         # context['guilds'] = ads.Guild.objects.annotate(cnt=Count('user'))
-#         # context['users'] = um.User.objects.all()
-#         return context
 
 
 class AdCreateView(CreateView):
@@ -72,7 +61,6 @@ def index(request):
     output = "<br><hr>".join(
         [f"<h3>{ad.title}:</h3><p>{ad.content}</p>" for ad in ads_list]
     )
-    # return HttpResponse(output)
     context = {"ads_list": ads_list}
     return render(request, "ads/ads.html", context)
 
@@ -91,7 +79,6 @@ class AdDetailView(DetailView):
 
         return context
 
-    # @login_required(login_url='settings.LOGIN_URL')
     def post(self, request, *args, **kwargs):
         user = self.request.user
         replies = ads.Reply.objects.filter(
@@ -123,13 +110,9 @@ class AdDetailView(DetailView):
         )
 
 
-# @login_required(login_url=settings.LOGIN_URL)
 def ad_detail(request, pk):
     ad = ads.Ad.objects.get(pk=pk)
-    # ad = get_object_or_404(ads.Ad, pk=pk)
     replies = ads.Reply.objects.filter(parent_ad_id=ad.pk).select_related("author")
-    # context = {'ad': ad, 'replies': replies}
-    # return render(request, 'ads/ad_detail.html', context)
     user = request.user
     new_reply = None
 
@@ -144,7 +127,6 @@ def ad_detail(request, pk):
             new_reply.parent_ad = ad
             # Save the comment to the database
             new_reply.save()
-            # return redirect('/post_reply')
             messages.success(request, "Отклик успешно добавлен.")
         else:
             messages.error(request, "Произошла ошибка.")
@@ -210,30 +192,23 @@ def profile(request):
 @login_required
 def ads_replies_list_view(request):
     user = request.user
-    print('user.id:', user.id)
-    sql = "SELECT ads_reply.content, ads_reply.accepted, ads_ad.id, ads_ad.author_id, " \
-          "ads_ad.title, ads_ad.content, " \
-          "ads_ad.media_content, ads_ad.created_at, ads_ad.updated_at,ads_ad.guild_id " \
-          "FROM ads_ad left join ads_reply " \
-          "on ads_ad.id = ads_reply.parent_ad_id " \
-          "WHERE ads_ad.author_id = %s and ads_reply.accepted = True " \
-          "or ads_reply.accepted is null;"
 
-
-    ads_list = ads.Ad.objects.filter(author=user).exclude(reply__accepted=False)
-    ads_list = ads.Ad.objects.filter(author=user, reply__accepted=False)
-
-    to_reply = ads.Reply.objects.exclude(accepted=False).filter(parent_ad_id=OuterRef('pk'))
-    ads_list = ads.Ad.objects.filter(Exists(to_reply), author=user, )
+    to_reply = ads.Reply.objects.exclude(accepted=False).filter(
+        parent_ad_id=OuterRef("pk")
+    )
+    ads_list = ads.Ad.objects.filter(
+        Exists(to_reply),
+        author=user,
+    )
     print(ads_list.query)
     if request.method == "POST":
 
-        reply = ads.Reply.objects.get(pk=int(request.POST['reply_id']))
-        reply.accepted = bool(int(request.POST['btnAction']))
+        reply = ads.Reply.objects.get(pk=int(request.POST["reply_id"]))
+        reply.accepted = bool(int(request.POST["btnAction"]))
         reply.save()
         messages.info(request, "Отклик был изменен")
 
-    return render(request, "ads/my_ad_list.html", {'ads_list': ads_list})
+    return render(request, "ads/my_ad_list.html", {"ads_list": ads_list})
 
 
 class AdsRepliesUpdateView(UpdateView):
@@ -242,4 +217,3 @@ class AdsRepliesUpdateView(UpdateView):
 
     def get_queryset(self):
         return ads.Ad.objects.exclude(reply__accepted=False)
-

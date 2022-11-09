@@ -3,7 +3,6 @@ from django.urls import reverse_lazy
 
 from django.conf import settings
 
-
 class Guild(m.Model):
     """пользователь обязательно должен определить объявление в одну из следующих
     - категорий:
@@ -112,7 +111,6 @@ class RepliesManager(m.Manager):
         return qs
 
 
-
 class Reply(m.Model):
     """Пользователи могут отправлять отклики на объявления других пользователей,
     состоящие из простого текста."""
@@ -139,5 +137,3 @@ class Reply(m.Model):
         ordering = ["-created_at"]
         verbose_name = "Отклик"
         verbose_name_plural = "Отклики"
-
-

@@ -37,20 +37,13 @@
                                     {% csrf_token %}
                                     <input type="hidden" name="reply_id" value="{{ reply.id }}">
                                         <hr>
-                                        {% if reply.accepted %}
-                                            <p>Пользователь {{ reply.author }}: {{ reply.content }} # {{ reply.id }}</p>
-                                            <p>{{ reply.accepted }}</p>
+                                        <p>Пользователь <a href="{{ reply.author.get_absolute_url }}">
+                                            {{ reply.author.username }}</a> отреагировал: {{ reply.content }} # {{ reply.id }}
+                                        </p>
                                             <button type="submit" name="btnAction" value="0">Decline</button>
-                                        {% elif reply.accepted is None %}
-                                            <p>Пользователь {{ reply.author }} {{ reply.content }} # {{ reply.id }}</p>
-                                            <p>{{ reply.accepted }}</p>
-                                            <button type="submit" name="btnAction" value="0">Decline</button>
-                                            <button type="submit" name="btnAction" value="1">Accept</button>
-                                        {% else %}
-<!--                                            <h4>declined</h4>-->
-<!--                                            <p>Пользовательccc {{ reply.author }} {{ reply.content }} # {{ reply.id }}</p>-->
-<!--                                            <p>{{ reply.accepted }}</p>-->
 
+                                        {% if reply.accepted is None %}
+                                            <button type="submit" name="btnAction" value="1">Accept</button>
                                         {% endif %}
 
                                     </form>

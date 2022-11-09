@@ -11,7 +11,6 @@ class BaseRegisterForm(UserCreationForm):
     is_subscribed = forms.BooleanField(label="Подписаться на еженедельную рассылку")
     is_subscribed.initial = 1
 
-
     class Meta:
         model = get_user_model()
         fields = (
@@ -56,16 +55,3 @@ class BaseRegisterForm(UserCreationForm):
                 }
             ),
         }
-
-
-# class CustomerForm(forms.ModelForm):
-#     class Meta:
-#         model = Customer
-#         fields  = '__all__'
-#         exclude = ['user', 'email','name','otp_code']
-
-
-# class CreateUserForm(UserCreationForm):
-#     class Meta:
-#         model = User
-#         fields  = ['username','first_name','last_name', 'email', 'password1', 'password2']

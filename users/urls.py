@@ -16,8 +16,5 @@ urlpatterns = [
         name="logout",
     ),
     path("accounts/<int:pk>", UserProfileView.as_view(), name="user_profile"),
-    # path('accounts/profile/<int:pk>', av.UserProfileView.as_view()),
-    path("accounts/signup/otp", otp_verification, name="otp_verification")
-    # path('accounts/signup/', BaseRegisterView.as_view(template_name='accounts/signup.html'), name='signup'),
-    # path('accounts/signup/', )
+    path("accounts/signup/otp", otp_verification, name="otp_verification"),
 ]

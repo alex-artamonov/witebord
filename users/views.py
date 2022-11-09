@@ -50,7 +50,6 @@ def signup(request):
 
 
 def otp_verification(request):
-
     username = request.session["username1"]
     if request.method == "POST":
         otp1 = request.session["otp1"]

@@ -11,12 +11,12 @@ register = template.Library()
 
 @register.simple_tag
 def get_guilds_list():
-    return Guild.objects.annotate(cnt=Count('user'))
+    return Guild.objects.annotate(cnt=Count("user"))
 
 
 @register.simple_tag
 def get_users_list():
-    return User.objects.annotate(cnt=Count('ad'))
+    return User.objects.annotate(cnt=Count("ad"))
 
 
 @register.filter

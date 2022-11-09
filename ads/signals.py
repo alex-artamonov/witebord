@@ -15,7 +15,7 @@ def notify_followers(sender, instance, created, **kwargs):
     # print(f'{instance.get_absolute_url()=}')
     if created:
         ad = instance.parent_ad
-        link = 'http://localhost:8000' + ad.get_absolute_url()
+        link = "http://localhost:8000" + ad.get_absolute_url()
         # print('hi from Reply.created', link)
         body = f"На ваше объявление {link} пользователь {instance.author.username} оставил отклик"
         email_to = ad.author.email
@@ -25,7 +25,7 @@ def notify_followers(sender, instance, created, **kwargs):
             subject="Новый отклик на объявление на сайте Witebord",
             from_email="sat.arepo@yandex.ru",
             recipient_list=[email_to],
-            fail_silently=not settings.DEBUG
+            fail_silently=not settings.DEBUG,
         )
 
 
@@ -36,7 +36,7 @@ def notify_accepted(sender, instance, created, **kwargs):
 
     if instance.accepted:
         ad = instance.parent_ad
-        link = 'http://localhost:8000' + ad.get_absolute_url()
+        link = "http://localhost:8000" + ad.get_absolute_url()
         print(instance.id, instance.content, instance.accepted)
         body = f"Ваш отклик '{instance.content}' на объявление {link} принят."
         email_to = instance.author.email
@@ -46,5 +46,5 @@ def notify_accepted(sender, instance, created, **kwargs):
             subject="Ваш отклик на объявление на сайте Witebord принят",
             from_email="sat.arepo@yandex.ru",
             recipient_list=[email_to],
-            fail_silently=not settings.DEBUG
+            fail_silently=not settings.DEBUG,
         )
