@@ -19,7 +19,9 @@
             {% if messages %}
                 {% for message in messages %}
                     <div class="alert alert-{{ message.tags }}" role="alert">
-                            {{ message }} <a href="#" class="close">x</a>
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="X"></button>
+
                     </div>
                 {% endfor %}
             {% endif %}
