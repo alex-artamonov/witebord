@@ -40,7 +40,6 @@ def signup(request):
                 from_email="sat.arepo@yandex.ru",
                 recipient_list=[user.email],
             )
-
             return redirect("otp_verification")
         else:
             messages.error(request, "Ошибка регистрации")
@@ -59,7 +58,7 @@ def otp_verification(request):
             messages.success(request, "Вы успешно зарегистрированы")
             login(request, user)
             messages.success(request, f" Добро пожаловать, {username}!")
-            return redirect("/")
+            return redirect("ads:rules")
         else:
             messages.error(request, "Неверный одноразоый код!")
     return render(request, "account/otp.html")
