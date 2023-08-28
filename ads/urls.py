@@ -20,5 +20,5 @@ urlpatterns = [
     path("ads/to_reply", av.ads_replies_list_view, name="ads_replies_list_view"),
     path("ads/my_ads/reply/<int:pk>/delete", av.ads_replies_list_view,
         name="ads_reply_delete"),
-    path('ads/search', av.search, name='search')
+    path('ads/search', av.search, name='search'),
 ]

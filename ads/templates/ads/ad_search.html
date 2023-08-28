@@ -1,2 +1,30 @@
 {% extends 'Witebord/base.html' %}
-hello from search
+{% block content %}
+<h2>hello from search</h2>
+{% if not query %}
+  <h1>No Query</h1>
+{% endif %}
+<h2>{{ test }}</h2>
+{% if query %}
+  <h1>Ads containing "{{ query }}"</h1>
+  <h3>
+    {% with results.count as total_results %}
+      Found {{ total_results }} result{{ total_results | pluralize }}
+    {% endwith %}
+  </h3>
+    {% for ad in results %}
+      <h4>
+        <a href="{{ ad.get_absolute_url }}">{{ ad.title }}</a>
+      </h4>
+        {{ ad.content|truncatewords:12 }}
+      {% empty %}
+        <p>There are no results for your query.</p>
+      {% endfor %}
+      <h1>Search for posts</h1>
+  {% else %}
+      <form method="get">
+      {{ search_form.as_p }}
+      <input type="submit" value="Search">
+      </form>
+  {% endif %}
+{% endblock %}

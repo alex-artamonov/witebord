@@ -2,13 +2,8 @@
 {% block content %} 
 <h2>Итак, правила такие:</h2> 
 <ol>
+	{% for _ in 'abcdefg' %}
 	<li>{% lorem 1 p random %}</li>
-	<li>{% lorem 1 p random %}</li>
-	<li>{% lorem 1 p random %}</li>
-	<li>{% lorem 1 p random %}</li>
-	<li>{% lorem 1 p random %}</li>
-	<li>{% lorem 1 p random %}</li>
-	<li>{% lorem 1 p random %}</li>
-	<li>{% lorem 1 p random %}</li>
+	{% endfor %}
 </ol>
 {% endblock content %}

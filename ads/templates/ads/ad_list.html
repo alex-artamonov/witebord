@@ -9,7 +9,7 @@
         <div class="card mb-3 mt-10" style="width: 80rem;">
             {% for ad in ads_list %}
                 <div class="card header mt-2" style="background-color: #a6cde9;">
-                    <h3>{{ ad.title  }}:</h3>
+                    <h3>{{ ad.title }}</h3>
                 </div>
                 <div class="card-body">                    
 <!--                    <div class="media">-->
@@ -32,7 +32,7 @@
                     <a href="{{ ad.get_absolute_url }}" class="btn btn-primary">Подробности...</a>
                 </div>
             {% empty %}
-                <comment>У этого юзера нет объявлений.</comment>
+                    <comment>По запросу "{{ query }}" нет объявлений.</comment>
             {% endfor %}           
         </div>
     </div>

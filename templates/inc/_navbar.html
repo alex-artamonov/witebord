@@ -1,10 +1,12 @@
-
+{% load static %}
 <!-- navbar navbar-dark bg-dark -->
 <nav class="navbar navbar-expand-lg navbar-light sticky-lg-top" style="background-color: #a6cde9;">
 <!--<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #a6cde9;">-->
     <div class="container-fluid">
       <!-- <a class="navbar-brand" href="#">Логотип?</a> -->
-      <img src="static/images/logo.png" height="50" alt="the logo">
+      <!-- <img src="static/images/logo.png" height="50" alt="the logo"> -->
+      <img src="{% static 'images/logo.png'%}" height="50" alt="the logo">
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -18,6 +20,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="{% url 'ads:rules' %}">Правила форума</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'ads:search' %}">Search</a>
           </li>
           {% if user.is_authenticated %}
             <li class="nav-item">
@@ -46,8 +51,13 @@
             </ul>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <form class="d-flex" action="{% url 'ads:home' %}">
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+          {% if search_form %}
+            {{ search_form.as_p }}
+          {% else %}
+            <p>!!No form!!</p>
+          {% endif %}
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         {% if not user.is_authenticated %}
