@@ -21,3 +21,6 @@ class AdForm(forms.ModelForm):
             "content": forms.Textarea(attrs={"class": "form-control", "rows": 10}),
             "guild": forms.Select(attrs={"class": "form-control"}),
         }
+
+class SearchForm(forms.Form):
+    query = forms.CharField()

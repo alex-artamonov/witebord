@@ -202,7 +202,6 @@ def ads_replies_list_view(request):
     )
     print(ads_list.query)
     if request.method == "POST":
-
         reply = ads.Reply.objects.get(pk=int(request.POST["reply_id"]))
         reply.accepted = bool(int(request.POST["btnAction"]))
         reply.save()
@@ -217,3 +216,6 @@ class AdsRepliesUpdateView(UpdateView):
 
     def get_queryset(self):
         return ads.Ad.objects.exclude(reply__accepted=False)
+
+def search(request):
+    return render(request ,"ads/ad_search.html")

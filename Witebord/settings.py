@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "django_apscheduler",
     "ads.apps.AdsConfig",
+    'django.contrib.postgres',
 ]
 
 AUTH_USER_MODEL = "users.User"
@@ -67,14 +68,15 @@ LOGIN_REDIRECT_URL = "ads:home"
 #     #if the signup went through uninterruptedly, for example, without any side steps due to email verification.
 # ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
 
-EMAIL_HOST = "smtp.yandex.ru"
-EMAIL_PORT = 465  # порт smtp сервера тоже одинаковый
-EMAIL_HOST_USER = "sat.arepo"
-EMAIL_HOST_PASSWORD = "bywtxyagkfghspfh"  # пароль от почты
-EMAIL_USE_SSL = True  # Яндекс использует ssl, подробнее о том,
-# что это, почитайте на Википедии, но включать его здесь обязательно
-#
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER + "@yandex.ru"
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+# EMAIL_HOST = "smtp.yandex.ru"
+# EMAIL_PORT = 465  # порт smtp сервера тоже одинаковый
+# EMAIL_HOST_USER = "sat.arepo"
+# EMAIL_HOST_PASSWORD = "bywtxyagkfghspfh"  # пароль от почты
+# EMAIL_USE_SSL = True  # Яндекс использует ssl, подробнее о том,
+# # что это, почитайте на Википедии, но включать его здесь обязательно
+# #
+# DEFAULT_FROM_EMAIL = EMAIL_HOST_USER + "@yandex.ru"
 
 
 MIDDLEWARE = [
@@ -127,12 +129,18 @@ WSGI_APPLICATION = "Witebord.wsgi.application"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    "default": {
+    "sqlite": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
+    },
+    'psql': {
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'witeboard',
+    'USER': 'alex',
     }
 }
 
+DATABASES['default'] = DATABASES["psql"]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -168,7 +176,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

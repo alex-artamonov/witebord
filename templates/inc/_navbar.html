@@ -1,8 +1,10 @@
+
 <!-- navbar navbar-dark bg-dark -->
 <nav class="navbar navbar-expand-lg navbar-light sticky-lg-top" style="background-color: #a6cde9;">
 <!--<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #a6cde9;">-->
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Логотип?</a>
+      <!-- <a class="navbar-brand" href="#">Логотип?</a> -->
+      <img src="static/images/logo.png" height="50" alt="the logo">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -52,7 +54,7 @@
           <a class="nav-link active" href="{% url 'login' %}">Вход</a>
           <a class="nav-link active" href="{% url 'signup' %}">Регистрация</a>
         {% else %}
-          Вы вошли на сайт как <a class="nav-link active" href="{{ reauest.user.get_absolute_url }}">{{ request.user }}</a>
+          Вы вошли на сайт как <a class="nav-link active" href="{{ request.user.get_absolute_url }}">{{ request.user }}</a>
           <a class="nav-link active" href="{% url 'logout' %}">Выход</a>
         {% endif %}
       </div>
