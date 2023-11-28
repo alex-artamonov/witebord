@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
 from pathlib import Path
+from dotenv import load_dotenv
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -64,11 +65,11 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_REDIRECT_URL = 'ads:rules' # не работает: Note that users are only redirected to this URL 
     #if the signup went through uninterruptedly, for example, without any side steps due to email verification. 
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
-
+load_dotenv()
 EMAIL_HOST = 'smtp.yandex.ru' 
 EMAIL_PORT = 465 # порт smtp сервера тоже одинаковый
-EMAIL_HOST_USER = 'sat.arepo' 
-EMAIL_HOST_PASSWORD = 'bywtxyagkfghspfh' # пароль от почты
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD") # пароль от почты
 EMAIL_USE_SSL = True # Яндекс использует ssl, подробнее о том, 
 #что это, почитайте на Википедии, но включать его здесь обязательно
 # 
@@ -126,11 +127,21 @@ WSGI_APPLICATION = "Witebord.wsgi.application"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    "default": {
+    "sqlite": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
+    },
+    'psql': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'witeboard2',
+        'USER': 'witeboard',
+        'PASSWORD': '12345',
+        'PORT': '5432',
+        'HOST': 'localhost',
     }
 }
+
+DATABASES['default'] = DATABASES['psql']
 
 
 # Password validation
