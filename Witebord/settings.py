@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "django_apscheduler",
     "ads.apps.AdsConfig",
-    'django.contrib.postgres',
+    "django.contrib.postgres",
 ]
 
 AUTH_USER_MODEL = "users.User"
@@ -109,7 +109,7 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
                 "django.template.context_processors.request",
-                "ads.context_processors.search_form"
+                "ads.context_processors.search_form",
             ],
         },
     },
@@ -134,14 +134,14 @@ DATABASES = {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
     },
-    'psql': {
-    'ENGINE': 'django.db.backends.postgresql',
-    'NAME': 'witeboard',
-    'USER': 'alex',
-    }
+    "psql": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "witeboard",
+        "USER": "alex",
+    },
 }
 
-DATABASES['default'] = DATABASES["psql"]
+DATABASES["default"] = DATABASES["psql"]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

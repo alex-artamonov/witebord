@@ -148,37 +148,38 @@ def ad_detail(request, pk):
 class AdsListView(ListView):
     context_object_name = "ads_list"
     paginate_by = 6
-    
 
     def get_context_data(self, **kwargs: Any) -> Dict[str, Any]:
         search_form = af.SearchForm()
         context = super().get_context_data(**kwargs)
-        context['search_form'] = search_form
+        context["search_form"] = search_form
         return context
 
     def get_queryset(self):
         author_id = self.request.GET.get("author_id", None)
         if author_id:
             return ads.Ad.objects.filter(author__id=author_id)
-        elif 'query' in self.request.GET:
-            print('hi from query')
-            search_form = af.SearchForm(self.request.GET)        
+        elif "query" in self.request.GET:
+            print("hi from query")
+            search_form = af.SearchForm(self.request.GET)
             if search_form.is_valid():
-                vector = SearchVector('title', 'content')
-                query = search_form.cleaned_data['query']
+                vector = SearchVector("title", "content")
+                query = search_form.cleaned_data["query"]
                 # query = 'test'
-                results = ads.Ad.objects.all().annotate(search=vector).filter(search=query)
+                results = (
+                    ads.Ad.objects.all().annotate(search=vector).filter(search=query)
+                )
             return results
-            
+
             # return ads.Ad.objects.filter(title__icontains='test')
         else:
             return ads.Ad.objects.all()
+
     #     search_form = af.SearchForm()
     # # query = 'django'
     #     query = None
     #     results = []
     #     if 'query' in request.GET:
-            
 
 
 class MyAdsListView(LoginRequiredMixin, ListView):
@@ -241,45 +242,54 @@ class AdsRepliesUpdateView(UpdateView):
     def get_queryset(self):
         return ads.Ad.objects.exclude(reply__accepted=False)
 
+
 def search(request):
     search_form = af.SearchForm()
     # query = 'django'
     query = None
     results = []
-    if 'query' in request.GET:
-        search_form = af.SearchForm(request.GET)        
+    if "query" in request.GET:
+        search_form = af.SearchForm(request.GET)
         if search_form.is_valid():
-            vector = SearchVector('title', 'content')
-            query = search_form.cleaned_data['query']
+            vector = SearchVector("title", "content")
+            query = search_form.cleaned_data["query"]
             # query = 'test'
             results = ads.Ad.objects.all().annotate(search=vector).filter(search=query)
-    return render(request, 'ads/ad_search.html',                   
-                  {'search_form': search_form,
-                   'query': query,
-                   'results': results,
-                   'test': 'TEST',}
-                  )
+    return render(
+        request,
+        "ads/ad_search.html",
+        {
+            "search_form": search_form,
+            "query": query,
+            "results": results,
+            "test": "TEST",
+        },
+    )
+
+
 def search(request):
     search_form = af.SearchForm()
     query = None
     results = []
-    if 'query' in request.GET:
+    if "query" in request.GET:
         search_form = af.SearchForm(request.GET)
         if search_form.is_valid():
-            query = search_form.cleaned_data['query']
-            search_vector = SearchVector('title', 'content')
+            query = search_form.cleaned_data["query"]
+            search_vector = SearchVector("title", "content")
             # search_query = SearchQuery(query)
-            results = ads.Ad.objects.all().annotate(
-                search=search_vector,
-                # rank=SearchRank(search_vector, search_query)
-                # ).filter(search=search_query).order_by('-rank')
-                ).filter(search=query)
-    return render(request, 'ads/ad_search.html',
-                  {'search_form': search_form,
-                      'query': query,
-                      'results': results})
-
-
-
+            results = (
+                ads.Ad.objects.all()
+                .annotate(
+                    search=search_vector,
+                    # rank=SearchRank(search_vector, search_query)
+                    # ).filter(search=search_query).order_by('-rank')
+                )
+                .filter(search=query)
+            )
+    return render(
+        request,
+        "ads/ad_search.html",
+        {"search_form": search_form, "query": query, "results": results},
+    )
 
     # return render(request ,"ads/ad_search.html")

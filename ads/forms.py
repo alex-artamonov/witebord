@@ -22,5 +22,6 @@ class AdForm(forms.ModelForm):
             "guild": forms.Select(attrs={"class": "form-control"}),
         }
 
+
 class SearchForm(forms.Form):
     query = forms.CharField()

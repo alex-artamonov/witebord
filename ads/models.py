@@ -3,6 +3,7 @@ from django.urls import reverse_lazy
 
 from django.conf import settings
 
+
 class Guild(m.Model):
     """пользователь обязательно должен определить объявление в одну из следующих
     - категорий:

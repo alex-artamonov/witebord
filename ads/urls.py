@@ -18,7 +18,10 @@ urlpatterns = [
     path("ads/<int:pk>/delete", av.AdDeleteView.as_view(), name="delete_ad"),
     # path("ads/my_ads", av.AdsRepliesUpdateView.as_view(), name="ads_replies_list_view"),
     path("ads/to_reply", av.ads_replies_list_view, name="ads_replies_list_view"),
-    path("ads/my_ads/reply/<int:pk>/delete", av.ads_replies_list_view,
-        name="ads_reply_delete"),
-    path('ads/search', av.search, name='search'),
+    path(
+        "ads/my_ads/reply/<int:pk>/delete",
+        av.ads_replies_list_view,
+        name="ads_reply_delete",
+    ),
+    path("ads/search", av.search, name="search"),
 ]
