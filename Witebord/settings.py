@@ -141,7 +141,7 @@ DATABASES = {
     }
 }
 
-DATABASES['default'] = DATABASES['psql']
+DATABASES['default'] = DATABASES['sqlite']
 
 
 # Password validation
