@@ -50,7 +50,7 @@ INSTALLED_APPS = [
 ]
 
 AUTH_USER_MODEL = 'users.User'
-SITE_ID = 1
+SITE_ID = 2
 # ACCOUNT_AUTHENTICATION_METHOD = 'email'
 # DEFAULT_FROM_EMAIL = 'sat.arepo@yandex.ru'
 LOGIN_URL = '/accounts/login/'
@@ -168,7 +168,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "ru-ru"
 
-TIME_ZONE = "Europe/Moscow"
+TIME_ZONE = "Europe/Madrid"
 
 USE_I18N = True
 
