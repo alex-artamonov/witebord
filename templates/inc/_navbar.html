@@ -1,8 +1,10 @@
 <!-- navbar navbar-dark bg-dark -->
+{% load static %}
 <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #a6cde9;">
 <!--<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #a6cde9;">-->
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Логотип</a>
+      <!-- <a class="navbar-brand" href="#">Логотип</a> -->
+      <img src="{% static 'images/logo.png'%}" height="50" alt="the logo" class="navbar-brand">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
