@@ -13,9 +13,9 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-
+# DEBUG = True
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -25,10 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-6a!--a9ja2(8-)6=zn+x!qx)hgu)5q!=a)jtbfwhok8hde7+$&"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = []
-
+# ALLOWED_HOSTS = ['localhost',
+#                  '127.0.0.1',]
 
 # Application definition
 
@@ -126,7 +125,7 @@ WSGI_APPLICATION = "Witebord.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
+"""DATABASES = {
     "sqlite": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
@@ -141,7 +140,7 @@ DATABASES = {
     }
 }
 
-DATABASES['default'] = DATABASES['psql']
+DATABASES['default'] = DATABASES['psql']"""
 
 
 # Password validation
