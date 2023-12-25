@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    command: python /code/manage.py runserver
+    restart: always
+    volumes:
+      - .:/code
+    ports:
+      -"8000:8000"
+    environment:
+      - DJANGO_SETTINGS_MODULLE=witebord.settings.prod
