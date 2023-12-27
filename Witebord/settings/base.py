@@ -122,25 +122,6 @@ AUTHENTICATION_BACKENDS = [
 WSGI_APPLICATION = "Witebord.wsgi.application"
 
 
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
-"""DATABASES = {
-    "sqlite": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    },
-    'psql': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'witeboard2',
-        'USER': 'witeboard',
-        'PASSWORD': '12345',
-        'PORT': '5432',
-        'HOST': 'localhost',
-    }
-}
-
-DATABASES['default'] = DATABASES['psql']"""
 
 
 # Password validation
