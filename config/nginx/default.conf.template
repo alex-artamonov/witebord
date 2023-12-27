@@ -4,11 +4,17 @@ upstream uwsgi_app {
 }
 server {
     listen      80;
-    server_name www.witebord.com witebord.com;
+    server_name www.mywitebord.com mywitebord.com;
     error_log   stderr warn;
     access_log  /dev/stdout main;
     location / {
         include      /etc/nginx/uwsgi_params;
         uwsgi_pass   uwsgi_app;
+    }
+    location /static/ {
+        alias /code/static/;
+    }
+    location /media/ {
+        alias /code/media/;
     }
 }
