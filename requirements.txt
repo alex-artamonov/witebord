@@ -35,4 +35,4 @@ tomli==2.0.1
 tzdata==2022.6
 tzlocal==4.2
 urllib3==1.26.12
-uwsgi==2.0.20
+uwsgi
