@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "debug_toolbar",
     "ads.apps.AdsConfig",
+    "django.contrib.postgres",
 ]
 
 AUTH_USER_MODEL = 'users.User'
@@ -85,7 +86,7 @@ MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    
+    "allauth.account.middleware.AccountMiddleware",
 ]
 
 ROOT_URLCONF = "Witebord.urls"
@@ -133,15 +134,15 @@ DATABASES = {
     },
     'psql': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'witeboard2',
-        'USER': 'witeboard',
-        'PASSWORD': '12345',
+        'NAME': 'witebord',
+        'USER': 'witebord',
+        'PASSWORD': 'asdf',
         'PORT': '5432',
         'HOST': 'localhost',
     }
 }
 
-DATABASES['default'] = DATABASES['sqlite']
+DATABASES['default'] = DATABASES['psql']
 
 
 # Password validation
@@ -179,11 +180,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "static/"
+STATIC_ROOT = BASE_DIR / "static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'

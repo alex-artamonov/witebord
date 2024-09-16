@@ -1,6 +1,6 @@
 <!-- navbar navbar-dark bg-dark -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #a6cde9;">
-<!--<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #a6cde9;">-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+<!-- <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #a6cde9;"> -->
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Логотип</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,8 +40,8 @@
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <form class="d-flex" method="get" action="{% url 'ads:ad_search' %}">
+          <input name="query" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         {% if not user.is_authenticated %}

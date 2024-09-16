@@ -8,7 +8,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import PermissionDenied
 from django.urls import reverse_lazy
 from requests import session
-
+from django.contrib.postgres.search import SearchVector
 import ads.models as ads
 import users.models as um
 from ads.forms import ReplyForm
@@ -178,3 +178,32 @@ def profile(request):
         print(request)
     # return HttpResponse("hi from profile view")
     return render(request, 'ads/rules.html')
+
+# def ad_search(request):
+#     form = af.SearchForm()
+#     query = None
+#     results = []
+#     if 'query' in request.GET:        
+#         form = af.SearchForm(request.GET)
+#         if form.is_valid():
+#             query = form.cleaned_data['query']
+#             results = ads.Ad.objects.annotate(search=SearchVector(
+#                 'title', 'content')).filter(search=query)
+#     return render(request, 'ads/search.html',
+#                   {'form': form,
+#                    'query': query,
+#                    'results': results})
+    
+   
+def ad_search(request):
+    form = af.SearchForm()
+    query_name = 'query'
+    results = []
+    if query_name in request.GET:        
+        query_text = request.GET[query_name]
+        results = ads.Ad.objects.annotate(search=SearchVector(
+                'title', 'content')).filter(search=query_text)
+    return render(request, 'ads/search.html',
+                    {'form': form,
+                    'query': query_text,
+                    'results': results}) 

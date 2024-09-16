@@ -1,0 +1,41 @@
+{% extends 'Witebord/base.html' %}
+{% comment %}
+    {% load thumbnail %}
+{% endcomment %}
+
+{% block content %}
+  <div class="row mt-4">
+    <div class="card mb-3 mt-10">
+      {% if query %}
+        <h1>Ads containing "{{ query }}"</h1>
+        <h3>
+          {% with results.count as total_results %}
+          Found {{ total_results }} result{{ total_results|pluralize }}
+          {% endwith %}
+        </h3>
+        {% for ad in results %}
+          <div class="card header mt-2">
+            <h4>{{ ad.title  }}:</h4>
+          </div>
+          <div class="card-body">
+            {{ ad.content }}
+          </div>
+          <div class="card-footer">
+            Автор: {{ ad.author }}
+            {{ ad.created_at|date:'d.m.Y' }}: С момента опубликования прошло {{ ad.created_at|timesince }}
+            <a href="{{ ad.get_absolute_url }}" class="btn btn-primary">Подробности...</a>
+          </div>
+        {% empty %}
+          <p>There are no results for your query.</p>
+        {% endfor %}
+        <p><a href="{% url 'ads:ad_search' %}">Search for ads</a></p>
+      {% else %}
+        <h1>Search for ads</h1>
+        <form method="get">
+          {{ form.as_p }}
+          <button type="submit">Search</button>
+        </form>
+      {% endif %}
+    </div>
+  </div>
+{% endblock content %}

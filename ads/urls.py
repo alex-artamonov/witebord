@@ -20,5 +20,5 @@ urlpatterns = [
     path('ads/create', av.AdCreateView.as_view(), name='create_ad'),
     path('ads/<int:pk>/update', av.AdUpdateView.as_view(), name='update_ad'),
     path('ads/<int:pk>/delete', av.AdDeleteView.as_view(), name='delete_ad'),
-    #  path('rules', av.rules, name='rules' ),
+    path('ads/search', av.ad_search, name='ad_search'),
 ]
