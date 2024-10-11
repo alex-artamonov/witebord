@@ -14,13 +14,14 @@ register = template.Library()
 
 @register.simple_tag
 def get_guilds_list():
-    return Guild.objects.annotate(cnt=Count('user'))
+    return Guild.objects.annotate(cnt=Count("user"))
 
 
 @register.simple_tag
 def get_users_list():
     return User.objects.all()
 
-@register.filter(name='markdown')
+
+@register.filter(name="markdown")
 def markdown_format(text):
     return mark_safe(markdown.markdown(text))

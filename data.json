@@ -1,0 +1,3989 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "users",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "ads",
+    "model": "guild"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "ads",
+    "model": "ad"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "ads",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "ads",
+    "model": "reply"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "account",
+    "model": "emailaddress"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "account",
+    "model": "emailconfirmation"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "socialaccount",
+    "model": "socialaccount"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "socialaccount",
+    "model": "socialapp"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "socialaccount",
+    "model": "socialtoken"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sites",
+    "model": "site"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1mlf75z6dt037bavlcsjy7r0rixbddrh",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQBf-FsyFIKYUevfsNZIFdixpoSptojP-uJD3o9c3MezEH2zq5reLiUmQjO7LD7-Yh3DA3EK-QL4WHktcled4UvtPKzyXi_bS7fwcT1KnVyloto5AAiqT3Q6c1oSIR0MRe-w46NESkjVXgiQYlpOp7Yyl8U6PbacVaU8kOH3NanmwU7w-ppj-U:1olHPK:kYNP1VHIn8pcKaOYakXYFMve_AuqetP5WjJEeBFZPBo",
+    "expire_date": "2022-11-02T22:19:26.491Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7h3q4qjzfq5uzrtept9amznvsgww47m7",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe8ya0OQUgou3XsGMsCMRQ2Y0iYa4921STfd_vfe_4Bv1FquxdPrmac3nOQBPC7z6JdGk88JTnCE3RYw3qmsIN2wXKuItcxTDmJVxEabuNREj_Pm7g5GbONaa-eMSlIhalYhDJ0xTJplJJt6EzrsyDKzsU5jYB60VLrvreP4T62B7w8hbz-U:1omfQu:VFcb6GUMym1ZKOliYUv4Vtiw4_n7KjInxOpIlOPT5ck",
+    "expire_date": "2022-11-06T18:10:48.353Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7vtty73ktacuyho2psofyr6ubfvw34n2",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQBf-FsyFIKYUevfsNZIFdixpoSptojP-uJD3o9c3MezEH2zq5reLiUmQjO7LD7-Yh3DA3EK-QL4WHktcled4UvtPKzyXi_bS7fwcT1KnVyloto5AAiqT3Q6c1oSIR0MRe-w46NESkjVXgiQYlpOp7Yyl8U6PbacVaU8kOH3NanmwU7w-ppj-U:1olyZs:CGlJJ6U_CyEfmzRdJmnm4qsKuLp-5CcUTSOgGuFfN2c",
+    "expire_date": "2022-11-04T20:25:12.874Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "8atec790tf0pfd5c7088d37172ult6rw",
+  "fields": {
+    "session_data": "e30:1omETX:IbOsv2SJviQG5r62WhCwbMOKd43eDPoOs3UW2nnv_1g",
+    "expire_date": "2022-11-05T13:23:43.133Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "aopxd2u07fkobld6pjv5b8vxu5afq816",
+  "fields": {
+    "session_data": ".eJxVj8FuwyAMht_F5wiFJEDIcfc9wTRFBrsLWwtVIFqrqu_esPXSm-Xv9yf_N0Dv0xbLjFtZOJbgsYQU5xOXJVGG6eMG_zNMcMacf9NK0AAWmKTpxtYoqYyQehjazjSwZV4jnnhP45EvcP9s4M89VzKHqpHwsnPofzhWQN8Yv5LwKZY1OFEj4kmzeE_Ex7dn9kWwYF72a2eV7Xptre4cSt33yrhRDi165tEdyBIRu_1NMoSHUZHSSpMzyL63xpoqzZxzrc-Xc1ivMLX3B9k7YDQ:1swpHx:wIgi2zATTBJ9tNlzlCDjkhSAyxaAFKH_Bpy8BELfM50",
+    "expire_date": "2024-10-18T20:52:37.193Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bhitw5dugsh7c93c69zfr9iu2uzznusk",
+  "fields": {
+    "session_data": ".eJxVj7tuwzAMAP-Fs2HIsvXy2L1fUBQGJTK12kQKLBlNEeTfG7VZshG84wG8AoaQ91QX3OvKqcaANea0nLiumQrMb1f4n2GGM5bynTeCDrDCPBhphR6nyfVKSOuU7WAvvCU88d3GI1_g9t7BX3tpZIktM8DTzmP44tQAfWL6yH3IqW7R903pH7T0r5n4-PJwnwIrlvV-7Z1yctTOaelx0OOojLfDJDAwW38gR0TsJyHJEB6sIqWVJm-Qw-iMMy1auJT2Pl_OcfuBWdx-AeTpYEI:1swmF7:iiVKBod1iJNp7ZhoBQsQgodP1C1o9OG4kjdUB7PzmYk",
+    "expire_date": "2024-10-18T17:37:29.528Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "fmea4w78kcixmc35f18qfyxfq6vqgck1",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHIq-DSfb-BzAAjVQNJaVfGf1eSLnR7zzn3xQLsWwl7z2tYEruwMzv9bgjxkesA6Q711nhsdVsX5EPhB-18bik_r4f7d1Cgl1Fr761MQgJokoiTspayJhGzS8aiApUdEVnnNSDRpIXUxjhP8Zs6y94f-IQ4Vw:1olGQi:DSrTSn1pGB5Ilq3_b3dRmUeb-E51wBas3NX425xUmLc",
+    "expire_date": "2022-11-02T21:16:48.576Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "hbzev0mxiyv53yrszivcblgfqz1lrj3e",
+  "fields": {
+    "session_data": "e30:1omEOx:xcaPs-aBsX1FCRj8z4VraRMK3e3YHvl4nTpm7fVX1X4",
+    "expire_date": "2022-11-05T13:18:59.409Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "j2p3447d6s6htww8fjw3ie7y6a1x3one",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe8ya0OQUgou3XsGMsCMRQ2Y0iYa4921STfd_vfe_4Bv1FquxdPrmac3nOQBPC7z6JdGk88JTnCE3RYw3qmsIN2wXKuItcxTDmJVxEabuNREj_Pm7g5GbONaa-eMSlIhalYhDJ0xTJplJJt6EzrsyDKzsU5jYB60VLrvreP4T62B7w8hbz-U:1omcBe:i1AxYVSBd8kRNDVjX_YV1C4MMFZ1p7BYwnepM4nw9Do",
+    "expire_date": "2022-11-06T14:42:50.379Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pnsfqlqa6qxo2shr1qhfg3tgs25zfi43",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHIq-DSfb-BzAAjVQNJaVfGf1eSLnR7zzn3xQLsWwl7z2tYEruwMzv9bgjxkesA6Q711nhsdVsX5EPhB-18bik_r4f7d1Cgl1Fr761MQgJokoiTspayJhGzS8aiApUdEVnnNSDRpIXUxjhP8Zs6y94f-IQ4Vw:1oj4y5:tJmgoeqREKC8eA0-cd_vfXY0vL15X4dcsIPPfojP4IA",
+    "expire_date": "2022-10-27T20:38:13.191Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "psnr0v90tq4vvss91ohe4wv4khrk07xm",
+  "fields": {
+    "session_data": ".eJxVjU0OwiAQhe_C2jTAgHXc2YuQYZimjQ1NBFbGuyumC12-7_09VaBWl9CKPMKa1FU5VKdfGInvkrtD29bxQMx7y3X4Zg67DLePklxXprrueTpaf1MLlaU_RG8Bor_o0aBLxBDnGRjdCGhskhlBizl7JzomGD2gGOOY0UbLgF693tGWO_A:1omiem:qvU9Bx5ugcqswRYAH4J_8XJQas8N2D9hqM3m9sq0Aqs",
+    "expire_date": "2022-11-06T21:37:20.029Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "r4d6cquz0wed0eqnkm3kppeetq1sgaoy",
+  "fields": {
+    "session_data": ".eJxVjM0OgjAQhN-lZ0P6g8vWm7wIaXeX0EhKYtuT8d0Fw0GP883M91JTaHWZWpHnlFjdVI_q8gtjoIfkownreuAuEG0t1-67OevS3fckuSYKNW15PF9_qiWUZfcIO89OawBG7biHefDGohWIzChAiBjparUFQdOzNiSzYRMH8TAYUe8P2tU8YA:1omfT9:muVJY8xnCM8HU6HkCs9KCLh5oXaqpyOPKPtJSD40O3A",
+    "expire_date": "2022-11-06T18:13:07.713Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "sr06i1mfydaetw4ae7ozfdkde2l8t61d",
+  "fields": {
+    "session_data": ".eJxVjEEOgyAQRe_C2hjREai79iJkhJlISjFR6Kbp3avGNHE57_15H4HOzSVl-6YlcCBv6YUhiiGVGKu_LSstYhCyF5WwWPJ0EBv8BkFe4YjuSWk3GOOO67NSH5tTr_V9uyjl4DCHOT3Or0tqwnXaOt7oviXFHbKhUQFrIH9riDpQxjfaNayk5paJPDIwm15Jkgo6cMCdEd8fjOxO8g:1old5v:9Gu2Pn1YHHxStNyY0nQz2cjdOCEIF-CFiGMQ9CIDNe4",
+    "expire_date": "2022-11-03T21:28:51.378Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "y39pw1qj6gbqw1fcki81p4891xpjfki1",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHIq-DSfb-BzAAjVQNJaVfGf1eSLnR7zzn3xQLsWwl7z2tYEruwMzv9bgjxkesA6Q711nhsdVsX5EPhB-18bik_r4f7d1Cgl1Fr761MQgJokoiTspayJhGzS8aiApUdEVnnNSDRpIXUxjhP8Zs6y94f-IQ4Vw:1ojPqI:isw_vwq39RDW3QDCxw62jfu8pDNJFSEm9KH7Ej5373o",
+    "expire_date": "2022-10-28T18:55:34.303Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "yfi8sthy18npt7v8qqtr0sb9x0kz9odq",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHIq-DSfb-BzAAjVQNJaVfGf1eSLnR7zzn3xQLsWwl7z2tYEruwMzv9bgjxkesA6Q711nhsdVsX5EPhB-18bik_r4f7d1Cgl1Fr761MQgJokoiTspayJhGzS8aiApUdEVnnNSDRpIXUxjhP8Zs6y94f-IQ4Vw:1oj59t:dVSnbQSiYmTfNW3nhICVlHIfF4XeHG6qiZOYI2YRaHk",
+    "expire_date": "2022-10-27T20:50:25.106Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "yocs6j634mrht4zriludwe40zbd486ug",
+  "fields": {
+    "session_data": "e30:1oldx5:-TX1ciPBoBhFhF-b-DPLRlZx_7XPYA9UQndMbdtOdj8",
+    "expire_date": "2022-11-03T22:23:47.301Z"
+  }
+},
+{
+  "model": "sites.site",
+  "fields": {
+    "domain": "127.0.0.1:8000",
+    "name": "example.com"
+  }
+},
+{
+  "model": "sites.site",
+  "fields": {
+    "domain": "localhost:8000",
+    "name": "www.example.com"
+  }
+},
+{
+  "model": "sites.site",
+  "fields": {
+    "domain": "http://localhost:8000",
+    "name": "my.example.com"
+  }
+},
+{
+  "model": "ads.guild",
+  "pk": 1,
+  "fields": {
+    "name": "Танки",
+    "description": "Танк (англ. tank) — в компьютерных или настольных ролевых играх — игрок, отвлекающий в бою внимание противника (монстра) на себя, предотвращающий нанесение урона слабозащищённым персонажам (например, магам или лучникам)[1][2][3]. Эта задача, зачастую, решается путём использования специфических умений танка, основанных на искусственном наборе ненависти (держать «агро»)[1][4]. Терминология используется в основном в MMORPG.\r\n\r\nОсновная задача танка: держать на себе монстров и выдерживать получаемый от них урон, в то время как ДД (Damage Dealers) наносят большой урон, а хилеры (Healers) занимаются поддержкой партии.\r\n\r\nОднако такое «однозадачное» поведение было характерно для ранних, примитивных MMORPG. В играх с современной механикой танк не просто стоит на месте и получает урон, а занимаются и другими задачами.\r\n\r\nПравильное позиционирование врагов — боссов и групп мобов — задача именно танка. Он должен ставить их в удобное для всей партии положение, например — отворачивать в сторону боссов с сильной фронтальной атакой, которая бьёт направленно по площади, чтобы ей не накрывало всю группу.\r\n\r\nТакже в задачи танка входит (если это позволяет игромеханика)[5]:\r\n\r\nсбор в одну кучу мобов для удобства их поражения атаками по площади;\r\nконтроль толпы (crowd control) — обездвиживание, замедление, вывод из равновесия;\r\nбафф (buff) — усиление сопартийцев (повышение их здоровья, сопротивляемости урону и др);\r\nналожение на противника дебаффов (debuff), то есть ослабления его атак, снижение его сопротивления и пр.;\r\nиногда — снятие дебаффов с сопартийцев, если хил очень занят другими делами.\r\nДля выполнения этих задач существуют как специальные скиллы класса, так и специальные сеты (наборы экипировки)[4], которые могут в некоторых играх давать бонусы не только одному игроку, но и всей партии.\r\n\r\nКроме того, если это позволяет игромеханика игры, танку нередко полезно уметь подлечивать как минимум себя. Если же речь идёт не о стандартной партии со всеми ролями (танк, хил, несколько ДД), а случайной небольшой группе без хила, то умение массового лечения по площади может быть очень в тему, так как ДД всё развитие направляют в увеличение своего урона.\r\n\r\nКласс назван по аналогии с боевой техникой. Персонаж, имеющий мощную защиту. Глобальная задача танка — прорвать оборону противника и отвлечь на себя его атаку, дав тем самым возможность ДД (от англ. Damage Dealer) (атакующим персонажам) уничтожить противника.\r\n\r\nДля выполнения своих функций «танки» также должны обладать хорошей защитой (defense) и большим запасом здоровья (hit/health points, HP)[2][6].\r\n\r\nВ некоторых играх возможно существование «легких» «evasion-танков». Такой персонаж специализируется на уклонении от атак, и если ему удаётся удерживать внимание монстра на себе в достаточной степени, evasion-танк может быть даже полезнее классического.\r\n\r\nКак правило, в MMORPG в партии требуется один танк, но в некоторых игровых местах для прохождения требуется более десятка игроков, и в таком случае может быть целесообразно включить в состав партии двух танков. В таком случае их роли, как правило, отличаются.\r\n\r\nОсновной танк (мейн-танк, от main tank) выполняет классическую работу: держит на себе босса, принимает урон и выживает там, где ляжет любой другой игрок. Соответственно, его экипировка должна давать ему много здоровья, сопротивляемости урону и т.д.\r\nТанк поддержки (офф-танк, от off-tank) в это время, как правило, собирает на себя оставшихся мобов, чтобы они не атаковали партию. Тактически может быть выгодно сначала убить мобов, затем босса, или наоборот — это решает конкретная ситуация в игре. Такой танк должен экипироваться с учётом поддержки группы, если это возможно.\r\nЕсли основной танк всё же ляжет, задача офф-танка — сагрить босса, пока мейн-танка не воскресят.\r\n\r\nВместе с хилером танк образует ядро стандартной PvE-группы.\r\n\r\nТанки также применяются при ускоренной «прокачке» персонажей низкого уровня, которые в противном случае не выжили бы в бою.",
+    "image": "pics/guilds/troll.png"
+  }
+},
+{
+  "model": "ads.guild",
+  "pk": 2,
+  "fields": {
+    "name": "Хилы",
+    "description": "Видимо, лекари. Или лекарки. Лекарессы?\r\nХил, или лекарь — важный, а часто незаменимый член отряда в любом режиме RAID. Лечение соратников, у которого осталось слишком мало здоровья значительно повышают выживаемость команды. Без ревайвера, который может воскресить павших, наличие хилера часто становится залогом прохождения подземелья или победы на Арене. В этом обзоре рассмотрим лучших лекарей «Рейда», на которых стоит обратить внимание.\r\n\r\n15 место: Синеша\r\nСинеша\r\n\r\nНемного нетипичный хилер — не столько лечит, сколько выравнивает здоровье команды. Аурой поднимает здоровье отряда на 33% в крипте Отступников. «Волна пламени» атакует всех противников. Делает дополнительный удар, если у одной из целей осталось менее половины здоровья. «Испарение» атакует одну цель, ставя на перезарядку небазовые навыки. Союзник с наименьшим здоровьем лечится на четверть максимума НР. «Бессмертие» выравнивает здоровье союзников до уровня члена отряда с наибольшим НР, затем случайному сопартийцу восстанавливыает 10% здоровья. Синеша подходит для фарма всех локаций, кроме Замка Лавового рыцаря.",
+    "image": "pics/guilds/actual_healers.png"
+  }
+},
+{
+  "model": "ads.guild",
+  "pk": 3,
+  "fields": {
+    "name": "ДД",
+    "description": "ДД или дэмэдж дилер (англ. damage dealer) — игрок в компьютерных или настольных ролевых играх, в группе либо индивидуально, наносящий в бою основной урон противникам (\"монстрам\"). Его основной задачей является нанесение максимального урона за минимальное время. По-русски часто именуется просто \"дамагер\", его основной характеристикой является ДПС (с англ. — «DPS», damage per second).[1][2]\r\n\r\nКроме нанесения повреждений на ДД могут возлагаться обязанности наложения на противника ослаблений (т.н. дебаффов, англ. debuff), и использования способностей, временно выводящих противника из боя — эффекты \"крауд контрол\" (англ. crowd control), - к последним, например, относятся замедление (Slow, Entangle — «Lineage 2»), оглушение (Stun Shot — «Lineage 2») или удержание противника на месте путём усыпления (Sleep — «Lineage 2») или связывания (Root — «Lineage 2»).\r\n\r\nИгровые классы, относящиеся к ДД, могут иметь защиту: выше средней (например, воины Тира в «Lineage 2»; Warrior, Paladin, Death Knight — в «World of Warcraft»); среднюю (лучники: Эура — «Lineage 2», Hunter — «World of Warcraft»; разбойники: Одала — «Lineage 2», Rogue — «World of Warcraft»; или Druid в DPS-форме, в том же «WoW») и низкую (магические классы, к примеру, волшебники Фео — «Lineage 2», Mage, Priest, Warlock — «World of Warcraft»), Воин-Физик — Восточная action MMORPG «Metin2»\r\n\r\nДД выполняют свои функции в тесном взаимодействии с танком, целью которого является отвлечение внимания противника на себя. Задача ДД — выждать момент, когда танк наберет достаточное количество ненависти противника (т.н. «аггро», с англ. — «aggression») на себя, таким образом удерживая его (внимание) — после чего можно начать нанесение основного урона, при этом строго следя за тем, чтобы не обратить итоговое внимание противника лично на ДД, т. к. последнее может привести в итоге к уничтожению группы.\r\n\r\nЗачастую ДД, в отличие от других бойцов, необходимо восполнение атакующего ресурса (маны, стрел, других игровых предметов), то есть по затратам он может быть достаточно дорогим персонажем, но есть и персонажи (например, Warrior, Druid, Rogue, Death Knight — «World of Warcraft»), которые используют ярость, энергию или силу рун как ресурс.\r\n\r\nТак же есть два вида ДД — Рдд — Рэндж ДД (англ. range damage dealer), то есть персонажи, которые наносят урон с расстояния, и Мдд — Мили(и) ДД (англ. melee damage dealer), то есть персонажи, которые наносят урон непосредственно стоя у цели.\r\n\r\nВ зависимости от типа группы, такого как ПвЕ\\ПвМ — группа против игрового мира (англ. PvE\\PvM — Party vs Environment\\Party vs Mobs), ПвП — игроки против игроков (англ. PvP — Party vs Party\\Player vs Player) или специализированные виды групп (мини-группа или большая — т. н. Raid - рус. рейд), ДД выполняет различные функции, для которых основными являются мобильность (agility) или скорость персонажа (speed) и высокий урон (damage, DPS).\r\n\r\nЗа счёт высокого урона нескольких ДД группа может обходиться без танка, успевая уничтожать противников на расстоянии или за малый промежуток времени.\r\n\r\nВ большинстве игр ДД делятся на два класса: физический (стрелковый и ближнего боя) и магический урон. Первые в свою очередь разделяются на классы ближнего и дальнего боя, при этом обладая достаточно высокой защитой, а магические персонажи совмещают в себе возможности нанесения урона как с ближней, так и с дальней дистанции, при этом предпочитая не вступать в рукопашную схватку из-за малого запаса здоровья и слабой брони.\r\n\r\nВ отдельно взятой группе наличие ДД не обязательно, поскольку танк при поддержке саппорт-классов (т. н. хилеров — лекарей, с англ. — «healers») и бафферов — персонажей, усиливающих урон или защиту) может самостоятельно справляться с одиночными противниками. Тем не менее, ДД — обязательная часть высокоуровневой группы, сражающейся с превосходящими по уровню, количеству или мощности врагами. Во-первых, наличие ДД значительно сокращает время уничтожения противника, во-вторых, ДД зачастую может наносить урон нескольким противникам сразу, в-третьих, на высоких уровнях мощность противников обычно уже превышает возможности одного персонажа, поэтому необходим сбор группы. В четвёртых, некоторые компьютерные противники обладают энрейнджем — через некоторый промежуток времени после начала боя либо после падения здоровья до определенного уровня их урон резко увеличивается, нередко значительно превышая здоровье самого прочного танка. Соответственно, в бою с такими мобами необходимы ДД.\r\n\r\nВ больших группах при наличии танка, или персонажа, выполняющего его функции, несколько ДД работают вместе «по ассисту» (англ. assist), выбирая следующую цель по его указанию. Обычно для этого существует специальный указатель (навык, умение). Сконцентрировав атаку на одной цели, ДД быстрее уничтожают группу противника, снижая при этом количество повреждений, наносимых при этом танку в единицу времени, таким образом экономя силы лекарей (ману).\r\n\r\nв указаниях классов «Lineage 2» использованы названия четвёртых профессий",
+    "image": "pics/guilds/dd.jpg"
+  }
+},
+{
+  "model": "ads.guild",
+  "pk": 4,
+  "fields": {
+    "name": "Торговцы",
+    "description": "Гильдия Торговцев (англ.Traders Guild) - это нейтральная фракция, которая по большей части занимается торговлей между городами. Они базируются в городах Союзых Городов и интегрированы в их экономику. Их статус позволяет им взаимодействовать с многими другими фракциями по всему континенту, даже между враждующими Союзными Городами и Святой Нацией.\r\nГильдия Торговцев на старте всегда будет нейтральна к фракции игрока, кроме сценария \"Странствующий торговец\", при котором уровень репутации будет равен +75. Если у вас есть открытый магазин рядом или на пути торгового каравана, члены гильдии будут иногда останавливаться для того, чтобы что-нибудь у вас приобрести.\r\n\r\nМногие охранники магазинов, караванов и даже нанятые воины-самураи наняты Гильдией торговцев для защиты своих активов, причем последние особенно развернуты вокруг штаб-квартиры гильдии торговцев в Краю Торговца, де-факто районе города Хэн.",
+    "image": "pics/guilds/traders.jpeg"
+  }
+},
+{
+  "model": "ads.guild",
+  "pk": 5,
+  "fields": {
+    "name": "Гилдмастеры",
+    "description": "На этой неделе мы познакомимся с гильдией Dark Horizon, которые называют себя сильнейшей чехословацкой организацией в Альбионе!\r\n24 ЯНВАРЯ 2017 Г., 18:00 | URZAKEFROSTGARD\r\n\r\n\r\n\r\n\r\nВпервые познакомившись с Mychy и Wolfynko, лидерами Dark Horizon, я сразу понял, что ребята полны энтузиазма по-отношению к своей гильдии и к игре в целом. Вместе мы обсудили причины появления их гильдии - цель стать топовым чехословацким кланом в Albion Online. Приятного чтения!\r\n\r\nВерное решение\r\nDark Horizon была основана игрокам Mychy and Wolfynko через 2 недели после начала финальной беты. До этого лидеры состояли в чешской гильдии Czeco, к которой они присоединились во время первого ЗБТ.\r\n\r\nОба игрока были недовольны организацией Czeco: “Нас расстраивала малая активность гильдии. В клане было множество людей, готовых играть, но лидер гильдии не выказывал поддержки. Таким образом мы топтались на месте. После объявления о том, что пора выдвинуться в черные зоны (хоть гильдия не была готова к этому), мы поговорили с группой игроков о решении гилдмастера. Вскоре после этого, мы решили покинуть Czeco и создать свою гильдию, где важно мнение каждого игрока. В конце концов, более 90% членов Czeco последовали за нами. Так родилась Dark Horizon”.\r\n\r\n\r\n\r\nПоставив цель стать самой сильной чехословацкой гильдией в Albion Online, гильдия Dark Horizon не жалела ресурсов для развития PvP направления. Сейчас гильдия имеет 3 города в красных зонах + 3 окружных территории.\r\n\r\nДруг за друга\r\nЧлены Dark Horizon всегда стараются улучшить свои навыки, но и союз с Bewahrer der Welten оказал неоценимую поддержку. В альянсе Weltenbummler сильно чувство локтя - они постоянно приходят на помощь друг другу, как бы далеко не находились. Mychy делится впечатлениями: “Союз с нашими немецкими друзьями принес много пользы. В первые дни альянс был не так легок на подъем, но командная работа принесла свои плоды: сейчас мы работаем вместе, помогаем друг другу как на GvG, так и при осадах и локальных битвах”.\r\n\r\n\r\n\r\nСражайся за то, что твое по праву\r\nDark Horizon пришли к величию посредством борьбы с двумя гильдиями. Продолжая борьбу, которую начали еще в Czeco, Dark Horizon пришлось столкнуться с другой сильнейшей чехословацкой гильдией Veterans Guild, чтобы подтвердить звание сильнейшей гильдии региона. Конфликт, который начался еще в первой бете, перешел и в финальное тестирование. Дабы подтвердить свое звание, Dark Horizon постоянно нападали на соперников при первой же возможности. Wolfynko объясняет: “Как только мы видели, что кто-то из Veterans Guild покидает город, мы преследовали их, чтобы “раздеть” и  обокрасть… Мы забрали у них все”.\r\n\r\nПлан удался, ведь Veterans Guild убежали в черные зоны: “Не было причин преследовать их - мы победили, и основали базу в Short Wetherford. Мы даже прекратили следить за их передвижениями. Насколько я знаю, они ушли в инактив”.",
+    "image": "pics/guilds/merchants_OHJB1Ki.jpeg"
+  }
+},
+{
+  "model": "ads.guild",
+  "pk": 6,
+  "fields": {
+    "name": "Квестгиверы",
+    "description": "Позволяет взять ежедневное задание на опыт. (Это НЕ квесты! Это просто ежедневные задания на хлам, который можно с умом конвертировать в опыт)\r\nПолучить можно в наборе /kit раз в 22 часа\r\nТак же можно получить через мейкер.\r\nМожно купить в /shop\r\nМожно купить на ауке у игроков\r\nМожно переносить с квантума на руну и обратно.\r\nМожно продавать.\r\n\r\nПри использовании (пкм) открывает меню с доступными заданиями.\r\nkZ_044EClbo.jpg\r\nНикаким другим образом открыть список заданий на лвл нельзя (и не нужно, если у вас нет гивера, взять задание вы не сможете)\r\n\r\nВыбрать можно одно задание из всего списка. Любое.\r\nНужное кол-во гиверов будет изъято из инвентаря игрока. Сколько - написано в описании.\r\nСрок выполнения задания 20 часов, после чего оно автоматически отменяется. Потраченные гиверы обратно не выдаются.\r\nВам нужно успеть сдать задание до окончания срока.\r\nКд на получение задания 20 часов и его можно сбросить сбрасывателем \r\nСбрасыватель убирает только кд на взятие задания, взять повторно одно и тоже задание (если оно активно) нельзя. Можно взять повторно одно и тоже задание, если вы его сдали.\r\n\r\nВ зависимости от сложности задания тратится разное кол-во гиверов. И выдается больше награды.\r\nОписание задания написано на иконке.\r\nТак же, как и то, сколько требуется гиверов.\r\nИ сколько будет выдано награды.\r\n3SEElmP2v0I.jpg\r\n\r\nСписок взятых заданий можно посмотреть по команде /quest\r\nСдать задание ТАМ ЖЕ по той же команде.\r\n(команда взята наобум, если у вас есть предложения по более понятной по этому делу команде - предлагайте - изменить дело 5 секунд)\r\nrKGAl6c5tg8.jpg\r\nВсе взятые вами задания на лвл будут отображены здесь. Как и описание того, что требуется для сдачи и сколько вам будет выдано награды.\r\nЧтобы сдать задание - нажмите на нужную иконку нужного задания. В инвентаре у вас должно быть нужное кол-во лута для завершения задания и свободное место для награды.",
+    "image": "pics/guilds/diggers.jpg"
+  }
+},
+{
+  "model": "ads.guild",
+  "pk": 7,
+  "fields": {
+    "name": "Кузнецы",
+    "description": "У моей зазнобы поселился б я,\r\nЕсли б только б не одно бы,\r\nНе одобрит муж, а муж - кузнец Илья,\r\nУ моей зазнобы.\r\n\r\nНо Илья кует, аж душа поёт,\r\nДни и ночи напролёт.\r\nВсё куёт Илья, им любуюсь я,\r\nРаботящий мужик Илья.\r\nИ пусть куёт Илья, им любуюсь я,\r\nРаботящий мужик Илья.",
+    "image": "pics/guilds/smith.jpeg"
+  }
+},
+{
+  "model": "ads.guild",
+  "pk": 8,
+  "fields": {
+    "name": "Кожевники",
+    "description": "Мнут кожу... Наверное, тоже здоровые мужики",
+    "image": "pics/guilds/leatherer.jpeg"
+  }
+},
+{
+  "model": "ads.guild",
+  "pk": 9,
+  "fields": {
+    "name": "Зельевары",
+    "description": "ельевар: опытный мастер зелий получает +3 балла к вероятности успеха создания сложного зелья или противоядия и +4 балла к вероятности успеха создания зелья легкой / средней сложности.",
+    "image": "pics/guilds/thin.png"
+  }
+},
+{
+  "model": "ads.guild",
+  "pk": 10,
+  "fields": {
+    "name": "Мастера заклинаний",
+    "description": "Мастер заклинаний: мощный старик с большой харизмой",
+    "image": "pics/guilds/sorcerer.png"
+  }
+},
+{
+  "model": "ads.tag",
+  "pk": 1,
+  "fields": {
+    "name": "куплю",
+    "ads": []
+  }
+},
+{
+  "model": "ads.tag",
+  "pk": 3,
+  "fields": {
+    "name": "продам",
+    "ads": []
+  }
+},
+{
+  "model": "ads.tag",
+  "pk": 4,
+  "fields": {
+    "name": "меняю",
+    "ads": []
+  }
+},
+{
+  "model": "ads.tag",
+  "pk": 5,
+  "fields": {
+    "name": "ищу игрока",
+    "ads": []
+  }
+},
+{
+  "model": "ads.tag",
+  "pk": 6,
+  "fields": {
+    "name": "ищу тренера",
+    "ads": []
+  }
+},
+{
+  "model": "ads.tag",
+  "pk": 7,
+  "fields": {
+    "name": "ищу команду",
+    "ads": []
+  }
+},
+{
+  "model": "ads.tag",
+  "pk": 8,
+  "fields": {
+    "name": "ищу тиммейта",
+    "ads": []
+  }
+},
+{
+  "model": "socialaccount.socialapp",
+  "pk": 1,
+  "fields": {
+    "provider": "google",
+    "provider_id": "",
+    "name": "Witebord",
+    "client_id": "161608975899-df963q8k50s1l270up6gr1ka2c66ogrq.apps.googleusercontent.com",
+    "secret": "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",
+    "key": "",
+    "settings": {},
+    "sites": [
+      [
+        "127.0.0.1:8000"
+      ],
+      [
+        "localhost:8000"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add user",
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change user",
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete user",
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view user",
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Гильдия",
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "codename": "add_guild"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Гильдия",
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "codename": "change_guild"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Гильдия",
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "codename": "delete_guild"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Гильдия",
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "codename": "view_guild"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Объявление",
+    "content_type": [
+      "ads",
+      "ad"
+    ],
+    "codename": "add_ad"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Объявление",
+    "content_type": [
+      "ads",
+      "ad"
+    ],
+    "codename": "change_ad"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Объявление",
+    "content_type": [
+      "ads",
+      "ad"
+    ],
+    "codename": "delete_ad"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Объявление",
+    "content_type": [
+      "ads",
+      "ad"
+    ],
+    "codename": "view_ad"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Метка",
+    "content_type": [
+      "ads",
+      "tag"
+    ],
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Метка",
+    "content_type": [
+      "ads",
+      "tag"
+    ],
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Метка",
+    "content_type": [
+      "ads",
+      "tag"
+    ],
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Метка",
+    "content_type": [
+      "ads",
+      "tag"
+    ],
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add Отклик",
+    "content_type": [
+      "ads",
+      "reply"
+    ],
+    "codename": "add_reply"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change Отклик",
+    "content_type": [
+      "ads",
+      "reply"
+    ],
+    "codename": "change_reply"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete Отклик",
+    "content_type": [
+      "ads",
+      "reply"
+    ],
+    "codename": "delete_reply"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view Отклик",
+    "content_type": [
+      "ads",
+      "reply"
+    ],
+    "codename": "view_reply"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add email address",
+    "content_type": [
+      "account",
+      "emailaddress"
+    ],
+    "codename": "add_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change email address",
+    "content_type": [
+      "account",
+      "emailaddress"
+    ],
+    "codename": "change_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete email address",
+    "content_type": [
+      "account",
+      "emailaddress"
+    ],
+    "codename": "delete_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view email address",
+    "content_type": [
+      "account",
+      "emailaddress"
+    ],
+    "codename": "view_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add email confirmation",
+    "content_type": [
+      "account",
+      "emailconfirmation"
+    ],
+    "codename": "add_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change email confirmation",
+    "content_type": [
+      "account",
+      "emailconfirmation"
+    ],
+    "codename": "change_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete email confirmation",
+    "content_type": [
+      "account",
+      "emailconfirmation"
+    ],
+    "codename": "delete_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view email confirmation",
+    "content_type": [
+      "account",
+      "emailconfirmation"
+    ],
+    "codename": "view_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add social account",
+    "content_type": [
+      "socialaccount",
+      "socialaccount"
+    ],
+    "codename": "add_socialaccount"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change social account",
+    "content_type": [
+      "socialaccount",
+      "socialaccount"
+    ],
+    "codename": "change_socialaccount"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete social account",
+    "content_type": [
+      "socialaccount",
+      "socialaccount"
+    ],
+    "codename": "delete_socialaccount"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view social account",
+    "content_type": [
+      "socialaccount",
+      "socialaccount"
+    ],
+    "codename": "view_socialaccount"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add social application",
+    "content_type": [
+      "socialaccount",
+      "socialapp"
+    ],
+    "codename": "add_socialapp"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change social application",
+    "content_type": [
+      "socialaccount",
+      "socialapp"
+    ],
+    "codename": "change_socialapp"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete social application",
+    "content_type": [
+      "socialaccount",
+      "socialapp"
+    ],
+    "codename": "delete_socialapp"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view social application",
+    "content_type": [
+      "socialaccount",
+      "socialapp"
+    ],
+    "codename": "view_socialapp"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add social application token",
+    "content_type": [
+      "socialaccount",
+      "socialtoken"
+    ],
+    "codename": "add_socialtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change social application token",
+    "content_type": [
+      "socialaccount",
+      "socialtoken"
+    ],
+    "codename": "change_socialtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete social application token",
+    "content_type": [
+      "socialaccount",
+      "socialtoken"
+    ],
+    "codename": "delete_socialtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view social application token",
+    "content_type": [
+      "socialaccount",
+      "socialtoken"
+    ],
+    "codename": "view_socialtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add site",
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change site",
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete site",
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view site",
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "codename": "view_site"
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$600000$mIqutKoQnykAgGhPd97B42$FfYR++tfKBxQjGLIyCl62m4rsZY6JV+pPpMrJgK+8Lg=",
+    "last_login": "2024-10-04T20:52:37.171Z",
+    "is_superuser": true,
+    "username": "alex",
+    "first_name": "",
+    "last_name": "",
+    "email": "alex.artamonov2010@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-10-13T20:37:39Z",
+    "guild": 5,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "qwaszxqw",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "test_user0",
+    "first_name": "test",
+    "last_name": "user0",
+    "email": "test_user@nomail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-15T20:30:29Z",
+    "guild": 4,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "JTristan",
+    "first_name": "Joel",
+    "last_name": "Tristan",
+    "email": "joel.tristan@pear.biz",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:02:44.778Z",
+    "guild": 1,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "VMarcel",
+    "first_name": "Vance",
+    "last_name": "Marcel",
+    "email": "vance.marcel@pear.biz",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:03:00.841Z",
+    "guild": 3,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "ZOtto",
+    "first_name": "Zaiden",
+    "last_name": "Otto",
+    "email": "zaiden.otto@lemon.by",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:07:16.535Z",
+    "guild": 3,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "SAtharv",
+    "first_name": "Silas",
+    "last_name": "Atharv",
+    "email": "silas.atharv@orange.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:08:23.125Z",
+    "guild": 2,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "BIsmael",
+    "first_name": "Blake",
+    "last_name": "Ismael",
+    "email": "blake.ismael@cabbage.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:12:17.388Z",
+    "guild": 6,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "RAlaric",
+    "first_name": "Ricky",
+    "last_name": "Alaric",
+    "email": "ricky.alaric@apple.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:13:34.609Z",
+    "guild": 3,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "KJustice",
+    "first_name": "Kane",
+    "last_name": "Justice",
+    "email": "kane.justice@lemon.by",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:13:34.678Z",
+    "guild": 7,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "CNehemiah",
+    "first_name": "Cillian",
+    "last_name": "Nehemiah",
+    "email": "cillian.nehemiah@lemon.by",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:13:34.745Z",
+    "guild": 1,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "ACasen",
+    "first_name": "Ahmir",
+    "last_name": "Casen",
+    "email": "ahmir.casen@orange.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:13:34.811Z",
+    "guild": 10,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "ZBrodie",
+    "first_name": "Zavier",
+    "last_name": "Brodie",
+    "email": "zavier.brodie@orange.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:13:34.878Z",
+    "guild": 7,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "GJalen",
+    "first_name": "Grey",
+    "last_name": "Jalen",
+    "email": "grey.jalen@orange.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:15:01.140Z",
+    "guild": 2,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "JArcher",
+    "first_name": "Jon",
+    "last_name": "Archer",
+    "email": "jon.archer@lemon.by",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:15:01.225Z",
+    "guild": 4,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "MMathias",
+    "first_name": "Mordechai",
+    "last_name": "Mathias",
+    "email": "mordechai.mathias@apple.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:15:01.293Z",
+    "guild": 3,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "MBryson",
+    "first_name": "Matthias",
+    "last_name": "Bryson",
+    "email": "matthias.bryson@pear.biz",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:15:01.359Z",
+    "guild": 8,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "SRex",
+    "first_name": "Salvador",
+    "last_name": "Rex",
+    "email": "salvador.rex@orange.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:15:01.426Z",
+    "guild": 8,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "MAlonso",
+    "first_name": "Mohammad",
+    "last_name": "Alonso",
+    "email": "mohammad.alonso@lemon.by",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:15:01.509Z",
+    "guild": 7,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "ZAbraham",
+    "first_name": "Zechariah",
+    "last_name": "Abraham",
+    "email": "zechariah.abraham@pear.biz",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:15:01.576Z",
+    "guild": 9,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "KAtlas",
+    "first_name": "Kaiden",
+    "last_name": "Atlas",
+    "email": "kaiden.atlas@pear.biz",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:15:01.643Z",
+    "guild": 4,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "SAnder",
+    "first_name": "Samson",
+    "last_name": "Ander",
+    "email": "samson.ander@lemon.by",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:15:01.709Z",
+    "guild": 3,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "BKareem",
+    "first_name": "Bode",
+    "last_name": "Kareem",
+    "email": "bode.kareem@apple.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:15:01.759Z",
+    "guild": 1,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "AJoe",
+    "first_name": "Amias",
+    "last_name": "Joe",
+    "email": "amias.joe@pear.biz",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:15:01.826Z",
+    "guild": 7,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "JAdrien",
+    "first_name": "Jedidiah",
+    "last_name": "Adrien",
+    "email": "jedidiah.adrien@lemon.by",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:15:01.893Z",
+    "guild": 7,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "LMichael",
+    "first_name": "Layne",
+    "last_name": "Michael",
+    "email": "layne.michael@cabbage.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:15:01.959Z",
+    "guild": 9,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "AWarren",
+    "first_name": "Ander",
+    "last_name": "Warren",
+    "email": "ander.warren@orange.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:15:02.043Z",
+    "guild": 3,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "HColeson",
+    "first_name": "Hamza",
+    "last_name": "Coleson",
+    "email": "hamza.coleson@pear.biz",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-18T20:15:02.109Z",
+    "guild": 8,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$e1IVhf4lmDD12hUXijLwWB$u3MmBZRqJgM9ojk95ZgEvo7qK+JdMEhJbso4VTALulE=",
+    "last_login": "2022-10-23T20:43:38.058Z",
+    "is_superuser": false,
+    "username": "viktor",
+    "first_name": "",
+    "last_name": "",
+    "email": "viktor.bolshev@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-23T18:12:58.636Z",
+    "guild": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "!jHC6k0n4yD6KfSEQvu9EH6bO1b4FbVgB6p37n5cy",
+    "last_login": "2022-10-23T21:37:19.724Z",
+    "is_superuser": false,
+    "username": "martin",
+    "first_name": "Martin",
+    "last_name": "Kovshov",
+    "email": "martin.kovshov@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-10-23T21:35:24.701Z",
+    "guild": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2022-10-15T20:27:12.918Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "ad"
+    ],
+    "object_id": "1",
+    "object_repr": "self.title='Первая попытка'",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2022-10-15T20:31:51.634Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "test_user0",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2022-10-15T20:47:25.423Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "ad"
+    ],
+    "object_id": "2",
+    "object_repr": "self.title='Вторая попытка'",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2022-10-15T22:37:33.030Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "ad"
+    ],
+    "object_id": "1",
+    "object_repr": "self.title='Первая попытка'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Media content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2022-10-15T23:08:28.733Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "ad"
+    ],
+    "object_id": "2",
+    "object_repr": "self.title='Вторая попытка'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Media content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2022-10-15T23:09:28.584Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "ad"
+    ],
+    "object_id": "3",
+    "object_repr": "self.title='Попытка №2'",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2022-10-15T23:38:53.905Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "ad"
+    ],
+    "object_id": "2",
+    "object_repr": "self.title='Вторая попытка'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Media content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2022-10-15T23:39:13.124Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "ad"
+    ],
+    "object_id": "2",
+    "object_repr": "self.title='Вторая попытка'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Media content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2022-10-16T09:23:06.013Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "ad"
+    ],
+    "object_id": "4",
+    "object_repr": "self.title='Забыл добавить автора в модель Объявление'",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2022-10-16T11:37:31.636Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "tag"
+    ],
+    "object_id": "2",
+    "object_repr": "продам",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2022-10-16T12:24:19.780Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "test_user0",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Guild\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2022-10-16T12:25:00.641Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "1",
+    "object_repr": "alex",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Guild\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2022-10-16T14:00:19.524Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "10",
+    "object_repr": "Мастера заклинаний",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2022-10-16T14:00:24.130Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "10",
+    "object_repr": "Мастера заклинаний",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2022-10-16T14:00:29.314Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "10",
+    "object_repr": "Мастера заклинаний",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2022-10-16T14:00:47.119Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "10",
+    "object_repr": "Мастера заклинаний",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2022-10-16T15:01:11.190Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "9",
+    "object_repr": "Зельевары",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\", \"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2022-10-16T15:02:00.425Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "1",
+    "object_repr": "Танки",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\", \"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2022-10-16T15:03:52.271Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "8",
+    "object_repr": "Кожевники",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\", \"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2022-10-16T15:05:59.469Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "8",
+    "object_repr": "Кожевники",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2022-10-16T15:08:30.954Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "7",
+    "object_repr": "Кузнецы",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\", \"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2022-10-16T15:12:22.423Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "4",
+    "object_repr": "Торговцы",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\", \"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2022-10-16T15:16:54.022Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "2",
+    "object_repr": "Хилы",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\", \"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2022-10-16T15:18:05.954Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "2",
+    "object_repr": "Хилы",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2022-10-16T15:19:14.579Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "2",
+    "object_repr": "Хилы",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2022-10-16T15:21:27.399Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "4",
+    "object_repr": "Торговцы",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2022-10-16T16:00:14.041Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "6",
+    "object_repr": "Квестгиверы",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\", \"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2022-10-16T16:01:27.028Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "6",
+    "object_repr": "Квестгиверы",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2022-10-16T16:04:38.622Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "5",
+    "object_repr": "Гилдмастеры",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\", \"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2022-10-16T16:06:48.915Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "3",
+    "object_repr": "ДД",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\", \"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2022-10-18T16:34:31.081Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "1",
+    "object_repr": "Танки",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2022-10-18T16:39:07.982Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "guild"
+    ],
+    "object_id": "9",
+    "object_repr": "Зельевары",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2022-10-19T18:05:11.897Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "tag"
+    ],
+    "object_id": "5",
+    "object_repr": "ищу игрока",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2022-10-19T18:05:29.280Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "tag"
+    ],
+    "object_id": "6",
+    "object_repr": "ищу тренера",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2022-10-19T18:05:50.486Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "tag"
+    ],
+    "object_id": "7",
+    "object_repr": "ищу команду",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2022-10-19T18:06:04.075Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "tag"
+    ],
+    "object_id": "8",
+    "object_repr": "ищу тимейта",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2022-10-19T18:06:39.269Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "tag"
+    ],
+    "object_id": "8",
+    "object_repr": "ищу тиммейта",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0435\\u0442\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2022-10-19T20:45:21.171Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "object_id": "1",
+    "object_repr": "127.0.0.1:8000",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Domain name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2022-10-19T20:45:40.850Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "object_id": "2",
+    "object_repr": "localhost:8000",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2022-10-19T21:16:11.894Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "31",
+    "object_repr": "alex1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2022-10-19T21:16:11.986Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "30",
+    "object_repr": "martin",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2022-10-19T21:16:12.060Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "29",
+    "object_repr": "some_guy1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2022-10-19T21:16:12.135Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "28",
+    "object_repr": "some_guy",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2022-10-19T21:17:14.083Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "32",
+    "object_repr": "alex1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2022-10-20T20:57:26.937Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "33",
+    "object_repr": "martin",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2022-10-20T21:01:07.392Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "34",
+    "object_repr": "martin",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2022-10-20T21:04:25.540Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "35",
+    "object_repr": "martin",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2022-10-20T21:19:26.247Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "36",
+    "object_repr": "martin",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2022-10-20T21:22:06.270Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "37",
+    "object_repr": "martin",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2022-10-20T21:24:47.597Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "38",
+    "object_repr": "martin",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2022-10-20T21:27:20.082Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "39",
+    "object_repr": "martin",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2022-10-20T21:28:36.847Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "40",
+    "object_repr": "martin",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2022-10-21T19:00:14.418Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "reply"
+    ],
+    "object_id": "1",
+    "object_repr": "Reply object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2022-10-21T19:00:38.296Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "reply"
+    ],
+    "object_id": "2",
+    "object_repr": "Reply object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2022-10-21T19:00:57.822Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "reply"
+    ],
+    "object_id": "3",
+    "object_repr": "Reply object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2022-10-21T19:07:43.253Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "reply"
+    ],
+    "object_id": "4",
+    "object_repr": "Reply object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2022-10-21T19:07:51.311Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "reply"
+    ],
+    "object_id": "5",
+    "object_repr": "Reply object (5)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2022-10-21T19:07:58.904Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "reply"
+    ],
+    "object_id": "6",
+    "object_repr": "Reply object (6)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2022-10-23T11:17:43.462Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "42",
+    "object_repr": "viktor",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2022-10-23T11:17:43.573Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "41",
+    "object_repr": "martin",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2022-10-23T15:48:50.797Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "1",
+    "object_repr": "alex",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2022-10-23T15:51:36.884Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "ads",
+      "ad"
+    ],
+    "object_id": "50",
+    "object_repr": "self.title='тест create ad 2'",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Media content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2022-10-23T17:52:41.686Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "43",
+    "object_repr": "viktor",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2022-10-23T18:00:24.268Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "44",
+    "object_repr": "viktor",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2022-10-23T18:08:58.810Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "45",
+    "object_repr": "viktor",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2022-10-23T18:10:56.478Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "46",
+    "object_repr": "viktor",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2022-10-23T18:12:46.821Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "47",
+    "object_repr": "viktor",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2022-10-23T20:52:06.834Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "object_id": "1",
+    "object_repr": "alex",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Last name\", \"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2022-10-23T21:33:08.344Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "object_id": "3",
+    "object_repr": "http://localhost:8000",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2022-10-23T21:33:58.889Z",
+    "user": [
+      "alex"
+    ],
+    "content_type": [
+      "socialaccount",
+      "socialapp"
+    ],
+    "object_id": "1",
+    "object_repr": "Witebord",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 21,
+  "fields": {
+    "user": [
+      "viktor"
+    ],
+    "email": "viktor.bolshev@gmail.com",
+    "verified": true,
+    "primary": true
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 22,
+  "fields": {
+    "user": [
+      "alex"
+    ],
+    "email": "alex.artamonov2010@gmail.com",
+    "verified": true,
+    "primary": true
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 23,
+  "fields": {
+    "user": [
+      "martin"
+    ],
+    "email": "martin.kovshov@gmail.com",
+    "verified": true,
+    "primary": true
+  }
+},
+{
+  "model": "socialaccount.socialaccount",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "martin"
+    ],
+    "provider": "google",
+    "uid": "105369095849539122140",
+    "last_login": "2022-10-23T21:37:17.575Z",
+    "date_joined": "2022-10-23T21:35:24.959Z",
+    "extra_data": {
+      "id": "105369095849539122140",
+      "email": "martin.kovshov@gmail.com",
+      "verified_email": true,
+      "name": "Martin Kovshov",
+      "given_name": "Martin",
+      "family_name": "Kovshov",
+      "picture": "https://lh3.googleusercontent.com/a/ALm5wu28YLyHGkb2KdbY5-Hret3pzhctN6t-VxJQhat_=s96-c",
+      "locale": "ru"
+    }
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 1,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "title": "Первая попытка",
+    "content": "тестовое объявление № 0",
+    "media_content": "pics/2022/10/16/logo.png",
+    "created_at": "2022-10-15T20:27:12.915Z",
+    "updated_at": "2022-10-23T09:57:04.533Z",
+    "guild": 9
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 2,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "title": "Вторая попытка",
+    "content": "Первая попытка удалась.. Вторая вызвала ошибку \"Обязательное поле, choose file, no file chosen\"",
+    "media_content": "pics/2022/10/16/random_park_Vb9MWNa.jpg",
+    "created_at": "2022-10-15T20:47:25.419Z",
+    "updated_at": "2022-10-23T09:57:04.457Z",
+    "guild": 5
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 3,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "title": "Попытка №2",
+    "content": "Не удается вывести на страницу загруженные картинки.",
+    "media_content": "",
+    "created_at": "2022-10-15T23:09:28.581Z",
+    "updated_at": "2022-10-23T09:57:04.385Z",
+    "guild": 9
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 4,
+  "fields": {
+    "author": [
+      "test_user0"
+    ],
+    "title": "Забыл добавить автора в модель Объявление",
+    "content": "Bacon ipsum dolor amet t-bone jowl pork chop, rump salami chicken swine drumstick ribeye cupim cow bacon. Venison prosciutto porchetta andouille doner short loin pork chop landjaeger filet mignon ham corned beef bresaola tongue beef ribs. Strip steak bresaola prosciutto, drumstick shank frankfurter sirloin spare ribs t-bone porchetta pork beef ribs ball tip. Landjaeger capicola pig ground round, pork loin venison sausage drumstick boudin. Cupim chuck shoulder, burgdoggen bresaola strip steak pork frankfurter. T-bone salami pork belly short ribs. Venison jerky short loin tail ground round.\r\n\r\nBiltong prosciutto ribeye ground round alcatra turducken kevin short loin. Fatback meatball tri-tip, pork belly jerky jowl doner burgdoggen ribeye pork prosciutto cupim landjaeger. Meatloaf turducken flank, fatback ground round tail strip steak swine sausage hamburger shankle beef ribs porchetta ham hock. Ham hock ground round short loin turducken, pork loin buffalo sausage corned beef tongue doner chuck. Beef ribs picanha kevin flank frankfurter ball tip, short loin pork chop biltong.",
+    "media_content": "pics/2022/10/16/swine.jpg",
+    "created_at": "2022-10-16T09:23:06.012Z",
+    "updated_at": "2022-10-23T09:57:04.301Z",
+    "guild": 7
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 5,
+  "fields": {
+    "author": [
+      "KJustice"
+    ],
+    "title": "Святъславли. падеся и грозный",
+    "content": "Жены Руския въсплакашась аркучи: уже нам своих милых лад ни мыслию смыслити, ни думою сдумати, ни очима съглядати, а злата и сребра ни мало того потрепати. А въстона бо, братие, Киев тугою, а Чернигов напастьми; тоска разлияся по Руской земли; печаль жирна тече средь земли Рускый; а Князи сами на себе крамолу коваху; а погании сами победами нарищуще на Рускую землю, емляху дань по беле от двора. Тии бо два храбрая Святъславлича, Игорь и Всеволод уже лжу убуди, которую то бяше успил отец их Святъславь грозный Великый Киевскый. Грозою бяшеть; притрепетал своими сильными плъкы и харалужными мечи; наступи на землю Половецкую; притопта хлъми и яругы; взмути реки и озеры; иссуши потоки и болота, а поганаго Кобяка из луку моря от железных великих плъков Половецких, яко вихр выторже: и падеся Кобяк в граде Киеве, в гриднице Святъславли. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:05.382Z",
+    "updated_at": "2022-10-23T09:57:04.199Z",
+    "guild": 7
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 6,
+  "fields": {
+    "author": [
+      "KAtlas"
+    ],
+    "title": "Ut pulvinar vitae",
+    "content": "Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Tellus elementum sagittis vitae et leo. Semper quis lectus nulla at. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Hendrerit dolor magna eget est lorem ipsum dolor. Aliquet enim tortor at auctor urna nunc id. Ipsum faucibus vitae aliquet nec. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nisl condimentum id venenatis a condimentum. Eu lobortis elementum nibh tellus molestie nunc. In cursus turpis massa tincidunt dui ut ornare lectus. Fermentum iaculis eu non diam phasellus. Fames ac turpis egestas sed. Pretium fusce id velit ut tortor. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Ut placerat orci nulla pellentesque dignissim enim sit. Sit amet justo donec enim diam vulputate. Diam sit amet nisl suscipit. Non consectetur a erat nam at lectus urna duis.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:10.457Z",
+    "updated_at": "2022-10-23T09:57:04.104Z",
+    "guild": 2
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 7,
+  "fields": {
+    "author": [
+      "AWarren"
+    ],
+    "title": "Contagium. perhsaps zom carne",
+    "content": "In Craven omni memoria patriae zombieland clairvius narcisse religionis sunt diri undead historiarum. Golums, zombies unrelenting et Raimi fascinati beheading. Maleficia! Vel cemetery man a modern bursting eyeballs perhsaps morbi. A terrenti flesh contagium. Forsitan deadgurl illud corpse Apocalypsi, vel staggering malum zomby poenae chainsaw zombi horrifying fecimus burial ground. Indeflexus shotgun coup de poudre monstra per plateas currere. Fit de decay nostra carne undead. Poenitentiam violent zom biehig hway agite RE:dead pœnitentiam! Vivens mortua sunt apud nos night of the living dead.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:12.490Z",
+    "updated_at": "2022-10-23T09:57:04.016Z",
+    "guild": 3
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 8,
+  "fields": {
+    "author": [
+      "BIsmael"
+    ],
+    "title": "Left terror",
+    "content": "Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:14.426Z",
+    "updated_at": "2022-10-23T09:57:03.925Z",
+    "guild": 1
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 9,
+  "fields": {
+    "author": [
+      "RAlaric"
+    ],
+    "title": "Sapien id tortor",
+    "content": "Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Tellus elementum sagittis vitae et leo. Semper quis lectus nulla at. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Hendrerit dolor magna eget est lorem ipsum dolor. Aliquet enim tortor at auctor urna nunc id. Ipsum faucibus vitae aliquet nec. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nisl condimentum id venenatis a condimentum. Eu lobortis elementum nibh tellus molestie nunc. In cursus turpis massa tincidunt dui ut ornare lectus. Fermentum iaculis eu non diam phasellus. Fames ac turpis egestas sed. Pretium fusce id velit ut tortor. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Ut placerat orci nulla pellentesque dignissim enim sit. Sit amet justo donec enim diam vulputate. Diam sit amet nisl suscipit. Non consectetur a erat nam at lectus urna duis.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:39.800Z",
+    "updated_at": "2022-10-23T09:57:03.812Z",
+    "guild": 2
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 10,
+  "fields": {
+    "author": [
+      "JArcher"
+    ],
+    "title": "Ullamcorper. feugiat",
+    "content": "Donec adipiscing tristique risus nec feugiat in fermentum posuere. Pretium lectus quam id leo in vitae turpis massa. Sem viverra aliquet eget sit. Risus sed vulputate odio ut enim blandit volutpat maecenas. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Pulvinar elementum integer enim neque. Sem viverra aliquet eget sit. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Vitae tortor condimentum lacinia quis. Consectetur a erat nam at. Ipsum faucibus vitae aliquet nec. Metus vulputate eu scelerisque felis imperdiet proin fermentum. Imperdiet dui accumsan sit amet nulla facilisi. Feugiat in ante metus dictum at tempor commodo ullamcorper.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:39.874Z",
+    "updated_at": "2022-10-23T09:57:03.728Z",
+    "guild": 9
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 11,
+  "fields": {
+    "author": [
+      "JArcher"
+    ],
+    "title": "Back missing sagittis darkness",
+    "content": "Lucio fulci tremor est dark vivos magna. Expansis creepy arm yof darkness ulnis witchcraft missing carnem armis Kirkman Moore and Adlard caeruleum in locis. Romero morbo Congress amarus in auras. Nihil horum sagittis tincidunt, zombie slack-jawed gelida survival portenta. The unleashed virus est, et iam zombie mortui ambulabunt super terram. Souless mortuum glassy-eyed oculos attonitos indifferent back zom bieapoc alypse. An hoc dead snow braaaiiiins sociopathic incipere Clairvius Narcisse, an ante? Is bello mundi z?",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:39.979Z",
+    "updated_at": "2022-10-23T09:57:03.645Z",
+    "guild": 2
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 12,
+  "fields": {
+    "author": [
+      "RAlaric"
+    ],
+    "title": "Потручяти ту",
+    "content": "Другаго дни велми рано кровавыя зори свет поведают; чръныя тучя съморя идут, хотят прикрыти д̃ солнца: а в них трепещуть синии млънии, быти грому великому, итти дождю стрелами с Дону великаго: ту ся копием приламати, ту ся саблям потручяти о шеломы Половецкыя, на реце на Каяле, у Дону великаго. О Руская земле! уже не Шеломянем еси. Се ветри, Стрибожи внуци, веют съморя стрелами на храбрыя плъкы Игоревы! земля тутнет, рекы мутно текуть; пороси поля прикрывают; стязи глаголют, Половци идуть от Дона, и от моря, и от всех стран. Рускыя плъкы отступиша. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:40.048Z",
+    "updated_at": "2022-10-23T09:57:03.558Z",
+    "guild": 2
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 13,
+  "fields": {
+    "author": [
+      "ZOtto"
+    ],
+    "title": "Curabitur. sapien molestie",
+    "content": "Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Tellus elementum sagittis vitae et leo. Semper quis lectus nulla at. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Hendrerit dolor magna eget est lorem ipsum dolor. Aliquet enim tortor at auctor urna nunc id. Ipsum faucibus vitae aliquet nec. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nisl condimentum id venenatis a condimentum. Eu lobortis elementum nibh tellus molestie nunc. In cursus turpis massa tincidunt dui ut ornare lectus. Fermentum iaculis eu non diam phasellus. Fames ac turpis egestas sed. Pretium fusce id velit ut tortor. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Ut placerat orci nulla pellentesque dignissim enim sit. Sit amet justo donec enim diam vulputate. Diam sit amet nisl suscipit. Non consectetur a erat nam at lectus urna duis.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:40.123Z",
+    "updated_at": "2022-10-23T09:57:03.475Z",
+    "guild": 8
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 14,
+  "fields": {
+    "author": [
+      "BIsmael"
+    ],
+    "title": "Млъвит гнезду сокольца, дятлове",
+    "content": "Тогда врани не граахуть, галици помлъкоша, сорокы не троскоташа, полозию ползоша только, дятлове тектом путь к реце кажут, соловии веселыми песьми свет поведают. Млъвит Гзак Кончакови: аже сокол к гнезду летит, соколича ростреляеве своими злачеными стрелами. Рече Кончак ко Гзе: аже сокол к гнезду летит, а ве соколца опутаеве красною дивицею. И рече Гзак к Кончакови: аще его опутаеве красною девицею, ни нама будет сокольца, ни нама красны девице, то почнут наю птици бити в поле Половецком.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:40.199Z",
+    "updated_at": "2022-10-23T09:57:03.391Z",
+    "guild": 5
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 15,
+  "fields": {
+    "author": [
+      "AJoe"
+    ],
+    "title": "Начашя всякыми хорюговь,",
+    "content": "С зарания в пятк потопташа поганыя плъкы Половецкыя; и рассушясь стрелами по полю, помчаша красныя девкы Половецкыя, а с ними злато, и паволокы, и драгыя оксамиты; орьтъмами и япончицами, и кожухы начашя мосты мостити по болотом и грязивым местом, и всякыми узорочьи Половецкыми. Чрьлен стяг, бела хорюговь, чрьлена чолка, сребрено стружие храброму Святьславличю. Дремлет в поле Ольгово хороброе гнездо далече залетело; небылон обиде порождено, ни соколу, ни кречету, ни тебе чръный ворон, поганый Половчине. Гзак бежит серым влъком; Кончак ему след править к Дону великому.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:40.298Z",
+    "updated_at": "2022-10-23T09:57:03.305Z",
+    "guild": 1
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 16,
+  "fields": {
+    "author": [
+      "JAdrien"
+    ],
+    "title": "Golums, decay",
+    "content": "In Craven omni memoria patriae zombieland clairvius narcisse religionis sunt diri undead historiarum. Golums, zombies unrelenting et Raimi fascinati beheading. Maleficia! Vel cemetery man a modern bursting eyeballs perhsaps morbi. A terrenti flesh contagium. Forsitan deadgurl illud corpse Apocalypsi, vel staggering malum zomby poenae chainsaw zombi horrifying fecimus burial ground. Indeflexus shotgun coup de poudre monstra per plateas currere. Fit de decay nostra carne undead. Poenitentiam violent zom biehig hway agite RE:dead pœnitentiam! Vivens mortua sunt apud nos night of the living dead.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:40.373Z",
+    "updated_at": "2022-10-23T09:57:03.204Z",
+    "guild": 6
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 17,
+  "fields": {
+    "author": [
+      "test_user0"
+    ],
+    "title": "Бояне, стоять",
+    "content": "Спала Князю умь похоти, и жалость ему знамение заступи, искусити Дону великаго. Хощу бо, рече, копие приломити конець поля Половецкаго с вами Русици, хощу главу свою приложити, а любо испити шеломомь Дону. О Бояне, соловию стараго времени! абы ты сиа плъкы ущекотал, скача славию по мыслену древу, летая умом под облакы, свивая славы оба полы сего времени, рища в тропу Трояню чрес поля на горы. Пети было песь Игореви, того (Олга) внуку. Не буря соколы занесе чрез поля широкая; галици стады бежать к дону великому; чили въспети было вещей Бояне, Велесовь внуче! Комони ржуть за Сулою; звенить слава в Кыеве; трубы трубять в Новеграде; стоять стязи в Путивле; Игорь ждет мила брата Всеволода. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:40.457Z",
+    "updated_at": "2022-10-23T09:57:03.112Z",
+    "guild": 3
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 18,
+  "fields": {
+    "author": [
+      "VMarcel"
+    ],
+    "title": "Pale, kingdead. avium,",
+    "content": "Whyt zomby Ut fames after death cerebro virus enim carnis grusome, viscera et organa viventium. Sicut spargit virus ad impetum, qui supersumus flesh eating. Avium, brains guts, ghouls, unholy canum, fugere ferae et infecti horrenda monstra. Videmus twenty-eight deformis pale, horrenda daemonum. Panduntur brains portae rotting inferi. Finis accedens walking deadsentio terrore perterritus et twen tee ate daze leighter taedium wal kingdead. The horror, monstra epidemic significant finem. Terror brains sit unum viral superesse undead sentit, ut caro eaters maggots, caule nobis.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:40.566Z",
+    "updated_at": "2022-10-23T09:57:03.020Z",
+    "guild": 4
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 19,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "title": "Elementum duis. tortor ac",
+    "content": "Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Tellus elementum sagittis vitae et leo. Semper quis lectus nulla at. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Hendrerit dolor magna eget est lorem ipsum dolor. Aliquet enim tortor at auctor urna nunc id. Ipsum faucibus vitae aliquet nec. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nisl condimentum id venenatis a condimentum. Eu lobortis elementum nibh tellus molestie nunc. In cursus turpis massa tincidunt dui ut ornare lectus. Fermentum iaculis eu non diam phasellus. Fames ac turpis egestas sed. Pretium fusce id velit ut tortor. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Ut placerat orci nulla pellentesque dignissim enim sit. Sit amet justo donec enim diam vulputate. Diam sit amet nisl suscipit. Non consectetur a erat nam at lectus urna duis.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:40.640Z",
+    "updated_at": "2022-10-23T09:57:02.928Z",
+    "guild": 8
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 20,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "title": "Земля, под харалужныи.",
+    "content": "Высоко плаваеши на дело в буести, яко сокол на ветрех ширяяся, хотя птицю в буйстве одолети. Суть бо у ваю железныи папорзи под шеломы латинскими. Теми тресну земля, и многи страны Хинова. Литва, Ятвязи, Деремела, и Половци сулици своя повръгоща, а главы своя поклониша под тыи мечи харалужныи. Н уже Княже Игорю, утрпе солнцю свет, а древо не бологом листвие срони: по Рсии, по Сули гради поделиша; а Игорева храбраго плъку не кресити. Дон ти Княже кличет, и зоветь Князи на победу. Олговичи храбрыи Князи доспели на брань. Инъгварь и Всеволод, и вси три Мстиславичи, не худа гнезда шестокрилци, непобедными жребии собе власти расхытисте? Кое ваши златыи шеломы и сулицы Ляцкии и щиты! Загородите полю ворота своими острыми стрелами за землю Русскую, за раны Игоревы буего Святъславлича. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:40.740Z",
+    "updated_at": "2022-10-23T09:57:02.837Z",
+    "guild": 10
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 21,
+  "fields": {
+    "author": [
+      "SAtharv"
+    ],
+    "title": "A fit",
+    "content": "In Craven omni memoria patriae zombieland clairvius narcisse religionis sunt diri undead historiarum. Golums, zombies unrelenting et Raimi fascinati beheading. Maleficia! Vel cemetery man a modern bursting eyeballs perhsaps morbi. A terrenti flesh contagium. Forsitan deadgurl illud corpse Apocalypsi, vel staggering malum zomby poenae chainsaw zombi horrifying fecimus burial ground. Indeflexus shotgun coup de poudre monstra per plateas currere. Fit de decay nostra carne undead. Poenitentiam violent zom biehig hway agite RE:dead pœnitentiam! Vivens mortua sunt apud nos night of the living dead.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:40.975Z",
+    "updated_at": "2022-10-23T09:57:02.728Z",
+    "guild": 9
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 22,
+  "fields": {
+    "author": [
+      "SAnder"
+    ],
+    "title": "Nullam sagittis dolor. facilisi",
+    "content": "Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Risus in hendrerit gravida rutrum quisque non. Porta lorem mollis aliquam ut. Eget nullam non nisi est sit amet facilisis magna etiam. Faucibus pulvinar elementum integer enim. Consectetur adipiscing elit ut aliquam purus. Interdum posuere lorem ipsum dolor. Consequat interdum varius sit amet mattis vulputate enim nulla. Commodo nulla facilisi nullam vehicula ipsum a arcu. Tellus orci ac auctor augue mauris. Hac habitasse platea dictumst quisque sagittis. Nunc scelerisque viverra mauris in aliquam sem.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:41.049Z",
+    "updated_at": "2022-10-23T09:57:02.624Z",
+    "guild": 2
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 23,
+  "fields": {
+    "author": [
+      "test_user0"
+    ],
+    "title": "Maecenas vitae.",
+    "content": "Etiam non quam lacus suspendisse faucibus interdum posuere lorem. Ac turpis egestas sed tempus urna et pharetra. Odio ut enim blandit volutpat maecenas volutpat blandit. Arcu odio ut sem nulla pharetra diam. Auctor neque vitae tempus quam pellentesque nec. Ac odio tempor orci dapibus ultrices in iaculis nunc. Pellentesque elit eget gravida cum sociis natoque. Ipsum a arcu cursus vitae. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum. Fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque. Dui faucibus in ornare quam viverra orci.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:41.131Z",
+    "updated_at": "2022-10-23T09:57:02.541Z",
+    "guild": 7
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 24,
+  "fields": {
+    "author": [
+      "HColeson"
+    ],
+    "title": "Semper at enim",
+    "content": "Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Tellus elementum sagittis vitae et leo. Semper quis lectus nulla at. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Hendrerit dolor magna eget est lorem ipsum dolor. Aliquet enim tortor at auctor urna nunc id. Ipsum faucibus vitae aliquet nec. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Nisl condimentum id venenatis a condimentum. Eu lobortis elementum nibh tellus molestie nunc. In cursus turpis massa tincidunt dui ut ornare lectus. Fermentum iaculis eu non diam phasellus. Fames ac turpis egestas sed. Pretium fusce id velit ut tortor. Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Ut placerat orci nulla pellentesque dignissim enim sit. Sit amet justo donec enim diam vulputate. Diam sit amet nisl suscipit. Non consectetur a erat nam at lectus urna duis.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:41.207Z",
+    "updated_at": "2022-10-23T09:57:02.441Z",
+    "guild": 1
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 25,
+  "fields": {
+    "author": [
+      "KJustice"
+    ],
+    "title": "Etiam. est sem. auctor",
+    "content": "Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Risus in hendrerit gravida rutrum quisque non. Porta lorem mollis aliquam ut. Eget nullam non nisi est sit amet facilisis magna etiam. Faucibus pulvinar elementum integer enim. Consectetur adipiscing elit ut aliquam purus. Interdum posuere lorem ipsum dolor. Consequat interdum varius sit amet mattis vulputate enim nulla. Commodo nulla facilisi nullam vehicula ipsum a arcu. Tellus orci ac auctor augue mauris. Hac habitasse platea dictumst quisque sagittis. Nunc scelerisque viverra mauris in aliquam sem.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:41.303Z",
+    "updated_at": "2022-10-23T09:57:02.358Z",
+    "guild": 10
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 26,
+  "fields": {
+    "author": [
+      "JTristan"
+    ],
+    "title": "Ту на о!",
+    "content": "Ту ся брата разлучиста на брезе быстрой Каялы. Ту кроваваго вина недоста; ту пир докончаша храбрии Русичи: сваты попоиша, а сами полегоша за землю Рускую. Ничить трава жалощами, а древо стугою к земли преклонилось. Уже бо, братие, не веселая година въстала, уже пустыни силу прикрыла. Въстала обида в силах Дажь-Божа внука. Вступил девою на землю Трояню, въсплескала лебедиными крылы на синем море у Дону плещучи, убуди жирня времена. Усобица Князем на поганыя погыбе, рекоста бо брат брату: се мое, а то моеже; и начяша Князи про малое, се великое млъвити, а сами на себе крамолу ковати: а погании с всех стран прихождаху с победами на землю Рускую. О! далече зайде сокол, птиць бья к морю: а Игорева храбраго плъку не кресити. За ним кликну Карна и Жля, по скочи по Руской земли, смагу мычючи в пламяне розе. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:41.381Z",
+    "updated_at": "2022-10-23T09:57:02.274Z",
+    "guild": 3
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 27,
+  "fields": {
+    "author": [
+      "JArcher"
+    ],
+    "title": "Кроваве девицю",
+    "content": "Уже бо Сула не течет сребреными струями к граду Переяславлю, и Двина болотом течет оным грозным Полочаном под кликом поганых. Един же Изяслав сын Васильков позвони своими острыми мечи о шеломы Литовския; притрепа славу деду своему Всеславу, а сам под чрълеными щиты на кроваве траве притрепан Литовскыми мечи. И схоти ю на кровать, и рек: дружину твою, Княже, птиць крилы приоде, а звери кровь полизаша. Не бысь ту брата Брячяслава, ни другаго Всеволода; един же изрони жемчюжну душу из храбра тела, чрес злато ожерелие. Унылы голоси, пониче веселие. Трубы трубят Городеньскии. Ярославе, и вси внуце Всеславли уже понизить стязи свои, вонзить свои мечи вережени; уже бо выскочисте из дедней славе. Вы бо своими крамолами начясте наводити поганыя на землю Рускую, на жизнь Всеславлю. Которое бо беше насилие от земли Половецкыи! На седьмом веце Трояни връже Всеслав жребий о девицю себе любу. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:41.464Z",
+    "updated_at": "2022-10-23T09:57:02.191Z",
+    "guild": 9
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 28,
+  "fields": {
+    "author": [
+      "KAtlas"
+    ],
+    "title": "Злата нам нарищуще",
+    "content": "Жены Руския въсплакашась аркучи: уже нам своих милых лад ни мыслию смыслити, ни думою сдумати, ни очима съглядати, а злата и сребра ни мало того потрепати. А въстона бо, братие, Киев тугою, а Чернигов напастьми; тоска разлияся по Руской земли; печаль жирна тече средь земли Рускый; а Князи сами на себе крамолу коваху; а погании сами победами нарищуще на Рускую землю, емляху дань по беле от двора. Тии бо два храбрая Святъславлича, Игорь и Всеволод уже лжу убуди, которую то бяше успил отец их Святъславь грозный Великый Киевскый. Грозою бяшеть; притрепетал своими сильными плъкы и харалужными мечи; наступи на землю Половецкую; притопта хлъми и яругы; взмути реки и озеры; иссуши потоки и болота, а поганаго Кобяка из луку моря от железных великих плъков Половецких, яко вихр выторже: и падеся Кобяк в граде Киеве, в гриднице Святъславли. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:41.620Z",
+    "updated_at": "2022-10-23T09:57:02.099Z",
+    "guild": 1
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 29,
+  "fields": {
+    "author": [
+      "SAtharv"
+    ],
+    "title": "Interdum arcu. in",
+    "content": "Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Risus in hendrerit gravida rutrum quisque non. Porta lorem mollis aliquam ut. Eget nullam non nisi est sit amet facilisis magna etiam. Faucibus pulvinar elementum integer enim. Consectetur adipiscing elit ut aliquam purus. Interdum posuere lorem ipsum dolor. Consequat interdum varius sit amet mattis vulputate enim nulla. Commodo nulla facilisi nullam vehicula ipsum a arcu. Tellus orci ac auctor augue mauris. Hac habitasse platea dictumst quisque sagittis. Nunc scelerisque viverra mauris in aliquam sem.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:41.690Z",
+    "updated_at": "2022-10-23T09:57:02.016Z",
+    "guild": 9
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 30,
+  "fields": {
+    "author": [
+      "GJalen"
+    ],
+    "title": "Чрънигова, кая братие,",
+    "content": "Дети бесови кликом поля прегородиша, а храбрии Русици преградиша чрълеными щиты. Яр туре Всеволоде! стоиши на борони, прыщеши на вои стрелами, гремлеши о шеломы мечи харалужными. Камо Тур поскочяше, своим златым шеломом посвечивая, тамо лежат поганыя головы Половецкыя; поскепаны саблями калеными шеломы Оварьскыя от тебе Яр Туре Всеволоде. Кая раны дорога, братие, забыв чти и живота, и града Чрънигова, отня злата стола, и своя милыя хоти красныя Глебовны свычая и обычая? Были вечи Трояни, минула лета Ярославля; были плъци Олговы, Ольга Святьславличя. Тъй бо Олег мечем крамолу коваше, и стрелы по земли сеяше. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:41.790Z",
+    "updated_at": "2022-10-23T09:57:01.924Z",
+    "guild": 9
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 31,
+  "fields": {
+    "author": [
+      "AJoe"
+    ],
+    "title": "Ты полуднию взыдоша к",
+    "content": "То было в ты рати, и в ты плъкы; а сице и рати не слышано: с зараниа до вечера, с вечера до света летят стрелы каленыя; гримлют сабли о шеломы; трещат копиа харалужныя, в поле незнаеме среди земли Половецкыи. Чръна земля под копыты, костьми была посеяна, а кровию польяна; тугою взыдоша по Руской земли. Что ми шумить, что ми звенить давечя рано пред зорями? Игорь плъкы заворочает; жаль бо ему мила брата Всеволода. Бишася день, бишася другый: третьяго дни к полуднию падоша стязи Игоревы. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:41.888Z",
+    "updated_at": "2022-10-23T09:57:01.833Z",
+    "guild": 7
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 32,
+  "fields": {
+    "author": [
+      "MAlonso"
+    ],
+    "title": "Бо кликом",
+    "content": "Тогда Великий Святслав изрони злато слово слезами смешено, и рече: о моя сыновчя Игорю и Всеволоде! рано еста начала Половецкую землю мечи цвелити, а себе славы искати. Н нечестно одолесте: нечестно бо кровь поганую пролиясте. Ваю храбрая сердца в жестоцем харалузе скована, а в буести закалена. Се ли створисте моей сребреней седине! А уже не вижду власти сильнаго, и богатаго и многовои брата моего Ярослава с Черниговьскими былями, с Могуты и с Татраны и с Шельбиры, и с Топчакы, ис Ревугы, и с Ольберы. Тии бо бес щитовь с засапожникы кликом плъкы побеждают, звонячи в прадеднюю славу. Н рекосте му жа имеся сами, преднюю славу сами похитим, а заднюю ся сами поделим. А чи диво ся братие стару помолодити? Коли сокол в мытех бывает, высоко птиц възбивает; не даст гнезда своего в обиду. Н се зло Княже ми не пособие; на ниче ся годины обратиша. Се Урим кричат под саблями Половецкыми, а Володимир под ранами. Туга и тоска сыну Глебову. Великый Княже Всеволоде! не мыслию ти прелетети издалеча, отня злата стола поблюсти? Ты бо можеши Волгу веслы раскропити, а Дон шеломы выльяти. Аже бы ты был, то была бы Чага по ногате, а Кощей по резане. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:41.957Z",
+    "updated_at": "2022-10-23T09:57:01.741Z",
+    "guild": 3
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 33,
+  "fields": {
+    "author": [
+      "JArcher"
+    ],
+    "title": "Сыны дуная. горы своем",
+    "content": "Ты бо можеши посуху живыми шереширы стреляти удалыми сыны Глебовы. Ты буй Рюриче и Давыде, не ваю ли злачеными шеломы по крови плаваша? Не ваю ли храбрая дружина рыкают акы тури, ранены саблями калеными, на поле незнаеме? Вступита Господина в злата стремень за обиду сего времени, за землю Русскую, за раны Игоревы, буего Святславлича! Галичкы Осмомысле Ярославе высоко седиши на своем златокованнем столе. Подпер горы Угорскыи своими железными плъки, заступив Королеви путь, затвори в Дунаю ворота, меча времены чрез облаки, суды рядя до Дуная. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:42.066Z",
+    "updated_at": "2022-10-23T09:57:01.649Z",
+    "guild": 9
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 34,
+  "fields": {
+    "author": [
+      "MBryson"
+    ],
+    "title": "Terror inferi. ad leighter",
+    "content": "Whyt zomby Ut fames after death cerebro virus enim carnis grusome, viscera et organa viventium. Sicut spargit virus ad impetum, qui supersumus flesh eating. Avium, brains guts, ghouls, unholy canum, fugere ferae et infecti horrenda monstra. Videmus twenty-eight deformis pale, horrenda daemonum. Panduntur brains portae rotting inferi. Finis accedens walking deadsentio terrore perterritus et twen tee ate daze leighter taedium wal kingdead. The horror, monstra epidemic significant finem. Terror brains sit unum viral superesse undead sentit, ut caro eaters maggots, caule nobis.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:42.140Z",
+    "updated_at": "2022-10-23T09:57:01.562Z",
+    "guild": 4
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 35,
+  "fields": {
+    "author": [
+      "AWarren"
+    ],
+    "title": "Odio enim",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis varius quam quisque id diam. Sed vulputate odio ut enim blandit. Sit amet consectetur adipiscing elit pellentesque habitant morbi. In egestas erat imperdiet sed. Sagittis purus sit amet volutpat. Vitae justo eget magna fermentum iaculis eu non diam. Proin fermentum leo vel orci porta. Tempus urna et pharetra pharetra massa massa ultricies. Varius morbi enim nunc faucibus a pellentesque sit. In hac habitasse platea dictumst quisque sagittis purus sit amet. Vel fringilla est ullamcorper eget nulla facilisi. A arcu cursus vitae congue. Aliquet sagittis id consectetur purus. Felis donec et odio pellentesque.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:42.224Z",
+    "updated_at": "2022-10-23T09:57:01.479Z",
+    "guild": 9
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 36,
+  "fields": {
+    "author": [
+      "MAlonso"
+    ],
+    "title": "Donec. amet netus",
+    "content": "Gravida quis blandit turpis cursus in hac habitasse platea. Convallis tellus id interdum velit laoreet id donec. Risus nec feugiat in fermentum posuere urna nec. Pharetra diam sit amet nisl suscipit. Rhoncus dolor purus non enim praesent elementum. Cursus turpis massa tincidunt dui ut ornare. Sodales ut etiam sit amet nisl. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Tristique senectus et netus et malesuada. Eu facilisis sed odio morbi quis commodo odio. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Ut tortor pretium viverra suspendisse potenti nullam ac. Ut venenatis tellus in metus vulputate eu. Aliquet nec ullamcorper sit amet risus. Ut porttitor leo a diam sollicitudin tempor. Auctor urna nunc id cursus. At tempor commodo ullamcorper a lacus vestibulum sed arcu non. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Pharetra diam sit amet nisl suscipit adipiscing bibendum.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:42.306Z",
+    "updated_at": "2022-10-23T09:57:01.396Z",
+    "guild": 2
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 37,
+  "fields": {
+    "author": [
+      "BKareem"
+    ],
+    "title": "Рыскаше; на",
+    "content": "Тъй клюками подпръся око ни, и скочи к граду Кыеву, и дотчеся стружием злата стола Киевскаго. Скочи от них лютым зверем в плъночи, из Бела-града, обесися сине мьгле, утр же воззни стрикусы оттвори врата Нову-граду, разшибе славу Ярославу, скочи влъком до Немиги с Дудуток. На Немизе снопы стелют головами, молотят чепи харалужными, на тоце живот кладут, веют душу от тела. Немизе кровави брезе не бологом бяхуть посеяни, посеяни костьми Руских сынов. Всеслав Князь людем судяше, Князем грады рядяше, а сам в ночь влъком рыскаше; из Кыева дорискаше до Кур Тмутороканя; великому хръсови влъком путь прерыскаше. Тому в Полотске позвониша заутренюю рано у Святыя Софеи в колоколы: а он в Кыеве звон слыша. Аще и веща душа в друзе теле, н часто беды страдаше. Тому вещей Боян и пръвое припевку смысленый рече: ни хытру, ни горазду, ни птицю горазду, суда Божиа не минути. О! стонати Руской земли, помянувше пръвую годину, и пръвых Князей. Того стараго Владимира не льзе бе пригвоздити к горам Киевским: сего бо ныне сташа стязи Рюриковы, а друзии Давидовы; н рози нося им хоботы пашут, копиа поют на Дунаи.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:42.365Z",
+    "updated_at": "2022-10-23T09:57:01.299Z",
+    "guild": 7
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 38,
+  "fields": {
+    "author": [
+      "SAtharv"
+    ],
+    "title": "Morbo in",
+    "content": "Lucio fulci tremor est dark vivos magna. Expansis creepy arm yof darkness ulnis witchcraft missing carnem armis Kirkman Moore and Adlard caeruleum in locis. Romero morbo Congress amarus in auras. Nihil horum sagittis tincidunt, zombie slack-jawed gelida survival portenta. The unleashed virus est, et iam zombie mortui ambulabunt super terram. Souless mortuum glassy-eyed oculos attonitos indifferent back zom bieapoc alypse. An hoc dead snow braaaiiiins sociopathic incipere Clairvius Narcisse, an ante? Is bello mundi z?",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:42.440Z",
+    "updated_at": "2022-10-23T09:57:01.212Z",
+    "guild": 10
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 39,
+  "fields": {
+    "author": [
+      "RAlaric"
+    ],
+    "title": "Eget urna platea.",
+    "content": "Gravida quis blandit turpis cursus in hac habitasse platea. Convallis tellus id interdum velit laoreet id donec. Risus nec feugiat in fermentum posuere urna nec. Pharetra diam sit amet nisl suscipit. Rhoncus dolor purus non enim praesent elementum. Cursus turpis massa tincidunt dui ut ornare. Sodales ut etiam sit amet nisl. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Tristique senectus et netus et malesuada. Eu facilisis sed odio morbi quis commodo odio. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Ut tortor pretium viverra suspendisse potenti nullam ac. Ut venenatis tellus in metus vulputate eu. Aliquet nec ullamcorper sit amet risus. Ut porttitor leo a diam sollicitudin tempor. Auctor urna nunc id cursus. At tempor commodo ullamcorper a lacus vestibulum sed arcu non. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Pharetra diam sit amet nisl suscipit adipiscing bibendum.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:42.566Z",
+    "updated_at": "2022-10-23T09:57:01.129Z",
+    "guild": 5
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 40,
+  "fields": {
+    "author": [
+      "LMichael"
+    ],
+    "title": "Quam habitasse",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis varius quam quisque id diam. Sed vulputate odio ut enim blandit. Sit amet consectetur adipiscing elit pellentesque habitant morbi. In egestas erat imperdiet sed. Sagittis purus sit amet volutpat. Vitae justo eget magna fermentum iaculis eu non diam. Proin fermentum leo vel orci porta. Tempus urna et pharetra pharetra massa massa ultricies. Varius morbi enim nunc faucibus a pellentesque sit. In hac habitasse platea dictumst quisque sagittis purus sit amet. Vel fringilla est ullamcorper eget nulla facilisi. A arcu cursus vitae congue. Aliquet sagittis id consectetur purus. Felis donec et odio pellentesque.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:42.622Z",
+    "updated_at": "2022-10-23T09:57:01.046Z",
+    "guild": 8
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 41,
+  "fields": {
+    "author": [
+      "JArcher"
+    ],
+    "title": "Cursus turpis pharetra suscipit.",
+    "content": "Gravida quis blandit turpis cursus in hac habitasse platea. Convallis tellus id interdum velit laoreet id donec. Risus nec feugiat in fermentum posuere urna nec. Pharetra diam sit amet nisl suscipit. Rhoncus dolor purus non enim praesent elementum. Cursus turpis massa tincidunt dui ut ornare. Sodales ut etiam sit amet nisl. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Tristique senectus et netus et malesuada. Eu facilisis sed odio morbi quis commodo odio. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Ut tortor pretium viverra suspendisse potenti nullam ac. Ut venenatis tellus in metus vulputate eu. Aliquet nec ullamcorper sit amet risus. Ut porttitor leo a diam sollicitudin tempor. Auctor urna nunc id cursus. At tempor commodo ullamcorper a lacus vestibulum sed arcu non. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Pharetra diam sit amet nisl suscipit adipiscing bibendum.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:42.689Z",
+    "updated_at": "2022-10-23T09:57:00.962Z",
+    "guild": 9
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 42,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "title": "Плъкы от",
+    "content": "Другаго дни велми рано кровавыя зори свет поведают; чръныя тучя съморя идут, хотят прикрыти д̃ солнца: а в них трепещуть синии млънии, быти грому великому, итти дождю стрелами с Дону великаго: ту ся копием приламати, ту ся саблям потручяти о шеломы Половецкыя, на реце на Каяле, у Дону великаго. О Руская земле! уже не Шеломянем еси. Се ветри, Стрибожи внуци, веют съморя стрелами на храбрыя плъкы Игоревы! земля тутнет, рекы мутно текуть; пороси поля прикрывают; стязи глаголют, Половци идуть от Дона, и от моря, и от всех стран. Рускыя плъкы отступиша. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:42.756Z",
+    "updated_at": "2022-10-23T09:57:00.854Z",
+    "guild": 3
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 43,
+  "fields": {
+    "author": [
+      "BIsmael"
+    ],
+    "title": "В тьмуторокане. приведе,",
+    "content": "Ступает в злат стремень в граде Тьмуторокане. Тоже звон слыша давный великый Ярославь сын Всеволожь: а Владимир по вся утра уши закладаше в Чернигове; Бориса же Вячеславлича слава на суд приведе, и на канину зелену паполому постла, за обиду Олгову храбра и млада Князя. С тояже Каялы Святоплъкь повелея отца своего междю Угорьскими иноходьцы ко Святей Софии к Киеву. Тогда при Олзе Гориславличи сеяшется и растяшеть усобицами; погибашеть жизнь Даждь-Божа внука, в Княжих крамолах веци человекомь скратишась. Тогда по Руской земли ретко ратаеве кикахуть: н часто врани граяхуть, трупиа себе деляче; а галици свою речь говоряхуть, хотять полетети на уедие. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:42.843Z",
+    "updated_at": "2022-10-23T09:57:00.771Z",
+    "guild": 8
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 44,
+  "fields": {
+    "author": [
+      "test_user0"
+    ],
+    "title": "Прихождаху земли уже земли,",
+    "content": "Ту ся брата разлучиста на брезе быстрой Каялы. Ту кроваваго вина недоста; ту пир докончаша храбрии Русичи: сваты попоиша, а сами полегоша за землю Рускую. Ничить трава жалощами, а древо стугою к земли преклонилось. Уже бо, братие, не веселая година въстала, уже пустыни силу прикрыла. Въстала обида в силах Дажь-Божа внука. Вступил девою на землю Трояню, въсплескала лебедиными крылы на синем море у Дону плещучи, убуди жирня времена. Усобица Князем на поганыя погыбе, рекоста бо брат брату: се мое, а то моеже; и начяша Князи про малое, се великое млъвити, а сами на себе крамолу ковати: а погании с всех стран прихождаху с победами на землю Рускую. О! далече зайде сокол, птиць бья к морю: а Игорева храбраго плъку не кресити. За ним кликну Карна и Жля, по скочи по Руской земли, смагу мычючи в пламяне розе. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:42.916Z",
+    "updated_at": "2022-10-23T09:57:00.688Z",
+    "guild": 8
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 45,
+  "fields": {
+    "author": [
+      "BIsmael"
+    ],
+    "title": "Ростреляеве стрелами. птици рече",
+    "content": "Тогда врани не граахуть, галици помлъкоша, сорокы не троскоташа, полозию ползоша только, дятлове тектом путь к реце кажут, соловии веселыми песьми свет поведают. Млъвит Гзак Кончакови: аже сокол к гнезду летит, соколича ростреляеве своими злачеными стрелами. Рече Кончак ко Гзе: аже сокол к гнезду летит, а ве соколца опутаеве красною дивицею. И рече Гзак к Кончакови: аще его опутаеве красною девицею, ни нама будет сокольца, ни нама красны девице, то почнут наю птици бити в поле Половецком.",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:42.991Z",
+    "updated_at": "2022-10-23T09:57:00.604Z",
+    "guild": 2
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 46,
+  "fields": {
+    "author": [
+      "SRex"
+    ],
+    "title": "Дело зоветь худа",
+    "content": "Высоко плаваеши на дело в буести, яко сокол на ветрех ширяяся, хотя птицю в буйстве одолети. Суть бо у ваю железныи папорзи под шеломы латинскими. Теми тресну земля, и многи страны Хинова. Литва, Ятвязи, Деремела, и Половци сулици своя повръгоща, а главы своя поклониша под тыи мечи харалужныи. Н уже Княже Игорю, утрпе солнцю свет, а древо не бологом листвие срони: по Рсии, по Сули гради поделиша; а Игорева храбраго плъку не кресити. Дон ти Княже кличет, и зоветь Князи на победу. Олговичи храбрыи Князи доспели на брань. Инъгварь и Всеволод, и вси три Мстиславичи, не худа гнезда шестокрилци, непобедными жребии собе власти расхытисте? Кое ваши златыи шеломы и сулицы Ляцкии и щиты! Загородите полю ворота своими острыми стрелами за землю Русскую, за раны Игоревы буего Святъславлича. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:43.087Z",
+    "updated_at": "2022-10-23T09:57:00.516Z",
+    "guild": 9
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 47,
+  "fields": {
+    "author": [
+      "RAlaric"
+    ],
+    "title": "Владимера полонену",
+    "content": "Почнем же, братие, повесть сию от стараго Владимера до нынешняго Игоря; иже истягну умь крепостию своею, и поостри сердца своего мужеством, наплънився ратнаго духа, наведе своя храбрыя плъкы на землю Половецькую за землю Руськую. Тогда Игорь възре на светлое солнце и виде от него тьмою вся своя воя прикрыты, и рече Игорь к дружине своей: братие и дружино! луцеж бы потяту быти, неже полонену быти: а всядем, братие, на свои бръзыя комони, да позрим синего Дону. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:43.155Z",
+    "updated_at": "2022-10-23T09:57:00.416Z",
+    "guild": 5
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 48,
+  "fields": {
+    "author": [
+      "ZOtto"
+    ],
+    "title": "Не буего",
+    "content": "Ты бо можеши посуху живыми шереширы стреляти удалыми сыны Глебовы. Ты буй Рюриче и Давыде, не ваю ли злачеными шеломы по крови плаваша? Не ваю ли храбрая дружина рыкают акы тури, ранены саблями калеными, на поле незнаеме? Вступита Господина в злата стремень за обиду сего времени, за землю Русскую, за раны Игоревы, буего Святславлича! Галичкы Осмомысле Ярославе высоко седиши на своем златокованнем столе. Подпер горы Угорскыи своими железными плъки, заступив Королеви путь, затвори в Дунаю ворота, меча времены чрез облаки, суды рядя до Дуная. ",
+    "media_content": "",
+    "created_at": "2022-10-20T20:25:43.232Z",
+    "updated_at": "2022-10-23T09:57:00.323Z",
+    "guild": 6
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 49,
+  "fields": {
+    "author": [
+      "SRex"
+    ],
+    "title": "test create ad",
+    "content": "{% csrf_token %} was missing",
+    "media_content": "",
+    "created_at": "2022-10-23T15:45:30.452Z",
+    "updated_at": "2022-10-23T15:45:30.452Z",
+    "guild": 2
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 50,
+  "fields": {
+    "author": [
+      "SRex"
+    ],
+    "title": "тест create ad 2",
+    "content": "Restricting access to class-based views\r\nYou are going to restrict access to the views so that only users with\r\nthe appropriate permissions can add, change, or delete Course\r\nobjects. You are going to use the following two mixins provided by\r\ndjango.contrib.auth to limit access to views:",
+    "media_content": "pics/2022/10/23/healeress.jpg",
+    "created_at": "2022-10-23T15:47:01.900Z",
+    "updated_at": "2022-10-23T15:51:36.880Z",
+    "guild": 2
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 51,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "title": "test create ad 3",
+    "content": "class django.views.generic.edit.BaseCreateView¶\r\nA base view for creating a new object instance. It is not intended to be used directly, but rather as a parent class of the django.views.generic.edit.CreateView.\r\n\r\nAncestors (MRO)\r\n\r\nThis view inherits methods and attributes from the following views:\r\n\r\ndjango.views.generic.edit.ModelFormMixin\r\ndjango.views.generic.edit.ProcessFormView\r\nMethods\r\n\r\nget(request, *args, **kwargs)¶\r\nSets the current object instance (self.object) to None.\r\n\r\npost(request, *args, **kwargs)¶\r\nSets the current object instance (self.object) to None.",
+    "media_content": "",
+    "created_at": "2022-10-23T15:52:35.550Z",
+    "updated_at": "2022-10-23T15:52:35.550Z",
+    "guild": 4
+  }
+},
+{
+  "model": "ads.ad",
+  "pk": 52,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "title": "test form4",
+    "content": "add enctype=\"multipart/form-data\"",
+    "media_content": "pics/2022/10/23/thin.png",
+    "created_at": "2022-10-23T17:31:43.706Z",
+    "updated_at": "2022-10-23T17:31:43.706Z",
+    "guild": 4
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 1,
+  "fields": {
+    "author": [
+      "test_user0"
+    ],
+    "content": "[21/Oct/2022 21:59:37] \"GET /static/admin/js/prepopulate.js HTTP/1.1\" 304 0\r\n[21/Oct/2022 21:59:37] \"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1\" 304 0\r\n[21/Oct/2022 21:59:37] \"GET /static/admin/js/filters.js HTTP/1.1\" 304 0\r\n[21/Oct/2022 21:59:37] \"GET /static/admin/img/tooltag-add.svg HTTP/1.1\" 304 0\r\n[21/Oct/2022 21:59:40] \"GET /admin/ads/reply/add/ HTTP/1.1\" 200 29400\r\n[21/Oct/2022 21:59:41] \"GET /admin/jsi18n/ HTTP/1.1\" 200 15618\r\n[21/Oct/2022 21:59:41] \"GET /static/admin/css/forms.css HTTP/1.1\" 200 8944\r\n[21/Oct/2022 21:59:41] \"GET /static/admin/js/prepopulate_init.js HTTP/1.1\" 200 586\r\n[21/Oct/2022 21:59:41] \"GET /static/admin/img/icon-viewlink.svg HTTP/1.1\" 200 581",
+    "parent_ad": 45,
+    "created_at": "2022-10-21T19:00:14.341Z",
+    "updated_at": "2022-10-23T09:46:30.140Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 2,
+  "fields": {
+    "author": [
+      "VMarcel"
+    ],
+    "content": "The order of model inner classes and standard methods should be as follows (noting that these are not all required):\r\n\r\nAll database fields\r\nCustom manager attributes\r\nclass Meta\r\ndef __str__()\r\ndef save()\r\ndef get_absolute_url()\r\nAny custom methods\r\nIf choices is defined for a given model field, define each choice as a list of tuples, with an all-uppercase name as a class attribute on the model. Example:",
+    "parent_ad": 45,
+    "created_at": "2022-10-21T19:00:38.294Z",
+    "updated_at": "2022-10-23T09:46:30.065Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 3,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "content": "Отклик “Reply object (2)“ был успешно добавлен. Вы можете добавить еще один Отклик ниже.",
+    "parent_ad": 1,
+    "created_at": "2022-10-21T19:00:57.821Z",
+    "updated_at": "2022-10-23T09:46:29.990Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 4,
+  "fields": {
+    "author": [
+      "RAlaric"
+    ],
+    "content": "your time zones are coming from a source that returns pytz_deprecation_shim shim time zones, you can upgrade them to the PEP 495-compatible zone that they are a wrapper around using pytz_deprecation_shim.helpers.upgrade_tzinfo().\r\n\r\nFor more information about how to get time zones from the replacement you’ve chosen, see the section on acquiring a tzinfo object.",
+    "parent_ad": 48,
+    "created_at": "2022-10-21T19:07:43.252Z",
+    "updated_at": "2022-10-23T09:46:29.915Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 5,
+  "fields": {
+    "author": [
+      "JTristan"
+    ],
+    "content": "your time zones are coming from a source that returns pytz_deprecation_shim shim time zones, you can upgrade them to the PEP 495-compatible zone that they are a wrapper around using pytz_deprecation_shim.helpers.upgrade_tzinfo().\r\n\r\nFor more information about how to get time zones from the replacement you’ve chosen, see the section on acquiring a tzinfo object.",
+    "parent_ad": 48,
+    "created_at": "2022-10-21T19:07:51.309Z",
+    "updated_at": "2022-10-23T09:46:29.840Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 6,
+  "fields": {
+    "author": [
+      "BIsmael"
+    ],
+    "content": "your time zones are coming from a source that returns pytz_deprecation_shim shim time zones, you can upgrade them to the PEP 495-compatible zone that they are a wrapper around using pytz_deprecation_shim.helpers.upgrade_tzinfo().\r\n\r\nFor more information about how to get time zones from the replacement you’ve chosen, see the section on acquiring a tzinfo object.",
+    "parent_ad": 47,
+    "created_at": "2022-10-21T19:07:58.903Z",
+    "updated_at": "2022-10-23T09:46:29.765Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 7,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "content": "time zones are coming from a source that returns pytz_deprecation_shim shim time zones, you can upgrade them to the PEP 495-compatible zone that they are a wrapper around using pytz_de",
+    "parent_ad": 48,
+    "created_at": "2022-10-21T21:26:19.179Z",
+    "updated_at": "2022-10-23T09:46:29.690Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 8,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "content": "fwerfsasdf",
+    "parent_ad": 48,
+    "created_at": "2022-10-22T13:24:36.458Z",
+    "updated_at": "2022-10-23T09:46:29.607Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 9,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "content": "fsasdfsd",
+    "parent_ad": 48,
+    "created_at": "2022-10-22T13:38:58.143Z",
+    "updated_at": "2022-10-23T09:46:29.532Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 10,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "content": "fghfddfghhgfdfgh",
+    "parent_ad": 47,
+    "created_at": "2022-10-22T13:39:26.140Z",
+    "updated_at": "2022-10-23T09:46:29.432Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 11,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "content": "fghfddfghhgfdfgh",
+    "parent_ad": 47,
+    "created_at": "2022-10-22T13:39:41.019Z",
+    "updated_at": "2022-10-23T09:46:29.348Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 12,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "content": "fsl;kjfjdksla",
+    "parent_ad": 48,
+    "created_at": "2022-10-22T14:13:30.147Z",
+    "updated_at": "2022-10-23T09:46:29.265Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 13,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "content": "fsl;kjfjdksla",
+    "parent_ad": 48,
+    "created_at": "2022-10-22T14:14:49.654Z",
+    "updated_at": "2022-10-23T09:46:29.165Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 14,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "content": "fdsadfbrsedgte",
+    "parent_ad": 48,
+    "created_at": "2022-10-22T14:47:35.226Z",
+    "updated_at": "2022-10-23T09:46:29.065Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 15,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "content": "ew;loijgejiopdfg;plj",
+    "parent_ad": 48,
+    "created_at": "2022-10-22T14:49:59.928Z",
+    "updated_at": "2022-10-23T09:46:28.965Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 16,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "content": "ew;loijgejiopdfg;plj",
+    "parent_ad": 48,
+    "created_at": "2022-10-22T14:52:50.598Z",
+    "updated_at": "2022-10-23T09:46:28.873Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 17,
+  "fields": {
+    "author": [
+      "alex"
+    ],
+    "content": "fsdagfdsgf",
+    "parent_ad": 48,
+    "created_at": "2022-10-22T15:36:31.073Z",
+    "updated_at": "2022-10-23T09:46:28.746Z"
+  }
+},
+{
+  "model": "ads.reply",
+  "pk": 18,
+  "fields": {
+    "author": [
+      "martin"
+    ],
+    "content": "asf;lkjfdjskl",
+    "parent_ad": 52,
+    "created_at": "2022-10-23T21:37:47.065Z",
+    "updated_at": "2022-10-23T21:37:47.065Z"
+  }
+}
+]

@@ -1,0 +1,8 @@
+/* class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #a6cde9;" */
+body {
+    background-color: slategray;
+    padding-top: 24px;
+}
+.navbar {
+    background-color: #a6cde9;   
+}

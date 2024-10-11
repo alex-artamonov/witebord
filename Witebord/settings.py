@@ -36,45 +36,47 @@ INSTALLED_APPS = [
     "django.contrib.admin",
     "users.apps.UsersConfig",
     "django.contrib.auth",
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.google',
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
+    "allauth.socialaccount.providers.google",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
-    'django.contrib.sites',
+    "django.contrib.sites",
     "django.contrib.staticfiles",
     "debug_toolbar",
     "ads.apps.AdsConfig",
     "django.contrib.postgres",
 ]
 
-AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = "users.User"
 SITE_ID = 2
 # ACCOUNT_AUTHENTICATION_METHOD = 'email'
 # DEFAULT_FROM_EMAIL = 'sat.arepo@yandex.ru'
-LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = 'ads:home'
+LOGIN_URL = "/accounts/login/"
+LOGIN_REDIRECT_URL = "ads:home"
 # LOGOUT_REDIRECT_URL = 'ads:home'
 # LOGIN_REDIRECT_URL = '/accounts/profile'
 
 
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-ACCOUNT_SIGNUP_REDIRECT_URL = 'ads:rules' # не работает: Note that users are only redirected to this URL 
-    #if the signup went through uninterruptedly, for example, without any side steps due to email verification. 
+ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+ACCOUNT_SIGNUP_REDIRECT_URL = (
+    "ads:rules"  # не работает: Note that users are only redirected to this URL
+)
+# if the signup went through uninterruptedly, for example, without any side steps due to email verification.
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
 load_dotenv()
-EMAIL_HOST = 'smtp.yandex.ru' 
-EMAIL_PORT = 465 # порт smtp сервера тоже одинаковый
-EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD") # пароль от почты
-EMAIL_USE_SSL = True # Яндекс использует ssl, подробнее о том, 
-#что это, почитайте на Википедии, но включать его здесь обязательно
-# 
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER + '@yandex.ru'
+EMAIL_HOST = "smtp.yandex.ru"
+EMAIL_PORT = 465  # порт smtp сервера тоже одинаковый
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")  # пароль от почты
+EMAIL_USE_SSL = True  # Яндекс использует ssl, подробнее о том,
+# что это, почитайте на Википедии, но включать его здесь обязательно
+#
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER + "@yandex.ru"
 
 
 MIDDLEWARE = [
@@ -83,7 +85,7 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "allauth.account.middleware.AccountMiddleware",
@@ -91,14 +93,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "Witebord.urls"
 INTERNAL_IPS = [
-    '127.0.0.1',
-    'localhose',
-] 
+    "127.0.0.1",
+    "localhose",
+]
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -106,7 +108,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                'django.template.context_processors.request',
+                "django.template.context_processors.request",
             ],
         },
     },
@@ -114,10 +116,9 @@ TEMPLATES = [
 
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
-    'django.contrib.auth.backends.ModelBackend',
-
+    "django.contrib.auth.backends.ModelBackend",
     # `allauth` specific authentication methods, such as login by e-mail
-    'allauth.account.auth_backends.AuthenticationBackend',
+    "allauth.account.auth_backends.AuthenticationBackend",
 ]
 
 
@@ -132,17 +133,17 @@ DATABASES = {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
     },
-    'psql': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'witebord',
-        'USER': 'witebord',
-        'PASSWORD': 'asdf',
-        'PORT': '5432',
-        'HOST': 'localhost',
-    }
+    "psql": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "witebord",
+        "USER": "witebord",
+        "PASSWORD": "asdf",
+        "PORT": "5432",
+        "HOST": "localhost",
+    },
 }
 
-DATABASES['default'] = DATABASES['psql']
+DATABASES["default"] = DATABASES["sqlite"]
 
 
 # Password validation
@@ -187,5 +188,12 @@ STATIC_ROOT = BASE_DIR / "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-MEDIA_ROOT = BASE_DIR / 'media'
-MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_URL = "/media/"
+
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+#         'LOCATION': 'redis://127.0.0.1:6379',
+#     }
+# }

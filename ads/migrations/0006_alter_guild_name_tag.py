@@ -4,7 +4,6 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("ads", "0005_ad_author_alter_ad_title_alter_guild_name"),
     ]

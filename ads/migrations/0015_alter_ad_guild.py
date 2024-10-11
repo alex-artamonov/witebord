@@ -5,7 +5,6 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("ads", "0014_remove_reply_guild_ad_guild"),
     ]
